@@ -1,0 +1,34 @@
+#gov_example = {
+#	possible = {}							# Determines if a government name can be chosen. AND trigger, scope: country; valid triggers: has_ethic, has_authority, has_valid_civic; everything else is undefined behavior!
+#	weight = {								# scriptable value, scope: country; the (possible) government type with the biggest weight is assigned to the country
+#		base = 100
+#	}
+#
+#	ruler_title = RT_KING					# translation tag for male ruler's title
+#	ruler_title_female = RT_QUEEN			# translation tag for female ruler's title
+#	heir_title = HT_CROWN_PRINCE			# translation tag for male heir's title
+#	heir_title_female = HT_CROWN_PRINCESS	# translation tag for female heir's title
+#	use_regnal_names = yes / no				# default: no
+#	dynastic_last_names = yes / no			# default: no
+#
+#	election_candidates = {					# scriptable value to weight election candidates for oligarchic elections, scope: leader
+#		modifier = {
+#			add = 1000
+#			leader_class = ruler
+#		}
+#	}
+#}
+
+gov_demon_cultists = {
+	ruler_title = RT_DEMON_CULTIST
+	ruler_title_female = RT_DEMON_CULTIST_FEMALE
+	resource_tag = demon_cultists
+
+	possible = {
+		has_authority = auth_demon_cultists
+	}
+
+	weight = {
+		base = 100000
+	}
+}
