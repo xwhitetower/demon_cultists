@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_ethics_demon_cultists"
+		texturefile = "gfx/interface/icons/ethics/ethic_demon_cultists.dds"
+	}	
+}
