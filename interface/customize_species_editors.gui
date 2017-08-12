@@ -2130,7 +2130,7 @@ guiTypes = {
             ### CUSTOM ETHIC DEMON CULTIST ###
 			buttonType = {
 				name = "ethic_demon_cultists"
-				spriteType = "GFX_ethics_fanatic_authoritarian"
+				spriteType = "GFX_ethics_demon_cultists"
 				position = { x = 30 y = 80 }
 				clicksound = interface
 			}
@@ -2190,7 +2190,7 @@ guiTypes = {
 
 		gridBoxType = {
 			name = "authority_grid"
-			position = { x = 390 y = 70 }
+			position = { x = 390 y = 50 }
 			slotSize = { width = 50 height = 50 }
 			max_slots_horizontal = 5
 			format = UPPER_LEFT
@@ -2200,7 +2200,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "authority_description"
 			size = { width = 310 height = 131 }
-			position = { x = 360 y = 140 }
+			position = { x = 360 y = 160 }
 
 			background = {
 				name = "background"
@@ -2222,7 +2222,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "government_type"
 			font = "malgun_goth_24"
-			position = { x = 360 y = 280 }
+			position = { x = 360 y = 295 }
 			maxWidth = 310
 			maxHeight = 20
 			text =	""
