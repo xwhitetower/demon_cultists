@@ -1,0 +1,8 @@
+### Planet Modifiers
+
+pm_demc_demon_gate = {
+	spawn_chance = {
+		# Demon Event only
+	}
+	modifier = "demc_demon_gate"
+}

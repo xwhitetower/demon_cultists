@@ -1,0 +1,19 @@
+namespace = demc_game_start
+
+### Hidden Demon Cultists Game Start Event
+event = {
+	id = demc_game_start.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = game_started
+
+		every_country = {
+			limit = { has_ethic = ethic_demon_cultists }
+            home_planet = {
+                add_modifier = { modifier = demc_demon_gate }
+            }
+		}
+    }
+}

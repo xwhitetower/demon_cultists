@@ -1,0 +1,9 @@
+
+##########################################################################
+# Planet Modifiers
+##########################################################################
+
+demc_demon_gate = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_chthonian_planet.dds"
+	icon_frame = 2
+}
