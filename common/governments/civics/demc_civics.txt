@@ -105,7 +105,7 @@ civic_frequent_sacrifices_demon_cult = {
 	}
 }
 
-civic_whispers_from_netherworld_demon_cult = {
+civic_whispers_shroud_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
