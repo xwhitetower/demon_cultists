@@ -101,7 +101,7 @@ civic_frequent_sacrifices_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
-		country_resource_unity_mult = 0.30
+		country_resource_unity_mult = 0.15
 	}
 }
 
@@ -117,9 +117,17 @@ civic_control_shroud_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
-		ship_ftl_wormhole_speed_mult = 0.05
+		ship_ftl_wormhole_range_mult = 0.05
 		ship_ftl_warp_range_mult = 0.05
 		ship_ftl_jumpdrive_range_mult = 0.05
 		ship_speed_mult = 0.15
+	}
+}
+
+civic_charimatic_leader_demon_cult = {
+	potential = { ethics = { value = ethic_demon_cultists } }
+	random_weight = { base = 1 }
+	modifier = {
+		country_core_sector_system_cap = 2
 	}
 }
