@@ -2,5 +2,6 @@
 on_game_start = {
 	events = {
 		demc_game_start.1
+    	demc_game_start.2
 	}
 }

@@ -10,7 +10,7 @@ sacrifice_button_effect = {
             }
         }
 	}
-	
+
 	effect = {
 		random_owned_pop = {
 			limit = { NOT = { is_same_species = root } }
