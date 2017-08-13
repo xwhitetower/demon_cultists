@@ -7,13 +7,26 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_global_flag = game_started
-
 		every_country = {
 			limit = { has_ethic = ethic_demon_cultists }
-            home_planet = {
-                add_modifier = { modifier = demc_demon_gate }
-            }
+			home_planet = {
+				add_modifier = { modifier = demc_demon_gate }
+			}
 		}
-    }
+	}
+}
+
+event = {
+	id = demc_game_start.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = { has_ethic = ethic_demon_cultists }
+			every_owned_pop = {
+				pop_change_ethic = ethic_demon_cultists
+			}
+		}
+	}
 }

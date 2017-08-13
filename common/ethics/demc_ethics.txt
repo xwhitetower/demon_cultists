@@ -3,7 +3,6 @@ ethic_demon_cultists = {
 	cost = 3
 	category = "col"
 	category_value = 0
-	use_for_pops = no
 
 	country_modifier = {
 		country_resource_influence_add = 1
@@ -16,5 +15,23 @@ ethic_demon_cultists = {
 
 	random_weight = {
 		value = 0 # player only for the time being
+	}
+
+	country_attraction = {
+		value = 1
+
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_demon_cultists }
+		}
+	}
+
+	pop_attraction = {
+		value = 1
+
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_demon_cultists }
+		}
 	}
 }
