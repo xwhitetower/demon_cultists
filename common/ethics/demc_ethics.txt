@@ -17,21 +17,21 @@ ethic_demon_cultists = {
 		value = 0 # player only for the time being
 	}
 
-    country_attraction = {
-        value = 1
+	country_attraction = {
+		value = 1
 
-        modifier = {
-            factor = 0
-            NOT = { has_ethic = ethic_demon_cultists }
-        }
-    }
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_demon_cultists }
+		}
+	}
 
-    pop_attraction = {
-        value = 1
+	pop_attraction = {
+		value = 1
 
-        modifier = {
-            factor = 0
-            NOT = { has_ethic = ethic_demon_cultists }
-        }
-    }
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_demon_cultists }
+		}
+	}
 }
