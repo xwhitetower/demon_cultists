@@ -13,7 +13,10 @@
 #}
 
 civic_imperial_cult = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			value = auth_imperial
@@ -38,7 +41,10 @@ civic_imperial_cult = {
 }
 
 civic_beacon_of_liberty = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			value = auth_democratic
@@ -63,7 +69,10 @@ civic_beacon_of_liberty = {
 }
 
 civic_exalted_priesthood = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			value = auth_oligarchic
@@ -83,7 +92,10 @@ civic_exalted_priesthood = {
 }
 
 civic_philosopher_king = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			OR = {
@@ -100,7 +112,10 @@ civic_philosopher_king = {
 }
 
 civic_meritocracy = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			OR = {
@@ -118,7 +133,10 @@ civic_meritocracy = {
 }
 
 civic_citizen_service = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -145,7 +163,10 @@ civic_citizen_service = {
 }
 
 civic_technocracy = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -162,7 +183,10 @@ civic_technocracy = {
 }
 
 civic_police_state = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			NOT = {
@@ -177,7 +201,10 @@ civic_police_state = {
 }
 
 civic_idealistic_foundation = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -194,7 +221,10 @@ civic_idealistic_foundation = {
 }
 
 civic_environmentalist = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	random_weight = { base = 1 }
 	modifier = {
 		pop_consumer_goods_mult = -0.20
@@ -202,7 +232,10 @@ civic_environmentalist = {
 }
 
 civic_slaver_guilds = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -220,7 +253,10 @@ civic_slaver_guilds = {
 }
 
 civic_inwards_perfection = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -242,7 +278,10 @@ civic_inwards_perfection = {
 }
 
 civic_warrior_culture = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -260,7 +299,10 @@ civic_warrior_culture = {
 }
 
 civic_distinguished_admiralty = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -277,7 +319,10 @@ civic_distinguished_admiralty = {
 }
 
 civic_free_haven = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -294,7 +339,10 @@ civic_free_haven = {
 }
 
 civic_cutthroat_politics = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	random_weight = { base = 1 }
 	modifier = {
 		country_resource_influence_add = 1
@@ -302,7 +350,10 @@ civic_cutthroat_politics = {
 }
 
 civic_corporate_dominion = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			value = auth_oligarchic
@@ -313,7 +364,7 @@ civic_corporate_dominion = {
 				value = ethic_xenophobe
 				value = ethic_fanatic_xenophobe
 			}
-		}		
+		}
 	}
 	random_weight = { base = 3 }
 	modifier = {
@@ -323,7 +374,10 @@ civic_corporate_dominion = {
 
 civic_agrarian_idyll = {
 	description = "civic_tooltip_agrarian_idyll_effects"
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -342,7 +396,10 @@ civic_agrarian_idyll = {
 }
 
 civic_shadow_council = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			OR = {
@@ -360,7 +417,10 @@ civic_shadow_council = {
 }
 
 civic_mining_guilds = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	random_weight = { base = 1 }
 	modifier = {
 		country_resource_minerals_mult = 0.10
@@ -368,7 +428,10 @@ civic_mining_guilds = {
 }
 
 civic_parliamentary_system = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			value = auth_democratic
@@ -381,7 +444,10 @@ civic_parliamentary_system = {
 }
 
 civic_efficient_bureaucracy = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	random_weight = { base = 1 }
 	modifier = {
 		country_core_sector_system_cap = 2
@@ -389,7 +455,10 @@ civic_efficient_bureaucracy = {
 }
 
 civic_nationalistic_zeal = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -407,7 +476,10 @@ civic_nationalistic_zeal = {
 }
 
 civic_functional_architecture = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	random_weight = { base = 1 }
 	modifier = {
 		planet_building_cost_mult = -0.15
@@ -415,7 +487,10 @@ civic_functional_architecture = {
 }
 
 civic_aristocratic_elite = {
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		authority = {
 			OR = {
@@ -435,7 +510,10 @@ civic_aristocratic_elite = {
 civic_mechanists = {
 	modification = no
 	playable = { host_has_dlc = "Utopia" }
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			OR = {
@@ -501,14 +579,17 @@ civic_syncretic_evolution = {
 
 civic_fanatic_purifiers = {
 	playable = { host_has_dlc = "Utopia" }
-	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	potential = {
+		ethics = { NOT = { value = ethic_hive_mind } }
+		ethics = { NOT = { value = ethic_demon_cultists } }
+	}
 	possible = {
 		ethics = {
 			value = ethic_fanatic_xenophobe
 			OR = {
 				value = ethic_militarist
 				value = ethic_spiritualist
-			}		
+			}
 		}
 		civics = {
 			NOR = {
@@ -568,7 +649,7 @@ civic_revanchist_fervor = {
 		ethics = { NOT = { value = ethic_hive_mind } }
 	}
 	random_weight = { base = 1 }
-	modifier = { 
+	modifier = {
 		country_resource_influence_add = 1
 	}
 }
@@ -581,9 +662,9 @@ civic_ancient_caches_of_technology = {
 		ethics = { NOT = { value = ethic_hive_mind } }
 	}
 	random_weight = { base = 1 }
-	modifier = { 
+	modifier = {
 		tile_resource_energy_mult = 0.5
-		tile_resource_minerals_mult = 0.5		
+		tile_resource_minerals_mult = 0.5
 	}
 }
 
@@ -689,7 +770,7 @@ civic_artist_collective = {
 	modifier = { }
 }
 
-# Other 
+# Other
 
 civic_military_order = {
 	modification = no
