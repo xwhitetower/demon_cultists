@@ -1,0 +1,84 @@
+pantheon_screen_open = {
+    potential = {
+        check_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 0
+        } 
+    }
+    
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        set_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 1
+        }
+    }
+}
+
+pantheon_screen_close = {
+    potential = {
+        check_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 1
+        } 
+    }
+    
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        set_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 0
+        }
+    }
+}
+
+# This is only used as a background and has no tooltip and will never do anything
+pantheon_screen_background = {
+    potential = {
+        check_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 1
+        }    
+    }
+
+    # Comments this for now, Alaways visible
+    # allow = {
+    #     check_variable = {
+    #         which = "pantheon_recently_selected" 
+    #         value = 0
+    #     }  
+    # }
+}
+
+pantheon_screen_deity_1_active = {
+    potential = {
+        check_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 1
+        }    
+    }
+}
+
+pantheon_screen_deity_2_active = {
+    potential = {
+        check_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 1
+        }    
+    }    
+}
+
+pantheon_screen_deity_3_active = {
+    potential = {
+        check_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 1
+        }    
+    }    
+}
