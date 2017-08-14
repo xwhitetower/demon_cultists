@@ -2,5 +2,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pantheon_background"
 		texturefile = "gfx/interface/pantheon/pantheon_bg.dds"
+        effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
 }
