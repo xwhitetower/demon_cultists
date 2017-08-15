@@ -61,6 +61,7 @@ button_pantheon_major_blood = {
         AND = {
             check_variable = { which = "Root.pantheon_screen_open" value = 1 }
             has_civic = civic_blood_demon_cult
+        }
     }
 
     # You cannot stop following a major demon for 5 years after selecting one
@@ -82,5 +83,32 @@ button_pantheon_major_blood = {
             
         add_modifier = { modifier = champion_of_the_blood_lord days = 1800 }
         add_modifier = { modifier = champion_of_the_blood_lord_effect days = -1 }
+    }
+}
+
+button_pantheon_major_plague = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_plague_demon_cult
+        }
+    }
+}
+
+button_pantheon_major_pleasure = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_pleasure_demon_cult
+        }
+    }
+}
+
+button_pantheon_major_wisdom = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_wisdom_demon_cult
+        }
     }
 }
