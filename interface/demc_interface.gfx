@@ -17,7 +17,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_pantheon_major_pleasure"
-		texturefile = "gfx/interface/pantheon/major_plesure.dds"
+		texturefile = "gfx/interface/pantheon/major_pleasure.dds"
 	}
 
 	spriteType = {

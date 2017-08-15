@@ -66,23 +66,34 @@ button_pantheon_major_blood = {
 
     # You cannot stop following a major demon for 5 years after selecting one
     allow = {
-        NOT = {
-            OR = {
-                has_modifier = champion_of_the_blood_lord
-                has_modifier = champion_of_the_plague_lord
-                has_modifier = champion_of_the_pleasure_mistress
-                has_modifier = champion_of_the_wise_one
+        custom_tooltip = {
+            text = PANTHEON_MAJOR_BLOOD_DESC
+            NOT = {
+                OR = {
+                    has_modifier = champion_of_the_blood_lord
+                    has_modifier = betrayer_of_the_blood_lord
+                }
             }
         }
     }
 
     effect = {
-        remove_modifier = champion_of_the_plague_lord_effect
-        remove_modifier = champion_of_the_pleasure_mistress_effect
-        remove_modifier = champion_of_the_wise_one_effect
-            
-        add_modifier = { modifier = champion_of_the_blood_lord days = 1800 }
-        add_modifier = { modifier = champion_of_the_blood_lord_effect days = -1 }
+        custom_tooltip = PANTHEON_MAJOR_BLOOD_DESC
+
+        # If not active, enable and grant bonus
+        if = {
+            limit = { NOT = { has_modifier = champion_of_the_blood_lord_effect } }
+            add_modifier = { modifier = champion_of_the_blood_lord_effect days = -1 }
+            hidden_effect = {
+                add_modifier = { modifier = champion_of_the_blood_lord days = 5 }
+            }
+            else = {
+                hidden_effect = {
+                    remove_modifier = champion_of_the_blood_lord_effect
+                    add_modifier = { modifier = betrayer_of_the_blood_lord days = 5 }
+                }
+            }
+        } 
     }
 }
 
