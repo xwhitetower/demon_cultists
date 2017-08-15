@@ -1,4 +1,4 @@
-pantheon_screen_open = {
+button_pantheon_screen_open = {
     potential = {
         check_variable = {
             which = "Root.pantheon_screen_open" 
@@ -18,7 +18,7 @@ pantheon_screen_open = {
     }
 }
 
-pantheon_screen_close = {
+button_pantheon_screen_close = {
     potential = {
         check_variable = {
             which = "Root.pantheon_screen_open" 
@@ -39,7 +39,7 @@ pantheon_screen_close = {
 }
 
 # This is only used as a background and has no tooltip and will never do anything
-pantheon_screen_background = {
+button_pantheon_screen_background = {
     potential = {
         check_variable = {
             which = "Root.pantheon_screen_open" 
@@ -56,29 +56,31 @@ pantheon_screen_background = {
     # }
 }
 
-pantheon_screen_deity_1_active = {
+button_pantheon_major_blood = {
     potential = {
-        check_variable = {
-            which = "Root.pantheon_screen_open" 
-            value = 1
-        }    
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_blood_demon_cult
     }
-}
 
-pantheon_screen_deity_2_active = {
-    potential = {
-        check_variable = {
-            which = "Root.pantheon_screen_open" 
-            value = 1
-        }    
-    }    
-}
+    # You cannot stop following a major demon for 5 years after selecting one
+    allow = {
+        NOT = {
+            OR = {
+                has_modifier = champion_of_the_blood_lord
+                has_modifier = champion_of_the_plague_lord
+                has_modifier = champion_of_the_pleasure_mistress
+                has_modifier = champion_of_the_wise_one
+            }
+        }
+    }
 
-pantheon_screen_deity_3_active = {
-    potential = {
-        check_variable = {
-            which = "Root.pantheon_screen_open" 
-            value = 1
-        }    
-    }    
+    effect = {
+        remove_modifier = champion_of_the_plague_lord_effect
+        remove_modifier = champion_of_the_pleasure_mistress_effect
+        remove_modifier = champion_of_the_wise_one_effect
+            
+        add_modifier = { modifier = champion_of_the_blood_lord days = 1800 }
+        add_modifier = { modifier = champion_of_the_blood_lord_effect days = -1 }
+    }
 }

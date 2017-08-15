@@ -47,7 +47,7 @@ guiTypes = {
             position = { x = 40 y = 40 }
             pdx_tooltip = "open_pantheon_screen_tooltip"
 			pdx_tooltip_delayed = "open_pantheon_screen_tooltip_delayed"
-            effect = "pantheon_screen_open"
+            effect = "button_pantheon_screen_open"
         }
 
         effectButtonType = {
@@ -57,16 +57,52 @@ guiTypes = {
             position = { x = 40 y = 40 }
             pdx_tooltip = "close_pantheon_screen_tooltip"
 			pdx_tooltip_delayed = "close_pantheon_screen_tooltip_delayed"
-            effect = "pantheon_screen_close"
+            effect = "button_pantheon_screen_close"
         }
 
         effectButtonType = {
             name = "pantheon_screen"
             spriteType = "GFX_pantheon_background"
-            size = { x = 256 y = 256 }
+            size = { x = 562 y = 396 }
             position = { x = 168 y = 168 }
             clicksound = none
-            effect = "pantheon_screen_background"
+            effect = "button_pantheon_screen_background"
+        }
+
+        effectButtonType = {
+            name = "pantheon_demon_major_blood"
+            spriteType = "GFX_pantheon_major_blood"
+            size = { x = 125 y = 105 }
+            position = { x = 386 y = 313 }
+            clicksound = interface
+            effect = "button_pantheon_major_blood"
+        }
+
+		effectButtonType = {
+            name = "pantheon_demon_major_plague"
+            spriteType = "GFX_pantheon_major_plague"
+            size = { x = 125 y = 105 }
+            position = { x = 386 y = 313 }
+            clicksound = interface
+            effect = "button_pantheon_major_plague"
+        }
+
+		effectButtonType = {
+            name = "pantheon_demon_major_pleasure"
+            spriteType = "GFX_pantheon_major_pleasure"
+            size = { x = 125 y = 105 }
+            position = { x = 386 y = 313 }
+            clicksound = interface
+            effect = "button_pantheon_major_pleasure"
+        }
+
+		effectButtonType = {
+            name = "pantheon_demon_major_wisdom"
+            spriteType = "GFX_pantheon_major_wisdom"
+            size = { x = 125 y = 105 }
+            position = { x = 386 y = 313 }
+            clicksound = interface
+            effect = "button_pantheon_major_wisdom"
         }
 	}
 

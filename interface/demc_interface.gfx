@@ -4,4 +4,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/pantheon/pantheon_bg.dds"
         effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
+
+    spriteType = {
+		name = "GFX_pantheon_major_blood"
+		texturefile = "gfx/interface/pantheon/major_blood.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_major_plague"
+		texturefile = "gfx/interface/pantheon/major_plague.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_major_pleasure"
+		texturefile = "gfx/interface/pantheon/major_plesure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_major_wisdom"
+		texturefile = "gfx/interface/pantheon/major_wisdom.dds"
+	}
 }
