@@ -97,6 +97,60 @@ button_pantheon_major_blood = {
     }
 }
 
+button_pantheon_minor_blood_1 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_blood_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_blood_2 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_blood_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_blood_3 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_blood_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_blood_4 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_blood_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_blood_5 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_blood_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_blood_6 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_blood_demon_cult
+        }
+    }
+}
+
 button_pantheon_major_plague = {
     potential = {
         AND = {

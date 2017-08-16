@@ -5,23 +5,65 @@ spriteTypes = {
         effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
 
+	#######################
+	### BLOOD DEMONS    ###
+	#######################
     spriteType = {
 		name = "GFX_pantheon_major_blood"
-		texturefile = "gfx/interface/pantheon/major_blood.dds"
+		texturefile = "gfx/interface/pantheon/blood/major_blood.dds"
 	}
 
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_1"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_2"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_3"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_4"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_5"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_6"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_6.dds"
+	}
+	
+	#######################
+	### PLAGUE DEMONS  	###
+	#######################
 	spriteType = {
 		name = "GFX_pantheon_major_plague"
-		texturefile = "gfx/interface/pantheon/major_plague.dds"
+		texturefile = "gfx/interface/pantheon/plague/major_plague.dds"
 	}
 
+	#######################
+	### PLEASURE DEMONS ###
+	#######################
 	spriteType = {
 		name = "GFX_pantheon_major_pleasure"
-		texturefile = "gfx/interface/pantheon/major_pleasure.dds"
+		texturefile = "gfx/interface/pantheon/pleasure/major_pleasure.dds"
 	}
 
+	#######################
+	### WISDOM DEMONS   ###
+	#######################
 	spriteType = {
 		name = "GFX_pantheon_major_wisdom"
-		texturefile = "gfx/interface/pantheon/major_wisdom.dds"
+		texturefile = "gfx/interface/pantheon/wisdom/major_wisdom.dds"
 	}
 }
