@@ -147,7 +147,7 @@ food_stockpiling = {
 		}
 
 		valid = {
-			always = yes
+			NOT = { has_valid_civic = civic_pleasure_demon_cult }
 		}
 
 		AI_weight = {
@@ -168,7 +168,7 @@ food_stockpiling = {
 		}
 
 		valid = {
-			always = yes
+			NOT = { has_valid_civic = civic_pleasure_demon_cult }
 		}
 
 		AI_weight = {
@@ -289,7 +289,10 @@ orbital_bombardment = {
 		name = "orbital_bombardment_armageddon"
 
 		potential = {
-			has_valid_civic = civic_fanatic_purifiers
+			OR = {
+				has_valid_civic = civic_blood_demon_cult
+				has_valid_civic = civic_fanatic_purifiers
+			}
 		}
 
 		valid = {
@@ -648,6 +651,7 @@ first_contact_protocol = {
 
 		valid = {
 			NOR = {
+				has_valid_civic = "civic_blood_demon_cult"
 				has_valid_civic = "civic_fanatic_purifiers"
 				has_valid_civic = "civic_hive_devouring_swarm"
 			}
@@ -838,7 +842,7 @@ artificial_intelligence_policy = {
 					has_country_flag = synthetic_empire
 				}
 			}
-            NOT = { has_ethic = ethic_demon_cultists }
+			NOT = { has_ethic = ethic_demon_cultists }
 		}
 
 		policy_flags = {
@@ -1189,7 +1193,7 @@ purge = {
 				has_authority = auth_hive_mind
 			}
 			OR = {
-                has_ethic = ethic_demon_cultists
+				has_ethic = ethic_demon_cultists
 				has_ethic = ethic_xenophobe
 				has_ethic = ethic_fanatic_xenophobe
 				has_ethic = ethic_authoritarian
@@ -1219,7 +1223,7 @@ purge = {
 		valid = {
 			NOT = { is_subject_type = signatory }
 			OR = {
-                has_ethic = ethic_demon_cultists
+				has_ethic = ethic_demon_cultists
 				has_authority = auth_hive_mind
 				has_ethic = ethic_xenophobe
 				has_ethic = ethic_fanatic_xenophobe
