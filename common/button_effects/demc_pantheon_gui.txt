@@ -1,3 +1,6 @@
+#######################
+### SHARED 		    ###
+#######################
 button_pantheon_screen_open = {
     potential = {
         check_variable = {
@@ -56,6 +59,9 @@ button_pantheon_screen_background = {
     # }
 }
 
+#######################
+### BLOOD 		    ###
+#######################
 button_pantheon_major_blood = {
     potential = {
         AND = {
@@ -151,6 +157,9 @@ button_pantheon_minor_blood_6 = {
     }
 }
 
+#######################
+### PLAGUE 		    ###
+#######################
 button_pantheon_major_plague = {
     potential = {
         AND = {
@@ -160,6 +169,63 @@ button_pantheon_major_plague = {
     }
 }
 
+button_pantheon_minor_plague_1 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_plague_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_plague_2 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_plague_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_plague_3 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_plague_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_plague_4 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_plague_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_plague_5 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_plague_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_plague_6 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_plague_demon_cult
+        }
+    }
+}
+
+#######################
+### PLEASURE        ###
+#######################
 button_pantheon_major_pleasure = {
     potential = {
         AND = {
@@ -169,7 +235,118 @@ button_pantheon_major_pleasure = {
     }
 }
 
+button_pantheon_minor_pleasure_1 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_pleasure_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_pleasure_2 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_pleasure_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_pleasure_3 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_pleasure_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_pleasure_4 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_pleasure_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_pleasure_5 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_pleasure_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_pleasure_6 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_pleasure_demon_cult
+        }
+    }
+}
+
+#######################
+### WISDOM 		    ###
+#######################
 button_pantheon_major_wisdom = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_wisdom_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_wisdom_1 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_wisdom_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_wisdom_2 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_wisdom_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_wisdom_3 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_wisdom_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_wisdom_4 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_wisdom_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_wisdom_5 = {
+    potential = {
+        AND = {
+            check_variable = { which = "Root.pantheon_screen_open" value = 1 }
+            has_civic = civic_wisdom_demon_cult
+        }
+    }
+}
+
+button_pantheon_minor_wisdom_6 = {
     potential = {
         AND = {
             check_variable = { which = "Root.pantheon_screen_open" value = 1 }

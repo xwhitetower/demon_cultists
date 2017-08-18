@@ -6,7 +6,7 @@ spriteTypes = {
 	}
 
 	#######################
-	### BLOOD DEMONS    ###
+	### BLOOD 		    ###
 	#######################
     spriteType = {
 		name = "GFX_pantheon_major_blood"
@@ -44,26 +44,117 @@ spriteTypes = {
 	}
 	
 	#######################
-	### PLAGUE DEMONS  	###
+	### PLAGUE 		    ###
 	#######################
 	spriteType = {
 		name = "GFX_pantheon_major_plague"
 		texturefile = "gfx/interface/pantheon/plague/major_plague.dds"
 	}
 
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_1"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_2"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_3"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_4"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_5"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_6"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_6.dds"
+	}
+
 	#######################
-	### PLEASURE DEMONS ###
+	### PLEASURE 		###
 	#######################
 	spriteType = {
 		name = "GFX_pantheon_major_pleasure"
 		texturefile = "gfx/interface/pantheon/pleasure/major_pleasure.dds"
 	}
 
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_1"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_2"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_3"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_4"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_5"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_6"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_6.dds"
+	}
+
 	#######################
-	### WISDOM DEMONS   ###
+	### WISDOM 		    ###
 	#######################
 	spriteType = {
 		name = "GFX_pantheon_major_wisdom"
 		texturefile = "gfx/interface/pantheon/wisdom/major_wisdom.dds"
 	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_1"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_2"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_3"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_4"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_5"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_6"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_6.dds"
+	}
+
 }
