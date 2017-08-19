@@ -67,7 +67,7 @@ empire_name_format = {
 		}
 	}
 	format = "format.blood_demon_cult.1"
-	prefix_format = "[This.Capital.System.GetName] <demon_cult>"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
 	noun = "[This.Capital.System.GetName]"
 }
 
@@ -95,7 +95,7 @@ empire_name_format = {
 		}
 	}
 	format = "format.plague_demon_cult.1"
-	prefix_format = "[This.Capital.System.GetName] <demon_cult>"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
 	noun = "[This.Capital.System.GetName]"
 }
 
@@ -123,7 +123,7 @@ empire_name_format = {
 		}
 	}
 	format = "format.pleasure_demon_cult.1"
-	prefix_format = "[This.Capital.System.GetName] <demon_cult>"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
 	noun = "[This.Capital.System.GetName]"
 }
 
@@ -151,6 +151,6 @@ empire_name_format = {
 		}
 	}
 	format = "format.wisdom_demon_cult.1"
-	prefix_format = "[This.Capital.System.GetName] <demon_cult>"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
 	noun = "[This.Capital.System.GetName]"
 }
