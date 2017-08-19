@@ -14,7 +14,7 @@ ethic_demon_cultists = {
 	}
 
 	random_weight = {
-		value = 0 # player only for the time being
+		value = 10000 # player only for the time being
 	}
 
 	country_attraction = {
