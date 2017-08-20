@@ -1157,6 +1157,67 @@ country_event = {
 		}
 	}
 
+	# vanilla cultist
+	desc = {
+		text = action.1.vanilla_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				NOR = {
+					has_valid_civic = civic_blood_demon_cult
+					has_valid_civic = civic_plague_demon_cult
+					has_valid_civic = civic_pleasure_demon_cult
+					has_valid_civic = civic_wisdom_demon_cult
+				}
+			}
+		}
+	}
+	# blood cultist
+	desc = {
+		text = action.1.blood_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				has_valid_civic = civic_blood_demon_cult
+			}
+		}
+	}
+	# plague cultist
+	desc = {
+		text = action.1.plague_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				has_valid_civic = civic_plague_demon_cult
+			}
+		}
+	}
+	# pleasure cultist
+	desc = {
+		text = action.1.pleasure_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				has_valid_civic = civic_pleasure_demon_cult
+			}
+		}
+	}
+	# wisdom cultist
+	desc = {
+		text = action.1.wisdom_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				has_valid_civic = civic_wisdom_demon_cult
+			}
+		}
+	}
+
 	diplomatic = yes
 	is_triggered_only = yes
 
@@ -3077,6 +3138,67 @@ country_event = {
 			event_target:contact_empire = {
 				is_country_type = awakened_fallen_empire
 				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+
+	# vanilla cultist
+	desc = {
+		text = action.1.vanilla_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				NOR = {
+					has_valid_civic = civic_blood_demon_cult
+					has_valid_civic = civic_plague_demon_cult
+					has_valid_civic = civic_pleasure_demon_cult
+					has_valid_civic = civic_wisdom_demon_cult
+				}
+			}
+		}
+	}
+	# blood cultist
+	desc = {
+		text = action.1.blood_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				has_valid_civic = civic_blood_demon_cult
+			}
+		}
+	}
+	# plague cultist
+	desc = {
+		text = action.1.plague_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				has_valid_civic = civic_plague_demon_cult
+			}
+		}
+	}
+	# pleasure cultist
+	desc = {
+		text = action.1.pleasure_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				has_valid_civic = civic_pleasure_demon_cult
+			}
+		}
+	}
+	# wisdom cultist
+	desc = {
+		text = action.1.wisdom_demon_cultist_desc
+		trigger = {
+			event_target:contact_empire = {
+				is_country_type = default
+				has_ethic = ethic_demon_cultists
+				has_valid_civic = civic_wisdom_demon_cult
 			}
 		}
 	}
