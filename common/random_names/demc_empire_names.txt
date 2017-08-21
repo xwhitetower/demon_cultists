@@ -1,0 +1,156 @@
+##############
+# NAME PARTS #
+##############
+
+# Generic Cultist
+empire_name_parts_list = {
+	key = "demon_cult_gen"
+	parts = {
+		"Cult" = 3
+		"Brotherhood" = 3
+		"Society" = 3
+		"Sect" = 3
+		"Worshippers" = 3
+		"Religion" = 3
+	}
+}
+
+# Generic Cult Descriptive
+empire_name_parts_list = {
+	key = "demon_cult_gen_desc"
+	parts = {
+		"Dark" = 2
+		"Unholy" = 2
+		"Heretic" = 2
+		"Demon" = 2
+		"Hermetic" = 1
+	}
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pirate = no
+			has_government = "gov_demon_cultists"
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.demon_cult.1"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
+	noun = "[This.Capital.System.GetName]"
+}
+
+# Blood Cult Descriptive
+empire_name_parts_list = {
+	key = "blood_demon_cult_gen_desc"
+	parts = {
+		"Blood" = 2
+		"Gore" = 2
+		"Violence" = 2
+		"Destruction" = 2
+		"Battle" = 2
+		"War" = 2
+	}
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pirate = no
+			has_government = "gov_blood_demon_cultists"
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.blood_demon_cult.1"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
+	noun = "[This.Capital.System.GetName]"
+}
+
+# Plague Cultist Descriptive
+empire_name_parts_list = {
+	key = "plague_demon_cult_gen_desc"
+	parts = {
+		"Death" = 2
+		"Disease" = 2
+		"Decay" = 2
+		"Famine" = 2
+		"Rot" = 2
+		"Plague" = 2
+	}
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pirate = no
+			has_government = "gov_plague_demon_cultists"
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.plague_demon_cult.1"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
+	noun = "[This.Capital.System.GetName]"
+}
+
+# Pleasure Cultist Descriptive
+empire_name_parts_list = {
+	key = "pleasure_demon_cult_gen_desc"
+	parts = {
+		"Plasure" = 2
+		"Love" = 2
+		"Bliss" = 2
+		"Delight" = 2
+		"Hedonist" = 2
+		"Glee" = 2
+	}
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pirate = no
+			has_government = "gov_pleasure_demon_cultists"
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.pleasure_demon_cult.1"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
+	noun = "[This.Capital.System.GetName]"
+}
+
+# Wisdom Cultist Descriptive
+empire_name_parts_list = {
+	key = "wisdom_demon_cult_gen_desc"
+	parts = {
+		"Wisdom" = 2
+		"Secret" = 2
+		"Shroud" = 2
+		"Knowledge" = 2
+		"Enigma" = 2
+		"Intelligence" = 2
+	}
+}
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pirate = no
+			has_government = "gov_wisdom_demon_cultists"
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.wisdom_demon_cult.1"
+	prefix_format = "[This.Capital.System.GetName] <demon_cult_gen>"
+	noun = "[This.Capital.System.GetName]"
+}
