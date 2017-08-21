@@ -19,16 +19,152 @@
 #	}
 #}
 
+gov_blood_demon_cultists = {
+	ruler_title = RT_BLOOD_DEMON_CULTIST
+	ruler_title_female = RT_BLOOD_DEMON_CULTIST_FEMALE
+
+	possible = {
+		has_authority = auth_demon_cultists
+		has_valid_civic = civic_blood_demon_cult
+	}
+
+	election_candidates = {
+		modifier = {
+			add = 100000
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+		modifier = {
+			add = 1000
+			leader_class = ruler
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				leader_class = governor
+				leader_class = scientist
+			}
+		}
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+
+gov_plague_demon_cultists = {
+	ruler_title = RT_PLAGUE_DEMON_CULTIST
+	ruler_title_female = RT_PLAGUE_DEMON_CULTIST_FEMALE
+
+	possible = {
+		has_authority = auth_demon_cultists
+		has_valid_civic = civic_plague_demon_cult
+	}
+
+	election_candidates = {
+		modifier = {
+			add = 1000
+			OR = {
+				leader_class = ruler
+				leader_class = governor
+				leader_class = scientist
+			}
+		}
+		modifier = {
+			add = 100
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+
+gov_pleasure_demon_cultists = {
+	ruler_title = RT_PLEASURE_DEMON_CULTIST
+	ruler_title_female = RT_PLEASURE_DEMON_CULTIST_FEMALE
+
+	possible = {
+		has_authority = auth_demon_cultists
+		has_valid_civic = civic_pleasure_demon_cult
+	}
+
+	election_candidates = {
+		modifier = {
+			add = 100000
+			OR = {
+				leader_class = governor
+				leader_class = ruler
+			}
+		}
+		modifier = {
+			add = 1000
+			leader_class = scientist
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+
+gov_wisdom_demon_cultists = {
+	ruler_title = RT_WISDOM_DEMON_CULTIST
+	ruler_title_female = RT_WISDOM_DEMON_CULTIST_FEMALE
+
+	possible = {
+		has_authority = auth_demon_cultists
+		has_valid_civic = civic_wisdom_demon_cult
+	}
+
+	election_candidates = {
+		modifier = {
+			add = 100000
+			leader_class = scientist
+		}
+		modifier = {
+			add = 1000
+			OR = {
+				leader_class = ruler
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				leader_class = governor
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+
 gov_demon_cultists = {
 	ruler_title = RT_DEMON_CULTIST
 	ruler_title_female = RT_DEMON_CULTIST_FEMALE
-	resource_tag = demon_cultists
 
 	possible = {
 		has_authority = auth_demon_cultists
 	}
 
 	weight = {
-		base = 100000
+		base = 10
 	}
 }

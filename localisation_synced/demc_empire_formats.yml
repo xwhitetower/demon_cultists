@@ -1,0 +1,6 @@
+﻿l_default:
+ format.demon_cult.1: "<demon_cult_gen_desc> <demon_cult_gen> of [This.Capital.System.GetName]"
+ format.blood_demon_cult.1: "<blood_demon_cult_gen_desc> <demon_cult_gen> of [This.Capital.System.GetName]"
+ format.plague_demon_cult.1: "<plague_demon_cult_gen_desc> <demon_cult_gen> of [This.Capital.System.GetName]"
+ format.pleasure_demon_cult.1: "<pleasure_demon_cult_gen_desc> <demon_cult_gen> of [This.Capital.System.GetName]"
+ format.wisdom_demon_cult.1: "<wisdom_demon_cult_gen_desc> <demon_cult_gen> of [This.Capital.System.GetName]"
