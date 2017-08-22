@@ -56,7 +56,7 @@
  action.1.pleasure_demon_cultist_desc:0 "Greetings [Root.GetRulerName]. I invite you to a party in honor of our master $MAJOR_PLEASURE_DEMON$. In here each day is a festival of pure bliss and joy. People of [Root.GetName] stop being hypocrites and follow the desires of the flesh."
  action.1.wisdom_demon_cultist_desc:0 "Well met, ignorant fools. You are blinded by the material world. Unbeknown of the truth that $MAJOR_WISDOM_DEMON$ blessed us. If you wish to open your eyes join us and accept the truth."
 
- action.1.opt.vanilla_demon_cultist_vs_heretic:0 "§EHeHeHeHe, you will cbe a good sacrifice to our lords.§!"
+ action.1.opt.vanilla_demon_cultist_vs_heretic:0 "§EHeHeHeHe, you will be a good sacrifice to our lords.§!"
  action.1.opt.vanilla_demon_cultist_vs_other_demon_cultist:0 "§EA fellow brother! Did our masters guide you to us?§!"
  action.1.opt.blood_demon_cultist_vs_heretic:0 "§ESoon we will be bathing with your blood!§!"
  action.1.opt.blood_demon_cultist_vs_vanilla_demon_cultist:0 "§EWhat fo you want? Do you want to train with us?§!"
