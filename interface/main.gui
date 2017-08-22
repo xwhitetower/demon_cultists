@@ -44,8 +44,8 @@ guiTypes = {
             name = "open_pantheon_screen"
             quadTextureSprite ="GFX_music_pause_button"
             position = { x = 40 y = 40 }
-            pdx_tooltip = "open_pantheon_screen_tooltip"
-			pdx_tooltip_delayed = "open_pantheon_screen_tooltip_delayed"
+			clicksound = interface
+			oversound = menu_over_01
             effect = "button_pantheon_screen_open"
         }
 
@@ -56,6 +56,17 @@ guiTypes = {
             position = { x = 5 y = 40 }
             clicksound = none
             effect = "button_pantheon_screen_background"
+        }
+
+		effectButtonType = {
+            name = "pantheon_screen_title"
+            spriteType = "GFX_invisible"
+            position = { x = 44 y = 46 }
+			size = { x = 200 y = 20 }
+            clicksound = none
+			font = "malgun_goth_24"
+			text = DARK_PANTHEON_TITLE
+            effect = "button_pantheon_screen_title"
         }
 
 		effectButtonType = {

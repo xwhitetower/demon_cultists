@@ -41,7 +41,7 @@ button_pantheon_screen_close = {
     }
 }
 
-# This is only used as a background and has no tooltip and will never do anything
+# Cosmetics like background etc...
 button_pantheon_screen_background = {
     potential = {
         check_variable = {
@@ -49,14 +49,15 @@ button_pantheon_screen_background = {
             value = 1
         }    
     }
+}
 
-    # Comments this for now, Alaways visible
-    # allow = {
-    #     check_variable = {
-    #         which = "pantheon_recently_selected" 
-    #         value = 0
-    #     }  
-    # }
+button_pantheon_screen_title = {
+    potential = {
+        check_variable = {
+            which = "Root.pantheon_screen_open" 
+            value = 1
+        }    
+    }
 }
 
 #######################
@@ -109,6 +110,14 @@ button_pantheon_minor_blood_1 = {
             check_variable = { which = "Root.pantheon_screen_open" value = 1 }
             has_civic = civic_blood_demon_cult
         }
+    }
+
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
     }
 }
 

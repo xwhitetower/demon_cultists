@@ -34,5 +34,11 @@
  champion_of_the_blood_lord:0 "Recent Pact"
  betrayer_of_the_blood_lord:0 "Recent Pact Broken"
 
+ DARK_PANTHEON_TITLE:0 "The Dark Pantheon"
+
+ PANTHEON_MINOR_BLOOD_1_DESC:0 "brbrbrbrb"
+ dc_blood:0 "Blood"
+ dc_blood_desc:0 "It's blue if you are Royalty"
+
  PANTHEON_MAJOR_BLOOD:0 "§HDokonomosor, Demon lord of blood and searing hatred."
  PANTHEON_MAJOR_BLOOD_DESC:0 "$PANTHEON_MAJOR_BLOOD$\n§WFeed his unending hunger with the blood of the living and he may bestow you powerfull boons.\nFail and you shall be the one to fill his belly.\nHe loves infernal creatures known as "kittens". <3\n"
