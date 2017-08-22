@@ -59,7 +59,7 @@
  action.1.opt.vanilla_demon_cultist_vs_heretic:0 "§EHeHeHeHe, you will be a good sacrifice to our lords.§!"
  action.1.opt.vanilla_demon_cultist_vs_other_demon_cultist:0 "§EA fellow brother! Did our masters guide you to us?§!"
  action.1.opt.blood_demon_cultist_vs_heretic:0 "§ESoon we will be bathing with your blood!§!"
- action.1.opt.blood_demon_cultist_vs_vanilla_demon_cultist:0 "§EWhat fo you want? Do you want to train with us?§!"
+ action.1.opt.blood_demon_cultist_vs_vanilla_demon_cultist:0 "§EWhat do you want? Do you want to train with us?§!"
  action.1.opt.blood_demon_cultist_vs_blood_demon_cultist:0 "§EHmmm. You think you are stronger than us?§!"
  action.1.opt.blood_demon_cultist_vs_plague_demon_cultist:0 "§EYour rotten body seems like a good training scarecrow.§!"
  action.1.opt.blood_demon_cultist_vs_pleasure_demon_cultist:0 "§EYou weakling! There is no better pleasure than combat!§!"
