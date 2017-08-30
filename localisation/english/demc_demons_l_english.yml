@@ -10,7 +10,15 @@
  PANTHEON_MINOR_BLOOD_4:0 "§HPuig, the Demon."
  PANTHEON_MINOR_BLOOD_4_DESC:0 "$PANTHEON_MINOR_BLOOD_4$\n§WThe independent.\n"
  PANTHEON_MINOR_BLOOD_5:0 "§HXaparod."
- PANTHEON_MINOR_BLOOD_5_DESC:0 "$PANTHEON_MINOR_BLOOD_5$\n§WMaster of bugs ( this one goes to plague ).\n"
- PANTHEON_MINOR_BLOOD_6:0 "§HUim Kon-jn."
- PANTHEON_MINOR_BLOOD_6_DESC:0 "$PANTHEON_MINOR_BLOOD_6$\n§WThe calm before the battle.\n"
+ PANTHEON_MINOR_BLOOD_5_DESC:0 "$PANTHEON_MINOR_BLOOD_5$\n§WMaster of bugs.\n"
+ PANTHEON_MINOR_BLOOD_6:0 "§HRegge a ton."
+ PANTHEON_MINOR_BLOOD_6_DESC:0 "$PANTHEON_MINOR_BLOOD_6$\n§WHe will drive you crazy.\n"
+
+ PANTHEON_MAJOR_BLOOD:0 "§HDemocrus. [Not final]"
+ PANTHEON_MINOR_BLOOD_1:0 "§HParry Lage. [Not final]"
+ PANTHEON_MINOR_BLOOD_2:0 "§HCimno. [Not final]"
+ PANTHEON_MINOR_BLOOD_3:0 "§HDafariaz. [Not final]"
+ PANTHEON_MINOR_BLOOD_4:0 "§HPuig, the Demon. [Not final]"
+ PANTHEON_MINOR_BLOOD_5:0 "§HXaparod. [Not final]"
+ PANTHEON_MINOR_BLOOD_6:0 "§HRegge a ton. [Not final]"
  
