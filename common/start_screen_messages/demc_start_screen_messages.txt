@@ -4,14 +4,12 @@
 #   localization, a key to a localized string.
 #	location, decides where this chunk of text is located in the description, cannot be negative.
 
-
-# Hive Mind
 part = {
 	location = 1
 	localization = "START_SCREEN_PART_TWO_DEMON_CULTIST"
 
 	trigger = {
-		has_government = gov_demon_cultists
+		has_ethic = ethic_demon_cultists
 		NOT = { has_country_flag = custom_start_screen }
 	}
 }

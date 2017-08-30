@@ -3,8 +3,28 @@
  ethic_demon_cultists_desc:0 "§LWe mortals must obey our masters. The demonds demand sacrifices from the mortals and we must spill our blood and our enemies to satiate them.§!\n"
  auth_demon_cultists:0 "Demon cultists"
  auth_demon_cultists_desc:0 "Cultists sects are ruled by a small group of individuals blessed enough to be able to listen the words of the demons."
- gov_demon_cultists:0 "Demon cult"
+
+ gov_blood_demon_cultists:0 "Blood Cult"
+ gov_blood_demon_cultists_desc:0 "This government is a sect of blood demon worshippers. The cultists of this sect are more aggressive than other sects."
+ gov_plague_demon_cultists:0 "Plague Cult"
+ gov_plague_demon_cultists_desc:0 "This government is a sect of plague demon worshippers. The cultists of this sect worship death and decay."
+ gov_pleasure_demon_cultists:0 "Plasure Cult"
+ gov_pleasure_demon_cultists_desc:0 "This government is a sect of pleasure demon worshippers. The cultists of this sect are consideret perverts due its hedonist lifestyle."
+ gov_wisdom_demon_cultists:0 "Wisdom Cult"
+ gov_wisdom_demon_cultists_desc:0 "This government is a sect of wisdom demon worshippers. The cultists of this sect pursue to understand all reality and the Shroud."
+ gov_demon_cultists:0 "Demon Cult"
  gov_demon_cultists_desc:0 "This government is a sect of demon worshippers. The cult tries to please its demon masters by any mean necessary."
+
+ RT_BLOOD_DEMON_CULTIST:0 "Blood Reaper"
+ RT_BLOOD_DEMON_CULTIST_FEMALE:0 "$RT_BLOOD_DEMON_CULTIST$"
+ RT_PLAGUE_DEMON_CULTIST:0 "Lord of Decay"
+ RT_PLAGUE_DEMON_CULTIST_FEMALE:0 "Lady of Decay"
+ RT_PLEASURE_DEMON_CULTIST:0 "Angel of Ecstasy"
+ RT_PLEASURE_DEMON_CULTIST_FEMALE:0 "Mistress of Pleasure"
+ RT_WISDOM_DEMON_CULTIST:0 "Secret Whisperer"
+ RT_WISDOM_DEMON_CULTIST_FEMALE:0 "$RT_WISDOM_DEMON_CULTIST$"
+ RT_DEMON_CULTIST:0 "Dark Bishop"
+ RT_DEMON_CULTIST_FEMALE:0 "$RT_DEMON_CULTIST$"
 
  civic_blood_demon_cult:0 "Blood cult"
  civic_blood_demon_cult_desc:0 "Our overlord demands blood. It doesn't matter the procedence, ours or the enemy, blood shall be offered."
@@ -29,9 +49,10 @@
  demc_demon_gate_desc:0 "This world has a demon gate. It weakness the fabric of reality and allowing for demons to interact with the normal universe."
 
  START_SCREEN_PART_TWO_DEMON_CULTIST:0 "One day, our masters gate opened on [GetHomeWorldName]. The demons wispered knowledge to our ancestors and a contract was signed and thus the demon cult started. With each blood sacrifice performed our cult grew stronger. It didn't took long that no unbeliever remained on [GetHomeWorldName]."
-
- champion_of_the_blood_lord_effect:0 "Demon blood"
- champion_of_the_blood_lord:0 "Recent Pact"
- betrayer_of_the_blood_lord:0 "Recent Pact Broken"
-
  DARK_PANTHEON_TITLE:0 "The Dark Pantheon"
+
+ requires_actor_not_demon_cultists:0 "§RNot possible because they are a §HDemon Worshippers§!.§!"
+ requires_target_not_demon_cultists:0 "§RNot possible because we are a §HDemon Worshippers§!.§!"
+ requires_actor_not_blood_demon_cultists:0 "§RNot possible because they are a §HBlood Demon Worshippers§!.§!"
+ requires_target_not_blood_demon_cultists:0 "§RNot possible because we are a §HBlood Demon Worshippers§!.§!"
+ requires_being_unholy_alliance:0 "§RNot possible because both parties are not §HDemon Worshippers§!.§!"
