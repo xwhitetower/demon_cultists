@@ -2,7 +2,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pantheon_background"
 		texturefile = "gfx/interface/pantheon/pantheon_bg.dds"
-        effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 	}
 
 	spriteType = {
@@ -17,8 +17,8 @@ spriteTypes = {
 			animationlooping = yes
 			animationtime = 12.0
 			animationdelay = 0.0
-			animationblendmode = "overlay"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationblendmode = "overlay"	   #add, multiply, overlay
+			animationtype = "scrolling"	  #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 			animationframes = { 1 2 3 }
@@ -27,9 +27,9 @@ spriteTypes = {
 	}
 
 	#######################
-	### BLOOD 		    ###
+	### BLOOD 			###
 	#######################
-    spriteType = {
+	spriteType = {
 		name = "GFX_pantheon_major_blood"
 		texturefile = "gfx/interface/pantheon/blood/major_blood.dds"
 	}
@@ -65,7 +65,7 @@ spriteTypes = {
 	}
 	
 	#######################
-	### PLAGUE 		    ###
+	### PLAGUE 			###
 	#######################
 	spriteType = {
 		name = "GFX_pantheon_major_plague"
@@ -141,7 +141,7 @@ spriteTypes = {
 	}
 
 	#######################
-	### WISDOM 		    ###
+	### WISDOM 			###
 	#######################
 	spriteType = {
 		name = "GFX_pantheon_major_wisdom"

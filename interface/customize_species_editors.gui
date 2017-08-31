@@ -2127,7 +2127,7 @@ guiTypes = {
 				clicksound = interface
 			}
 
-            ### CUSTOM ETHIC DEMON CULTIST ###
+			### CUSTOM ETHIC DEMON CULTIST ###
 			buttonType = {
 				name = "ethic_demon_cultists"
 				spriteType = "GFX_ethics_demon_cultists"

@@ -18,12 +18,12 @@ guiTypes = {
 		size = { width=100% height=100% }
 
 		iconType = {
-				name = "topbar_shield_decoration"
-				spriteType = "GFX_topbar_shield_decoration"
-				position = { x= 0 y = 0 }
-				Orientation = "UPPER_LEFT"
-				alwaysTransparent = yes
-			}
+			name = "topbar_shield_decoration"
+			spriteType = "GFX_topbar_shield_decoration"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			alwaysTransparent = yes
+		}
 
 		buttonType ={
 			name ="button_topbar_government"
@@ -37,177 +37,177 @@ guiTypes = {
 			shortcut = "F1"
 		}
 
-        #######################
-        ### PHANTEON SCREEN ###
-        #######################
+		#######################
+		### PHANTEON SCREEN ###
+		#######################
 		effectButtonType = {
-            name = "open_pantheon_screen"
-            quadTextureSprite ="GFX_topbar_pantheon_button"
-            position = { x = 1140 y = -9 }
+			name = "open_pantheon_screen"
+			quadTextureSprite ="GFX_topbar_pantheon_button"
+			position = { x = 1140 y = -9 }
 			clicksound = interface
 			oversound = menu_over_01
-            effect = "button_pantheon_screen_open"
-        }
+			effect = "button_pantheon_screen_open"
+		}
 
 		effectButtonType = {
-            name = "pantheon_screen"
-            spriteType = "GFX_pantheon_background"
-            size = { x = 562 y = 641 }
+			name = "pantheon_screen"
+			spriteType = "GFX_pantheon_background"
+			size = { x = 562 y = 641 }
 			position = { x = 5 y = 40 }
-            clicksound = none
-            effect = "button_pantheon_screen_background"
-        }
+			clicksound = none
+			effect = "button_pantheon_screen_background"
+		}
 
 		effectButtonType = {
-            name = "pantheon_screen_title"
-            spriteType = "GFX_invisible"
-            position = { x = 44 y = 46 }
+			name = "pantheon_screen_title"
+			spriteType = "GFX_invisible"
+			position = { x = 44 y = 46 }
 			size = { x = 200 y = 20 }
-            clicksound = none
+			clicksound = none
 			font = "malgun_goth_24"
 			text = DARK_PANTHEON_TITLE
-            effect = "button_pantheon_screen_title"
-        }
+			effect = "button_pantheon_screen_title"
+		}
 
 		effectButtonType = {
-            name = "close_pantheon_screen"
-            quadTextureSprite = "GFX_close_button_planet"
-            position = { x = 521 y = 56 }
-            tooltip_mode_enabled = no
-            effect = "button_pantheon_screen_close"
-        }
+			name = "close_pantheon_screen"
+			quadTextureSprite = "GFX_close_button_planet"
+			position = { x = 521 y = 56 }
+			tooltip_mode_enabled = no
+			effect = "button_pantheon_screen_close"
+		}
 
 		#######################
-        ### BLOOD 		    ###
-        #######################
-        effectButtonType = {
-            name = "pantheon_demon_major_blood"
-            spriteType = "GFX_pantheon_major_blood"
-            size = { x = 125 y = 105 }
-            position = { x = 213 y = 280 }
-            clicksound = interface
-            effect = "button_pantheon_major_blood"
-        }
+		### BLOOD 			###
+		#######################
+		effectButtonType = {
+			name = "pantheon_demon_major_blood"
+			spriteType = "GFX_pantheon_major_blood"
+			size = { x = 125 y = 105 }
+			position = { x = 213 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_major_blood"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_blood_1"
-            spriteType = "GFX_pantheon_minor_blood_1"
-            size = { x = 125 y = 105 }
-            position = { x = 33 y = 280 }
-            clicksound = interface
-            effect = "button_pantheon_minor_blood_1"
-        }
+			name = "pantheon_demon_minor_blood_1"
+			spriteType = "GFX_pantheon_minor_blood_1"
+			size = { x = 125 y = 105 }
+			position = { x = 33 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_minor_blood_1"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_blood_2"
-            spriteType = "GFX_pantheon_minor_blood_2"
-            size = { x = 125 y = 105 }
-            position = { x = 124 y = 125 }
-            clicksound = interface
-            effect = "button_pantheon_minor_blood_2"
-        }
+			name = "pantheon_demon_minor_blood_2"
+			spriteType = "GFX_pantheon_minor_blood_2"
+			size = { x = 125 y = 105 }
+			position = { x = 124 y = 125 }
+			clicksound = interface
+			effect = "button_pantheon_minor_blood_2"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_blood_3"
-            spriteType = "GFX_pantheon_minor_blood_3"
-            size = { x = 125 y = 105 }
-            position = { x = 302 y = 125 }
-            clicksound = interface
-            effect = "button_pantheon_minor_blood_3"
-        }
+			name = "pantheon_demon_minor_blood_3"
+			spriteType = "GFX_pantheon_minor_blood_3"
+			size = { x = 125 y = 105 }
+			position = { x = 302 y = 125 }
+			clicksound = interface
+			effect = "button_pantheon_minor_blood_3"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_blood_4"
-            spriteType = "GFX_pantheon_minor_blood_4"
-            size = { x = 125 y = 105 }
-            position = { x = 393 y = 280 }
-            clicksound = interface
-            effect = "button_pantheon_minor_blood_4"
-        }
+			name = "pantheon_demon_minor_blood_4"
+			spriteType = "GFX_pantheon_minor_blood_4"
+			size = { x = 125 y = 105 }
+			position = { x = 393 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_minor_blood_4"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_blood_5"
-            spriteType = "GFX_pantheon_minor_blood_5"
-            size = { x = 125 y = 105 }
-            position = { x = 124 y = 435 }
-            clicksound = interface
-            effect = "button_pantheon_minor_blood_5"
-        }
+			name = "pantheon_demon_minor_blood_5"
+			spriteType = "GFX_pantheon_minor_blood_5"
+			size = { x = 125 y = 105 }
+			position = { x = 124 y = 435 }
+			clicksound = interface
+			effect = "button_pantheon_minor_blood_5"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_blood_6"
-            spriteType = "GFX_pantheon_minor_blood_6"
-            size = { x = 125 y = 105 }
-           	position = { x = 302 y = 435 }
-            clicksound = interface
-            effect = "button_pantheon_minor_blood_6"
-        }
+			name = "pantheon_demon_minor_blood_6"
+			spriteType = "GFX_pantheon_minor_blood_6"
+			size = { x = 125 y = 105 }
+		   	position = { x = 302 y = 435 }
+			clicksound = interface
+			effect = "button_pantheon_minor_blood_6"
+		}
 
 		#######################
-        ### PLAGUE 		    ###
-        #######################
-        effectButtonType = {
-            name = "pantheon_demon_major_plague"
-            spriteType = "GFX_pantheon_major_plague"
-            size = { x = 125 y = 105 }
-            position = { x = 213 y = 280 }
-            clicksound = interface
-            effect = "button_pantheon_major_plague"
-        }
+		### PLAGUE 			###
+		#######################
+		effectButtonType = {
+			name = "pantheon_demon_major_plague"
+			spriteType = "GFX_pantheon_major_plague"
+			size = { x = 125 y = 105 }
+			position = { x = 213 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_major_plague"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_plague_1"
-            spriteType = "GFX_pantheon_minor_plague_1"
-            size = { x = 125 y = 105 }
-            position = { x = 33 y = 280 }
-            clicksound = interface
-            effect = "button_pantheon_minor_plague_1"
-        }
+			name = "pantheon_demon_minor_plague_1"
+			spriteType = "GFX_pantheon_minor_plague_1"
+			size = { x = 125 y = 105 }
+			position = { x = 33 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_minor_plague_1"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_plague_2"
-            spriteType = "GFX_pantheon_minor_plague_2"
-            size = { x = 125 y = 105 }
-            position = { x = 124 y = 125 }
-            clicksound = interface
-            effect = "button_pantheon_minor_plague_2"
-        }
+			name = "pantheon_demon_minor_plague_2"
+			spriteType = "GFX_pantheon_minor_plague_2"
+			size = { x = 125 y = 105 }
+			position = { x = 124 y = 125 }
+			clicksound = interface
+			effect = "button_pantheon_minor_plague_2"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_plague_3"
-            spriteType = "GFX_pantheon_minor_plague_3"
-            size = { x = 125 y = 105 }
-            position = { x = 302 y = 125 }
-            clicksound = interface
-            effect = "button_pantheon_minor_plague_3"
-        }
+			name = "pantheon_demon_minor_plague_3"
+			spriteType = "GFX_pantheon_minor_plague_3"
+			size = { x = 125 y = 105 }
+			position = { x = 302 y = 125 }
+			clicksound = interface
+			effect = "button_pantheon_minor_plague_3"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_plague_4"
-            spriteType = "GFX_pantheon_minor_plague_4"
-            size = { x = 125 y = 105 }
-            position = { x = 393 y = 280 }
-            clicksound = interface
-            effect = "button_pantheon_minor_plague_4"
-        }
+			name = "pantheon_demon_minor_plague_4"
+			spriteType = "GFX_pantheon_minor_plague_4"
+			size = { x = 125 y = 105 }
+			position = { x = 393 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_minor_plague_4"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_plague_5"
-            spriteType = "GFX_pantheon_minor_plague_5"
-            size = { x = 125 y = 105 }
-            position = { x = 124 y = 435 }
-            clicksound = interface
-            effect = "button_pantheon_minor_plague_5"
-        }
+			name = "pantheon_demon_minor_plague_5"
+			spriteType = "GFX_pantheon_minor_plague_5"
+			size = { x = 125 y = 105 }
+			position = { x = 124 y = 435 }
+			clicksound = interface
+			effect = "button_pantheon_minor_plague_5"
+		}
 
 		effectButtonType = {
-            name = "pantheon_demon_minor_plague_6"
-            spriteType = "GFX_pantheon_minor_plague_6"
-            size = { x = 125 y = 105 }
-           	position = { x = 302 y = 435 }
-            clicksound = interface
-            effect = "button_pantheon_minor_plague_6"
-        }
+			name = "pantheon_demon_minor_plague_6"
+			spriteType = "GFX_pantheon_minor_plague_6"
+			size = { x = 125 y = 105 }
+		   	position = { x = 302 y = 435 }
+			clicksound = interface
+			effect = "button_pantheon_minor_plague_6"
+		}
 
 		#######################
 		### PLEASURE 		###
@@ -276,7 +276,7 @@ guiTypes = {
 		}
 
 		#######################
-		### WISDOM 		    ###
+		### WISDOM 			###
 		#######################
 		effectButtonType = {
 			name = "pantheon_demon_major_wisdom"

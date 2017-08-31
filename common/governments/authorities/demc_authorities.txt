@@ -18,8 +18,8 @@
 auth_demon_cultists = {
 	has_heir = no
 	election_type = oligarchic
-    uses_mandates = no
-    has_agendas = yes
+	uses_mandates = no
+	has_agendas = yes
 	has_factions = yes
 
 	possible = {
