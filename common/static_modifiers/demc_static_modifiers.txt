@@ -7,3 +7,19 @@ demc_demon_gate = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_chthonian_planet.dds"
 	icon_frame = 2
 }
+
+##########################################################################
+# Demon Modifiers
+##########################################################################
+
+champion_of_the_blood_lord = {
+	pop_happiness = 0.10
+}
+
+champion_of_the_blood_lord_effect = {
+	ship_weapon_damage = 6.66
+}
+
+betrayer_of_the_blood_lord = {
+	pop_happiness = -0.10
+}

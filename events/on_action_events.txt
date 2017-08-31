@@ -6543,18 +6543,18 @@ ship_event = {
 #						last_created_pop = {
 #							save_event_target_as = og_bot
 #						}
-#	    				else = {
-#	    					build_pop = {
+#						else = {
+#							build_pop = {
 #								name = buildable_robot_pop_3
 #								grown = yes
 #							}
 #							last_created_pop = {
 #								save_event_target_as = og_bot
 #							}
-#	    				}
+#						}
 #					}
-#	    		}
-#	    	}
+#				}
+#			}
 #	   	}
 #	}
 #

@@ -29,7 +29,7 @@ auth_democratic = {
 				value = ethic_hive_mind
 				value = ethic_authoritarian
 				value = ethic_fanatic_authoritarian
-    			value = ethic_demon_cultists
+				value = ethic_demon_cultists
 			}
 		}
 	}
@@ -51,7 +51,7 @@ auth_oligarchic = {
 				value = ethic_hive_mind
 				value = ethic_fanatic_egalitarian
 				value = ethic_fanatic_authoritarian
-    			value = ethic_demon_cultists
+				value = ethic_demon_cultists
 			}
 		}
 	}
@@ -69,7 +69,7 @@ auth_dictatorial = {
 				value = ethic_hive_mind
 				value = ethic_egalitarian
 				value = ethic_fanatic_egalitarian
-    			value = ethic_demon_cultists
+				value = ethic_demon_cultists
 			}
 		}
 	}
@@ -86,7 +86,7 @@ auth_imperial = {
 				value = ethic_hive_mind
 				value = ethic_egalitarian
 				value = ethic_fanatic_egalitarian
-    			value = ethic_demon_cultists
+				value = ethic_demon_cultists
 			}
 		}
 	}

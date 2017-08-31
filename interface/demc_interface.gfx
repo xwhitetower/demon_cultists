@@ -1,0 +1,181 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_pantheon_background"
+		texturefile = "gfx/interface/pantheon/pantheon_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_topbar_pantheon_button"
+		texturefile = "gfx/interface/buttons/topbar_pantheon_button.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/buttons/button_topbar_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/standard_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"	   #add, multiply, overlay
+			animationtype = "scrolling"	  #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+		hitbox_margin = { x=10 y=10 }
+	}
+
+	#######################
+	### BLOOD 			###
+	#######################
+	spriteType = {
+		name = "GFX_pantheon_major_blood"
+		texturefile = "gfx/interface/pantheon/blood/major_blood.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_1"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_2"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_3"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_4"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_5"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_6"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_6.dds"
+	}
+	
+	#######################
+	### PLAGUE 			###
+	#######################
+	spriteType = {
+		name = "GFX_pantheon_major_plague"
+		texturefile = "gfx/interface/pantheon/plague/major_plague.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_1"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_2"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_3"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_4"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_5"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_6"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_6.dds"
+	}
+
+	#######################
+	### PLEASURE 		###
+	#######################
+	spriteType = {
+		name = "GFX_pantheon_major_pleasure"
+		texturefile = "gfx/interface/pantheon/pleasure/major_pleasure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_1"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_2"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_3"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_4"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_5"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_pleasure_6"
+		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_6.dds"
+	}
+
+	#######################
+	### WISDOM 			###
+	#######################
+	spriteType = {
+		name = "GFX_pantheon_major_wisdom"
+		texturefile = "gfx/interface/pantheon/wisdom/major_wisdom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_1"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_2"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_3"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_4"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_5"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_6"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_6.dds"
+	}
+
+}

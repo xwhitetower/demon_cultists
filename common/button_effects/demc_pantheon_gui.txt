@@ -1,0 +1,407 @@
+#######################
+### SHARED 			###
+#######################
+button_pantheon_screen_open = {
+	potential = {
+		NOT = { has_country_flag = pantheon_screen_open }
+	}
+	
+	allow = {
+		always = yes
+	}
+
+	effect = {
+		set_country_flag = pantheon_screen_open
+	}
+}
+
+button_pantheon_screen_close = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+	}
+	
+	allow = {
+		always = yes
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_country_flag = pantheon_screen_open
+		}
+	}
+}
+
+# Cosmetics like background etc...
+button_pantheon_screen_background = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+	}
+}
+
+button_pantheon_screen_title = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+	}
+}
+
+#######################
+### BLOOD 			###
+#######################
+button_pantheon_major_blood = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_blood_demon_cult
+		}
+	}
+
+	# You cannot stop following a major demon for 5 years after selecting one
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MAJOR_BLOOD_DESC
+			NOT = {
+				OR = {
+					has_modifier = champion_of_the_blood_lord
+					has_modifier = betrayer_of_the_blood_lord
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MAJOR_BLOOD_DESC
+
+		# If not active, enable and grant bonus
+		if = {
+			limit = { NOT = { has_modifier = champion_of_the_blood_lord_effect } }
+			add_modifier = { modifier = champion_of_the_blood_lord_effect days = -1 }
+			hidden_effect = {
+				add_modifier = { modifier = champion_of_the_blood_lord days = 5 }
+			}
+			else = {
+				hidden_effect = {
+					remove_modifier = champion_of_the_blood_lord_effect
+					add_modifier = { modifier = betrayer_of_the_blood_lord days = 5 }
+				}
+			}
+		} 
+	}
+}
+
+button_pantheon_minor_blood_1 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_blood_demon_cult
+		}
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_1_DESC
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
+	}
+}
+
+button_pantheon_minor_blood_2 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_blood_demon_cult
+		}
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_2_DESC
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_2_DESC
+	}
+}
+
+button_pantheon_minor_blood_3 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_blood_demon_cult
+		}
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_3_DESC
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_3_DESC
+	}
+}
+
+button_pantheon_minor_blood_4 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_blood_demon_cult
+		}
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_4_DESC
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_4_DESC
+	}
+}
+
+button_pantheon_minor_blood_5 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_blood_demon_cult
+		}
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_5_DESC
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_5_DESC
+	}
+}
+
+button_pantheon_minor_blood_6 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_blood_demon_cult
+		}
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_6_DESC
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_6_DESC
+	}
+}
+
+#######################
+### PLAGUE 			###
+#######################
+button_pantheon_major_plague = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_plague_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_plague_1 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_plague_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_plague_2 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_plague_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_plague_3 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_plague_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_plague_4 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_plague_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_plague_5 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_plague_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_plague_6 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_plague_demon_cult
+		}
+	}
+}
+
+#######################
+### PLEASURE		###
+#######################
+button_pantheon_major_pleasure = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_pleasure_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_pleasure_1 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_pleasure_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_pleasure_2 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_pleasure_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_pleasure_3 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_pleasure_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_pleasure_4 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_pleasure_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_pleasure_5 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_pleasure_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_pleasure_6 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_pleasure_demon_cult
+		}
+	}
+}
+
+#######################
+### WISDOM 			###
+#######################
+button_pantheon_major_wisdom = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_wisdom_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_wisdom_1 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_wisdom_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_wisdom_2 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_wisdom_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_wisdom_3 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_wisdom_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_wisdom_4 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_wisdom_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_wisdom_5 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_wisdom_demon_cult
+		}
+	}
+}
+
+button_pantheon_minor_wisdom_6 = {
+	potential = {
+		AND = {
+			has_country_flag = pantheon_screen_open
+			has_civic = civic_wisdom_demon_cult
+		}
+	}
+}

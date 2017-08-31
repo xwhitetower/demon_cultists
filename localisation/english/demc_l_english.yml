@@ -49,6 +49,7 @@
  demc_demon_gate_desc:0 "This world has a demon gate. It weakness the fabric of reality and allowing for demons to interact with the normal universe."
 
  START_SCREEN_PART_TWO_DEMON_CULTIST:0 "One day, our masters gate opened on [GetHomeWorldName]. The demons wispered knowledge to our ancestors and a contract was signed and thus the demon cult started. With each blood sacrifice performed our cult grew stronger. It didn't took long that no unbeliever remained on [GetHomeWorldName]."
+ DARK_PANTHEON_TITLE:0 "The Dark Pantheon"
 
  action.1.vanilla_demon_cultist_desc:0 "I, [contact_empire.GetRulerName], am the voice of the gods of the Shroud. The people of [Root.GetName] has still not see the light! Repent! Stop your heretic ways and join us!"
  action.1.blood_demon_cultist_desc:0 "Weak warriors of [Root.GetName] we will meet you anytime on the battlefield. Lets honor our lord $MAJOR_BLOOD_DEMON$ and shed our blood on holy battle."
