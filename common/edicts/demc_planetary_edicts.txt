@@ -1,0 +1,71 @@
+##########################################################################
+# Planet edicts
+##########################################################################
+
+# Variables:
+#  name, the name of the edict, also serves as localisation key.
+#  influence_cost, the base influence cost of activating the edict.
+#  potential, planet or country trigger to decide whether the edict should be shown.
+#  allow, planet or country trigger to decide if whether this edict can be activated.
+#  effect, an effect that is executed when this trigger activates.
+#  prerequisites, tech requirements for this trigger.
+#  ai_will_do, determines AI scoring for edict
+#  modifier, a list of modifiers
+#  length, number of days the trigger is active.
+
+planet_edict = {
+	name = "sacrifice_pop_to_the_dark_gods"
+	influence_cost = 0
+
+	potential = {
+		owner = { has_ethic = ethic_demon_cultists }
+	}
+
+	length = 30
+
+	allow = {
+		any_tile = {
+			has_pop = yes
+			has_building = building_sacrificial_altar
+		}
+	}
+
+	effect = {
+		random_tile = {
+			limit = {
+				has_pop = yes
+				has_building = building_sacrificial_altar
+			}
+			kill_pop = yes
+			# Increment sacrifice energy by 1
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+planet_edict = {
+	name = "debug_simulate_use_one_sacrifical_energy"
+	influence_cost = 0
+
+	potential = {
+		owner = { has_ethic = ethic_demon_cultists }
+	}
+
+	length = 30
+
+	allow = {
+		# Need at last 1 sacrifice energy
+	}
+
+	effect = {
+		# Remove sacrifice energy as debug by 1
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
