@@ -1,0 +1,84 @@
+namespace = demc_demon_contact
+
+# Major Blood Demon contact
+country_event = {
+	id = demc_demon_contact.1
+	title = "demc_demon.blood.temple.mainwindow.title"
+	desc = {
+		trigger = {
+			switch = {
+				trigger = has_modifier
+				dark_gods_are_upset = { text = demc_demon.blood.temple.mainwindow.desc.upset }
+				sinner_in_the_eyes_of_the_dark_gods = { text = demc_demon.blood.temple.mainwindow.desc.sinner }
+				default = { text = demc_demon.blood.temple.mainwindow.desc }
+			}
+		}
+	}
+
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = root
+		room = personality_evangelizing_zealots_room
+	}
+	immediate = {
+		set_country_flag = major_blood_demon_diplomacy_engaged
+	}
+	option = {
+		name = demc_demon.blood.temple.mainwindow.opt.great
+		trigger = {
+			NOR = {
+				has_modifier = champion_of_the_blood_lord_effect
+				has_modifier = dark_gods_are_upset
+				has_modifier = sinner_in_the_eyes_of_the_dark_gods
+			}
+		}
+		allow = {
+			has_sacrificial_energy = yes
+		}
+		add_modifier = { modifier = champion_of_the_blood_lord_effect days = -1 }
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+	}
+	option = {
+		name = demc_demon.blood.temple.mainwindow.opt.upset
+		trigger = {
+			has_modifier = dark_gods_are_upset
+		}
+		allow = {
+			has_sacrificial_energy = yes
+		}
+		remove_modifier = dark_gods_are_upset
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+	}
+	option = {
+		name = demc_demon.blood.temple.mainwindow.opt.sinner
+		trigger = {
+			has_modifier = sinner_in_the_eyes_of_the_dark_gods
+		}
+		remove_modifier = sinner_in_the_eyes_of_the_dark_gods
+		set_variable = {
+			which = sacrifical_energy_count
+			value = 0
+		}
+		kill_leader = {
+			type = ruler
+			show_notification = no
+		}
+	}
+	option = {
+		name = demc_demon.blood.temple.mainwindow.opt.bye
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = major_blood_demon_diplomacy_engaged
+		}
+	}
+}

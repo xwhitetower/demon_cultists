@@ -5,7 +5,7 @@ button_pantheon_screen_open = {
 	potential = {
 		NOT = { has_country_flag = pantheon_screen_open }
 	}
-	
+
 	allow = {
 		always = yes
 	}
@@ -19,7 +19,7 @@ button_pantheon_screen_close = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 	}
-	
+
 	allow = {
 		always = yes
 	}
@@ -57,34 +57,14 @@ button_pantheon_major_blood = {
 
 	# You cannot stop following a major demon for 5 years after selecting one
 	allow = {
-		custom_tooltip = {
-			text = PANTHEON_MAJOR_BLOOD_DESC
-			NOT = {
-				OR = {
-					has_modifier = champion_of_the_blood_lord
-					has_modifier = betrayer_of_the_blood_lord
-				}
-			}
-		}
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MAJOR_BLOOD_DESC
-
-		# If not active, enable and grant bonus
-		if = {
-			limit = { NOT = { has_modifier = champion_of_the_blood_lord_effect } }
-			add_modifier = { modifier = champion_of_the_blood_lord_effect days = -1 }
-			hidden_effect = {
-				add_modifier = { modifier = champion_of_the_blood_lord days = 5 }
-			}
-			else = {
-				hidden_effect = {
-					remove_modifier = champion_of_the_blood_lord_effect
-					add_modifier = { modifier = betrayer_of_the_blood_lord days = 5 }
-				}
-			}
-		} 
+		hidden_effect = {
+			country_event = { id = demc_demon_contact.1 }
+			remove_country_flag = pantheon_screen_open
+		}
 	}
 }
 
