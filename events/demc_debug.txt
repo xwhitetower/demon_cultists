@@ -8,7 +8,7 @@ country_event = {
 
 	immediate = {
 		add_modifier = { modifier = dark_gods_are_upset days = -1 }
-		if {
+		if = {
 			limit = { has_modifier = sinner_in_the_eyes_of_the_dark_gods }
 			remove_modifier = sinner_in_the_eyes_of_the_dark_gods
 		}
@@ -23,9 +23,23 @@ country_event = {
 
 	immediate = {
 		add_modifier = { modifier = sinner_in_the_eyes_of_the_dark_gods days = -1 }
-		if {
+		if = {
 			limit = { has_modifier = dark_gods_are_upset }
 			remove_modifier = dark_gods_are_upset
+		}
+	}
+}
+
+# Give me energy
+country_event = {
+	id = demc_debug.3
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		set_variable = {
+			which = sacrifical_energy_count
+			value = 10
 		}
 	}
 }

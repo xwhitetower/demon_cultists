@@ -89,3 +89,19 @@
  requires_actor_not_blood_demon_cultists:0 "§RNot possible because they are a §HBlood Demon Worshippers§!.§!"
  requires_target_not_blood_demon_cultists:0 "§RNot possible because we are a §HBlood Demon Worshippers§!.§!"
  requires_being_unholy_alliance:0 "§RNot possible because both parties are not §HDemon Worshippers§!.§!"
+
+
+ leader_trait_admiral_mark_blood_god:0 "Mark of the Blood God"
+ leader_trait_admiral_mark_blood_god_desc:0 "This leader has been branded by the Blood God giving him exceptional fighting habilities. The mark can be lost if the leader acts against the teachings of the Blood God."
+ leader_trait_general_mark_blood_god:0 "Mark of the Blood God"
+ leader_trait_general_mark_blood_goddesc:0 "This leader has been branded by the Blood God giving him exceptional fighting habilities. The mark can be lost if the leader acts against the teachings of the Blood God."
+
+
+ dark_gods_are_upset:0 "Dissapointed Gods"
+ dark_gods_are_upset_desc:0 "The dark gods are dissapointed with our actions. We are still in time to search their forgiveness."
+ sinner_in_the_eyes_of_the_dark_gods:0 "Sinner"
+ sinner_in_the_eyes_of_the_dark_gods_desc:0 "You have commit sins against the dark gods. Such act of treason can not be tolerated."
+ blood_demon_morefire_blessing:0 "Fire blessing of the Blood God"
+ blood_demon_morefire_blessing_desc:0 "The fire of the Shroud will bring holy joy to our enemies!"
+ blood_demon_morepunch_blessing:0 "Strength blessing of the Blood God"
+ blood_demon_morepunch_blessing_desc:0 "Our armies zeal will tear our enemies apart!"

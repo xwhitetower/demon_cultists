@@ -1,16 +1,28 @@
 namespace = demc_demon_contact
 
-# Major Blood Demon contact
+@standardblessingtime = 1800
+
+# Blood god temple interactions (No ascension perks)
+# Navigation Map:
+#    Main Window (event 1) <-> Blessing window (event 2)
+
+# Main Window
 country_event = {
 	id = demc_demon_contact.1
 	title = "demc_demon.blood.temple.mainwindow.title"
 	desc = {
 		trigger = {
-			switch = {
-				trigger = has_modifier
-				dark_gods_are_upset = { text = demc_demon.blood.temple.mainwindow.desc.upset }
-				sinner_in_the_eyes_of_the_dark_gods = { text = demc_demon.blood.temple.mainwindow.desc.sinner }
-				default = { text = demc_demon.blood.temple.mainwindow.desc }
+			if = {
+				limit = { has_country_flag = major_blood_demon_diplomacy_from_blood_blessing_window }
+					text = demc_demon.blood.temple.mainwindow.desc.fromblessing
+				else = {
+					switch = {
+						trigger = has_modifier
+						dark_gods_are_upset = { text = demc_demon.blood.temple.mainwindow.desc.upset }
+						sinner_in_the_eyes_of_the_dark_gods = { text = demc_demon.blood.temple.mainwindow.desc.sinner }
+						default = { text = demc_demon.blood.temple.mainwindow.desc }
+					}
+				}
 			}
 		}
 	}
@@ -19,28 +31,29 @@ country_event = {
 	is_triggered_only = yes
 
 	picture_event_data = {
-		portrait = root
+		# portrait = root
 		room = personality_evangelizing_zealots_room
 	}
+	trigger = {
+		OR = {
+			has_country_flag = major_blood_demon_diplomacy_from_blood_blessing_window
+			NOT = { has_country_flag = major_blood_demon_diplomacy_engaged }
+		}
+	}
+
 	immediate = {
 		set_country_flag = major_blood_demon_diplomacy_engaged
 	}
 	option = {
-		name = demc_demon.blood.temple.mainwindow.opt.great
+		name = demc_demon.blood.temple.mainwindow.opt.blessings
 		trigger = {
-			NOR = {
-				has_modifier = champion_of_the_blood_lord_effect
-				has_modifier = dark_gods_are_upset
-				has_modifier = sinner_in_the_eyes_of_the_dark_gods
-			}
+			in_dark_gods_good_grace = yes
 		}
 		allow = {
 			has_sacrificial_energy = yes
 		}
-		add_modifier = { modifier = champion_of_the_blood_lord_effect days = -1 }
-		change_variable = {
-			which = sacrifical_energy_count
-			value = -1
+		hidden_effect = {
+			country_event = { id = demc_demon_contact.2 }
 		}
 	}
 	option = {
@@ -76,6 +89,119 @@ country_event = {
 		name = demc_demon.blood.temple.mainwindow.opt.bye
 	}
 
+	after = {
+		hidden_effect = {
+			remove_country_flag = major_blood_demon_diplomacy_engaged
+			remove_country_flag = major_blood_demon_diplomacy_from_blood_blessing_window
+		}
+	}
+}
+
+# Blood Blessing window
+country_event = {
+	id = demc_demon_contact.2
+	title = demc_demon.blood.temple.blessingwindow.title
+	desc = demc_demon.blood.temple.blessingwindow.desc
+
+
+	diplomatic = yes
+	is_triggered_only = yes
+
+	picture_event_data = {
+		# portrait = root
+		room = personality_evangelizing_zealots_room
+	}
+	immediate = {
+		set_country_flag = major_blood_demon_diplomacy_engaged
+	}
+
+	option = {
+		name = demc_demon.blood.temple.blessingwindow.opt.morefire
+		allow = {
+			NOT = { has_modifier = blood_demon_morefire_blessing }
+			has_sacrificial_energy = yes
+		}
+		is_dialog_only = yes
+		response_text = demc_demon.blood.temple.blessingwindow.reply.morefire
+		add_modifier = {
+			modifier = blood_demon_morefire_blessing
+			days = @standardblessingtime
+		}
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+	}
+	option = {
+		name = demc_demon.blood.temple.blessingwindow.opt.morepunch
+		allow = {
+			NOT = { has_modifier = blood_demon_morepunch_blessing }
+			has_sacrificial_energy = yes
+		}
+		is_dialog_only = yes
+		response_text = demc_demon.blood.temple.blessingwindow.reply.morepunch
+		add_modifier = {
+			modifier = blood_demon_morepunch_blessing
+			days = @standardblessingtime
+		}
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+	}
+	option = {
+		name = demc_demon.blood.temple.blessingwindow.opt.markgeneral
+		allow = {
+			any_owned_leader = {
+				leader_class = general
+				NOT = { has_trait = leader_trait_general_mark_blood_god }
+			}
+			has_2_sacrificial_energy = yes
+		}
+		is_dialog_only = yes
+		response_text = demc_demon.blood.temple.blessingwindow.reply.markgeneral
+		random_owned_leader = {
+			limit = {
+				leader_class = general
+				NOT = { has_trait = leader_trait_general_mark_blood_god }
+			}
+			add_trait = leader_trait_general_mark_blood_god
+		}
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -2
+		}
+	}
+	option = {
+		name = demc_demon.blood.temple.blessingwindow.opt.markadmiral
+		allow = {
+			any_owned_leader = {
+				leader_class = admiral
+				NOT = { has_trait = leader_trait_admiral_mark_blood_god }
+			}
+			has_3_sacrificial_energy = yes
+		}
+		is_dialog_only = yes
+		response_text = demc_demon.blood.temple.blessingwindow.reply.markadmiral
+		random_owned_leader = {
+			limit = {
+				leader_class = admiral
+				NOT = { has_trait = leader_trait_admiral_mark_blood_god }
+			}
+			add_trait = leader_trait_admiral_mark_blood_god
+		}
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -3
+		}
+	}
+	option = {
+		name = demc_demon.blood.temple.blessingwindow.opt.bye
+		hidden_effect = {
+			set_country_flag = major_blood_demon_diplomacy_from_blood_blessing_window
+			country_event = { id = demc_demon_contact.1 }
+		}
+	}
 	after = {
 		hidden_effect = {
 			remove_country_flag = major_blood_demon_diplomacy_engaged
