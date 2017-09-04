@@ -24,9 +24,15 @@ planet_edict = {
 	length = 30
 
 	allow = {
-		any_tile = {
-			has_pop = yes
-			has_building = building_sacrificial_altar
+		AND = {
+			any_tile = {
+				has_pop = yes
+				has_building = building_sacrificial_altar
+			}
+			check_variable = {
+				which = "demc_sacrifical_energy_count" 
+				value <= 10
+			}
 		}
 	}
 
@@ -37,7 +43,10 @@ planet_edict = {
 				has_building = building_sacrificial_altar
 			}
 			kill_pop = yes
-			# Increment sacrifice energy by 1
+			change_variable = { #check_variable
+				which = "sacrifical_energy_count"
+				value = 1
+			}
 		}
 	}
 
@@ -58,11 +67,21 @@ planet_edict = {
 	length = 30
 
 	allow = {
-		# Need at last 1 sacrifice energy
+		custom_tooltip = {
+			text = need_sacrifice_power
+			check_variable = {
+				which = "sacrifical_energy_count"
+				value > 0
+			}
+		}
 	}
 
 	effect = {
 		# Remove sacrifice energy as debug by 1
+		change_variable = { #check_variable
+			which = "sacrifical_energy_count"
+			value = -1
+		}
 	}
 
 	ai_weight = {
