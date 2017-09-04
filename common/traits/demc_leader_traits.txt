@@ -9,7 +9,7 @@
 # prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
 
 #####################
-# Admiral Traits    #
+# Blood god traits  #
 #####################
 
 leader_trait_admiral_mark_blood_god = {
@@ -29,10 +29,6 @@ leader_trait_admiral_mark_blood_god = {
 	randomized = no
 }
 
-#####################
-# General Traits    #
-#####################
-
 leader_trait_general_mark_blood_god = {
 	cost = 1
 	modification = no
@@ -42,6 +38,43 @@ leader_trait_general_mark_blood_god = {
 		army_attack_damage_mult = 0.2
 		army_defense_morale_mult = -0.05
 		army_defense_damage_mult = -0.05
+	}
+	leader_trait = yes
+	leader_class = { general }
+	initial = no
+	randomized = no
+}
+
+
+#####################
+# Plague god traits #
+#####################
+
+leader_trait_admiral_mark_plague_god = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_unyielding.dds"
+	modifier = {
+		ship_hitpoints_mult = 0.15
+		ship_auto_repair_add = 0.02
+		ship_combat_speed_mult = -0.05
+		ship_evasion_mult = -0.10
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	initial = no
+	randomized = no
+}
+
+leader_trait_general_mark_plague_god = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_defender.dds"
+	modifier = {
+		army_attack_morale_mult = -0.05
+		army_attack_damage_mult = -0.05
+		army_defense_morale_mult = 0.2
+		army_defense_damage_mult = 0.2
 	}
 	leader_trait = yes
 	leader_class = { general }

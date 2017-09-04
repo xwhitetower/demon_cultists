@@ -30,3 +30,15 @@ blood_demon_morefire_blessing = {
 blood_demon_morepunch_blessing = {
 	army_damage_mult = 0.10
 }
+
+##########################################################################
+# Plague demon Blessings
+##########################################################################
+
+plague_demon_morehull_blessing = {
+	ship_hitpoints_mult = 0.10
+}
+
+plague_demon_regenhull_blessing = {
+	ship_auto_repair_add = 0.05
+}

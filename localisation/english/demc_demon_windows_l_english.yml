@@ -20,3 +20,28 @@
  demc_demon.blood.temple.blessingwindow.opt.markadmiral:0 "An admiral should wear the blood brand!"
  demc_demon.blood.temple.blessingwindow.reply.markadmiral:0 "Be proud! Your chosen admiral wears the mark of $PANTHEON_MAJOR_BLOOD$!"
  demc_demon.blood.temple.blessingwindow.opt.bye:0 "I have everything I wanted."
+
+
+
+ demc_demon.plague.temple.mainwindow.title:0 "Plague temple"
+ demc_demon.plague.temple.mainwindow.desc:0 "Welcome to the Plague temple. [Root.GetRulerName], let us rot together in honor of our master $PANTHEON_MAJOR_PLAGUE$."
+ demc_demon.plague.temple.mainwindow.desc.fromblessing:0 "Anything else?"
+ demc_demon.plague.temple.mainwindow.desc.upset:0 "We need to act. $PANTHEON_MAJOR_PLAGUE$ is dissapointed in us. We must act to correct this situation!"
+ demc_demon.plague.temple.mainwindow.desc.sinner:0 "The wrath of $PANTHEON_MAJOR_PLAGUE$ is upon us! The holy plagues are upon us! We must sacrifice [Root.GetRulerName] and beg for forgiveness!"
+ demc_demon.plague.temple.mainwindow.opt.blessings:0 "I want to receive blessings."
+ demc_demon.plague.temple.mainwindow.opt.upset:0 "A sacrifice will please him."
+ demc_demon.plague.temple.mainwindow.opt.sinner:0 "I will atone my sins!"
+ demc_demon.plague.temple.mainwindow.opt.bye:0 "I don't need anything."
+
+
+ demc_demon.plague.temple.blessingwindow.title:0 "Plague temple"
+ demc_demon.plague.temple.blessingwindow.desc:0 "What blessing of $PANTHEON_MAJOR_PLAGUE$, do you want?"
+ demc_demon.plague.temple.blessingwindow.opt.morehull:0 "My navies need defense!"
+ demc_demon.plague.temple.blessingwindow.reply.morehull:0 "The flesh of our lord will cover our ships. The heretics will not be able to tear them apart!"
+ demc_demon.plague.temple.blessingwindow.opt.regenhull:0 "Our lord should possess our ships!"
+ demc_demon.plague.temple.blessingwindow.reply.regenhull:0 "The living flesh of $PANTHEON_MAJOR_PLAGUE$ is in our ships! Our blessed ships will heal any damage!"
+ demc_demon.plague.temple.blessingwindow.opt.markgeneral:0 "A general should wear the plague brand!"
+ demc_demon.plague.temple.blessingwindow.reply.markgeneral:0 "Your chosen general has been branded! His flesh will endure any pain or desease!"
+ demc_demon.plague.temple.blessingwindow.opt.markadmiral:0 "An admiral should wear the plague brand!"
+ demc_demon.plague.temple.blessingwindow.reply.markadmiral:0 "Your chosen admiral wears the mark of $PANTHEON_MAJOR_PLAGUE$! His rotten flesh will protect him."
+ demc_demon.plague.temple.blessingwindow.opt.bye:0 "I have everything I wanted."

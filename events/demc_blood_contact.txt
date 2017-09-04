@@ -1,4 +1,4 @@
-namespace = demc_demon_contact
+namespace = demc_blood_contact
 
 @standardblessingtime = 1800
 
@@ -8,7 +8,7 @@ namespace = demc_demon_contact
 
 # Main Window
 country_event = {
-	id = demc_demon_contact.1
+	id = demc_blood_contact.1
 	title = "demc_demon.blood.temple.mainwindow.title"
 	desc = {
 		trigger = {
@@ -31,7 +31,7 @@ country_event = {
 	is_triggered_only = yes
 
 	picture_event_data = {
-		# portrait = root
+		portrait = owner_species = { species_portrait }
 		room = personality_evangelizing_zealots_room
 	}
 	trigger = {
@@ -53,7 +53,7 @@ country_event = {
 			has_sacrificial_energy = yes
 		}
 		hidden_effect = {
-			country_event = { id = demc_demon_contact.2 }
+			country_event = { id = demc_blood_contact.2 }
 		}
 	}
 	option = {
@@ -99,7 +99,7 @@ country_event = {
 
 # Blood Blessing window
 country_event = {
-	id = demc_demon_contact.2
+	id = demc_blood_contact.2
 	title = demc_demon.blood.temple.blessingwindow.title
 	desc = demc_demon.blood.temple.blessingwindow.desc
 
@@ -108,7 +108,7 @@ country_event = {
 	is_triggered_only = yes
 
 	picture_event_data = {
-		# portrait = root
+		portrait = owner_species = { species_portrait }
 		room = personality_evangelizing_zealots_room
 	}
 	immediate = {
@@ -199,7 +199,7 @@ country_event = {
 		name = demc_demon.blood.temple.blessingwindow.opt.bye
 		hidden_effect = {
 			set_country_flag = major_blood_demon_diplomacy_from_blood_blessing_window
-			country_event = { id = demc_demon_contact.1 }
+			country_event = { id = demc_blood_contact.1 }
 		}
 	}
 	after = {

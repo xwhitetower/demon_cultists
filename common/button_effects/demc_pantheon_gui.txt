@@ -62,7 +62,7 @@ button_pantheon_major_blood = {
 	effect = {
 		custom_tooltip = PANTHEON_MAJOR_BLOOD_DESC
 		hidden_effect = {
-			country_event = { id = demc_demon_contact.1 }
+			country_event = { id = demc_blood_contact.1 }
 			remove_country_flag = pantheon_screen_open
 		}
 	}
@@ -196,6 +196,14 @@ button_pantheon_major_plague = {
 		AND = {
 			has_country_flag = pantheon_screen_open
 			has_civic = civic_plague_demon_cult
+		}
+	}
+
+	effect = {
+#		custom_tooltip = PANTHEON_MAJOR_PLAGUE_DESC
+		hidden_effect = {
+			country_event = { id = demc_plague_contact.1 }
+			remove_country_flag = pantheon_screen_open
 		}
 	}
 }
