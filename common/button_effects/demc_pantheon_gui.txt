@@ -272,6 +272,14 @@ button_pantheon_major_pleasure = {
 			has_civic = civic_pleasure_demon_cult
 		}
 	}
+
+	effect = {
+#		custom_tooltip = PANTHEON_MAJOR_PLAGUE_DESC
+		hidden_effect = {
+			country_event = { id = demc_pleasure_contact.1 }
+			remove_country_flag = pantheon_screen_open
+		}
+	}
 }
 
 button_pantheon_minor_pleasure_1 = {

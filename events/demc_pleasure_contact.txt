@@ -1,0 +1,236 @@
+namespace = demc_pleasure_contact
+
+@standardblessingtime = 1800
+
+# pleasure god temple interactions (No ascension perks)
+# Navigation Map:
+#    Main Window (event 1) <-> Blessing window (event 2)
+
+# Main Window
+country_event = {
+	id = demc_pleasure_contact.1
+	title = "demc_demon.pleasure.temple.mainwindow.title"
+	desc = {
+		trigger = {
+			if = {
+				limit = { has_country_flag = diplomacy_from_pleasure_blessing_window }
+					text = demc_demon.pleasure.temple.mainwindow.desc.fromblessing
+				else = {
+					switch = {
+						trigger = has_modifier
+						dark_gods_are_upset = { text = demc_demon.pleasure.temple.mainwindow.desc.upset }
+						sinner_in_the_eyes_of_the_dark_gods = { text = demc_demon.pleasure.temple.mainwindow.desc.sinner }
+						default = { text = demc_demon.pleasure.temple.mainwindow.desc }
+					}
+				}
+			}
+		}
+	}
+
+	diplomatic = yes
+	is_triggered_only = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = owner_species = { species_portrait }
+		room = personality_evangelizing_zealots_room
+	}
+	trigger = {
+		OR = {
+			has_country_flag = diplomacy_from_pleasure_blessing_window
+			NOT = { has_country_flag = major_pleasure_demon_diplomacy_engaged }
+		}
+	}
+
+	immediate = {
+		set_country_flag = major_pleasure_demon_diplomacy_engaged
+	}
+	option = {
+		name = demc_demon.pleasure.temple.mainwindow.opt.blessings
+		trigger = {
+			in_dark_gods_good_grace = yes
+		}
+		allow = {
+			has_sacrificial_energy = yes
+		}
+		hidden_effect = {
+			country_event = { id = demc_pleasure_contact.2 }
+		}
+	}
+	option = {
+		name = demc_demon.pleasure.temple.mainwindow.opt.upset
+		trigger = {
+			has_modifier = dark_gods_are_upset
+		}
+		allow = {
+			has_sacrificial_energy = yes
+		}
+		remove_modifier = dark_gods_are_upset
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+	}
+	option = {
+		name = demc_demon.pleasure.temple.mainwindow.opt.sinner
+		trigger = {
+			has_modifier = sinner_in_the_eyes_of_the_dark_gods
+		}
+		remove_modifier = sinner_in_the_eyes_of_the_dark_gods
+		set_variable = {
+			which = sacrifical_energy_count
+			value = 0
+		}
+		kill_leader = {
+			type = ruler
+			show_notification = no
+		}
+	}
+	option = {
+		default_hide_option = yes
+		name = demc_demon.pleasure.temple.mainwindow.opt.bye
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = major_pleasure_demon_diplomacy_engaged
+			remove_country_flag = diplomacy_from_pleasure_blessing_window
+		}
+	}
+}
+
+# pleasure Blessing window
+country_event = {
+	id = demc_pleasure_contact.2
+	title = demc_demon.pleasure.temple.blessingwindow.title
+	desc = demc_demon.pleasure.temple.blessingwindow.desc
+
+
+	diplomatic = yes
+	is_triggered_only = yes
+	force_open = yes
+
+	picture_event_data = {
+		portrait = owner_species = { species_portrait }
+		room = personality_evangelizing_zealots_room
+	}
+	immediate = {
+		set_country_flag = major_pleasure_demon_diplomacy_engaged
+	}
+
+	option = {
+		name = demc_demon.pleasure.temple.blessingwindow.opt.makemesexy
+		allow = {
+			custom_tooltip = {
+				text = demc_demon.pleasure.temple.blessingwindow.tooltip.makemesexy
+				NOT = { has_country_flag = pleasure_demon_sexy_blessing }
+			}
+			has_sacrificial_energy = yes
+		}
+		is_dialog_only = yes
+		response_text = demc_demon.pleasure.temple.blessingwindow.reply.makemesexy
+		hidden_effect = {
+			set_country_flag = pleasure_demon_sexy_blessing
+			country_event = { id = demc_pleasure_contact.3 days=@standardblessingtime}
+			every_country = {
+				add_opinion_modifier = { who = PREV modifier = opinion_pleasure_demon_sexy_blessing }
+			}
+		}
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+	}
+	option = {
+		name = demc_demon.pleasure.temple.blessingwindow.opt.makemeloved
+		allow = {
+			NOT = { has_modifier = pleasure_demon_makemeloved_blessing }
+			has_sacrificial_energy = yes
+		}
+		is_dialog_only = yes
+		response_text = demc_demon.pleasure.temple.blessingwindow.reply.makemeloved
+		add_modifier = {
+			modifier = pleasure_demon_makemeloved_blessing
+			days = @standardblessingtime
+		}
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+	}
+	option = {
+		name = demc_demon.pleasure.temple.blessingwindow.opt.markruler
+		allow = {
+			any_owned_leader = {
+				leader_class = ruler
+				NOT = { has_trait = leader_trait_ruler_mark_pleasure_god }
+			}
+			has_3_sacrificial_energy = yes
+		}
+		is_dialog_only = yes
+		response_text = demc_demon.pleasure.temple.blessingwindow.reply.markruler
+		random_owned_leader = {
+			limit = {
+				leader_class = ruler
+				NOT = { has_trait = leader_trait_ruler_mark_pleasure_god }
+			}
+			add_trait = leader_trait_ruler_mark_pleasure_god
+		}
+		hidden_effect = {
+			every_country = {
+				add_opinion_modifier = { who = PREV modifier = opinion_mark_pleasure_god }
+			}
+		}
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -3
+		}
+	}
+	option = {
+		name = demc_demon.pleasure.temple.blessingwindow.opt.bye
+		default_hide_option = yes
+		hidden_effect = {
+			set_country_flag = diplomacy_from_pleasure_blessing_window
+			country_event = { id = demc_pleasure_contact.1 }
+		}
+	}
+	after = {
+		hidden_effect = {
+			remove_country_flag = major_pleasure_demon_diplomacy_engaged
+		}
+	}
+}
+
+# expiration of the make me sexy blessing
+country_event = {
+	id = demc_pleasure_contact.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_country_flag = pleasure_demon_sexy_blessing
+		every_country = {
+			remove_opinion_modifier = { who = PREV modifier = opinion_pleasure_demon_sexy_blessing }
+		}
+	}
+}
+
+# ruler died. If it had the mark of the pleasure god remove the opinion modifier.
+country_event = {
+	id = demc_pleasure_contact.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = {
+			leader_class = ruler
+			has_trait = leader_trait_ruler_mark_pleasure_god
+		}
+	}
+
+	immediate = {
+		every_country = {
+			remove_opinion_modifier = { who = PREV modifier = opinion_mark_pleasure_god }
+		}
+	}
+}

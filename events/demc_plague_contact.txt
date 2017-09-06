@@ -29,6 +29,7 @@ country_event = {
 
 	diplomatic = yes
 	is_triggered_only = yes
+	force_open = yes
 
 	picture_event_data = {
 		portrait = owner_species = { species_portrait }
@@ -87,6 +88,7 @@ country_event = {
 	}
 	option = {
 		name = demc_demon.plague.temple.mainwindow.opt.bye
+		default_hide_option = yes
 	}
 
 	after = {
@@ -106,6 +108,7 @@ country_event = {
 
 	diplomatic = yes
 	is_triggered_only = yes
+	force_open = yes
 
 	picture_event_data = {
 		portrait = owner_species = { species_portrait }
@@ -198,6 +201,7 @@ country_event = {
 	}
 	option = {
 		name = demc_demon.plague.temple.blessingwindow.opt.bye
+		default_hide_option = yes
 		hidden_effect = {
 			set_country_flag = diplomacy_from_plague_blessing_window
 			country_event = { id = demc_plague_contact.1 }

@@ -45,3 +45,27 @@
  demc_demon.plague.temple.blessingwindow.opt.markadmiral:0 "An admiral should wear the plague brand!"
  demc_demon.plague.temple.blessingwindow.reply.markadmiral:0 "Your chosen admiral wears the mark of $PANTHEON_MAJOR_PLAGUE$! His rotten flesh will protect him."
  demc_demon.plague.temple.blessingwindow.opt.bye:0 "I have everything I wanted."
+
+
+
+ demc_demon.pleasure.temple.mainwindow.title:0 "Pleasure temple"
+ demc_demon.pleasure.temple.mainwindow.desc:0 "Hi! The joys of our lord $PANTHEON_MAJOR_PLEASURE$ awaits you in this chamber."
+ demc_demon.pleasure.temple.mainwindow.desc.fromblessing:0 "Anything else, Darling?"
+ demc_demon.pleasure.temple.mainwindow.desc.upset:0 "You are soooo booooring. $PANTHEON_MAJOR_PLEASURE$ is starting to lose faith in us. We must organise a party!"
+ demc_demon.pleasure.temple.mainwindow.desc.sinner:0 "[Root.GetRulerName], you are not trendy anymore! You must be expelled!"
+ demc_demon.pleasure.temple.mainwindow.opt.blessings:0 "I want to receive blessings."
+ demc_demon.pleasure.temple.mainwindow.opt.upset:0 "Organise a festival ASAP!"
+ demc_demon.pleasure.temple.mainwindow.opt.sinner:0 "I am so disgusting!"
+ demc_demon.pleasure.temple.mainwindow.opt.bye:0 "I don't need anything."
+
+
+ demc_demon.pleasure.temple.blessingwindow.title:0 "Pleasure temple"
+ demc_demon.pleasure.temple.blessingwindow.desc:0 "What blessing of $PANTHEON_MAJOR_PLEASURE$ will you enjoy today?"
+ demc_demon.pleasure.temple.blessingwindow.opt.makemesexy:0 "I want to be sexy!"
+ demc_demon.pleasure.temple.blessingwindow.tooltip.makemesexy:0 "You look stunning! You are still enjoying this blessing!"
+ demc_demon.pleasure.temple.blessingwindow.reply.makemesexy:0 "Your beauty treatment is over. Your skin looks sooooo fantastic now!"
+ demc_demon.pleasure.temple.blessingwindow.opt.makemeloved:0 "I want to be loved!"
+ demc_demon.pleasure.temple.blessingwindow.reply.makemeloved:0 "Your openess has been really well received by your subjects!"
+ demc_demon.pleasure.temple.blessingwindow.opt.markruler:0 "I want the pleasure brand!"
+ demc_demon.pleasure.temple.blessingwindow.reply.markruler:0 "Here you have! You are now a VIP in the eyes of our master!"
+ demc_demon.pleasure.temple.blessingwindow.opt.bye:0 "Bye!"

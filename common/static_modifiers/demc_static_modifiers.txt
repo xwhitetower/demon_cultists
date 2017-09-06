@@ -42,3 +42,11 @@ plague_demon_morehull_blessing = {
 plague_demon_regenhull_blessing = {
 	ship_auto_repair_add = 0.05
 }
+
+##########################################################################
+# Pleasure demon Blessings
+##########################################################################
+
+pleasure_demon_makemeloved_blessing = {
+	pop_happiness = 0.05
+}
