@@ -274,7 +274,7 @@ button_pantheon_major_pleasure = {
 	}
 
 	effect = {
-#		custom_tooltip = PANTHEON_MAJOR_PLAGUE_DESC
+#		custom_tooltip = PANTHEON_MAJOR_PLEASURE_DESC
 		hidden_effect = {
 			country_event = { id = demc_pleasure_contact.1 }
 			remove_country_flag = pantheon_screen_open
@@ -344,6 +344,14 @@ button_pantheon_major_wisdom = {
 		AND = {
 			has_country_flag = pantheon_screen_open
 			has_civic = civic_wisdom_demon_cult
+		}
+	}
+
+	effect = {
+#		custom_tooltip = PANTHEON_MAJOR_WISDOM_DESC
+		hidden_effect = {
+			country_event = { id = demc_wisdom_contact.1 }
+			remove_country_flag = pantheon_screen_open
 		}
 	}
 }

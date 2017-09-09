@@ -104,6 +104,11 @@
  leader_trait_ruler_mark_pleasure_god:0 "Mark of the Pleasure God"
  leader_trait_ruler_mark_pleasure_god_desc:0 "The brand has an aphrodisiac effect on people, making them attracted to you damaging they hability to think clearly. The mark can be lost if the leader acts against the teachings of the Pleasure God."
 
+ leader_trait_explorer_mark_wisdom_god:0 "Mark of the Wisdom God"
+ leader_trait_explorer_mark_wisdom_god_desc:0 "The brand of the Wisdom God for those with the need to explore the universe. The mark can be lost if the leader acts against the teachings of the Wisdom God."
+ leader_trait_researcher_mark_wisdom_god:0 "Mark of the Wisdom God"
+ leader_trait_researcher_mark_wisdom_god_desc:0 "The brand of the Wisdom God for those with an inquisitive mind that tries to unravel the truth of the universe. The mark can be lost if the leader acts against the teachings of the Wisdom God."
+
  dark_gods_are_upset:0 "Dissapointed Gods"
  dark_gods_are_upset_desc:0 "The dark gods are dissapointed with our actions. We are still in time to search their forgiveness."
  sinner_in_the_eyes_of_the_dark_gods:0 "Sinner"
@@ -123,3 +128,6 @@
  opinion_mark_pleasure_god:0 "Pleasure mark blessing"
  pleasure_demon_makemeloved_blessing:0 "Love blessing of the Pleasure God"
  pleasure_demon_makemeloved_blessing_desc:0 "The aphrodisiac effects of the Pleasure God makes subjects to happily serve their master."
+
+ wisdom_demon_smartass_blessing:0 "Intelligence blessing of the Wisdom God"
+ wisdom_demon_smartass_blessing_desc:0 "The Wisdom God bestowed its knowledge to our people."

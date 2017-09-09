@@ -69,3 +69,26 @@
  demc_demon.pleasure.temple.blessingwindow.opt.markruler:0 "I want the pleasure brand!"
  demc_demon.pleasure.temple.blessingwindow.reply.markruler:0 "Here you have! You are now a VIP in the eyes of our master!"
  demc_demon.pleasure.temple.blessingwindow.opt.bye:0 "Bye!"
+
+
+
+ demc_demon.wisdom.temple.mainwindow.title:0 "Wisdom temple"
+ demc_demon.wisdom.temple.mainwindow.desc:0 "Welcome to the Hall of Knowledge. [Root.GetRulerName], are you here to search for references or to publish a paper?"
+ demc_demon.wisdom.temple.mainwindow.desc.fromblessing:0 "Anything else?"
+ demc_demon.wisdom.temple.mainwindow.desc.upset:0 "$PANTHEON_MAJOR_WISDOM$ is starting to rate us badly. At this rate he will deny us of his knowledge!"
+ demc_demon.wisdom.temple.mainwindow.desc.sinner:0 "A new wave of obscurantism! $PANTHEON_MAJOR_WISDOM$ has shut down any communication with us!"
+ demc_demon.wisdom.temple.mainwindow.opt.blessings:0 "I want to receive blessings."
+ demc_demon.wisdom.temple.mainwindow.opt.upset:0 "A sacrifice will please him."
+ demc_demon.wisdom.temple.mainwindow.opt.sinner:0 "I will atone my sins!"
+ demc_demon.wisdom.temple.mainwindow.opt.bye:0 "I don't need anything."
+
+
+ demc_demon.wisdom.temple.blessingwindow.title:0 "Wisdom temple"
+ demc_demon.wisdom.temple.blessingwindow.desc:0 "What blessing of $PANTHEON_MAJOR_WISDOM$, do you want?"
+ demc_demon.wisdom.temple.blessingwindow.opt.smartass:0 "We need to improve our labs!"
+ demc_demon.wisdom.temple.blessingwindow.reply.smartass:0 "Direct supervision of our master will make our research more fruitful!"
+ demc_demon.wisdom.temple.blessingwindow.opt.markrexplorer:0 "An explorer should wear the wisdom brand!"
+ demc_demon.wisdom.temple.blessingwindow.reply.markrexplorer:0 "Your chosen explorer has been branded! Let him find and catalog new worlds!"
+ demc_demon.wisdom.temple.blessingwindow.opt.markresearcher:0 "A researcher should wear the wisdom brand!"
+ demc_demon.wisdom.temple.blessingwindow.reply.markresearcher:0 "Your chosen researcher is blessed by $PANTHEON_MAJOR_PLAGUE$! He will unravel the truths of the universe!"
+ demc_demon.wisdom.temple.blessingwindow.opt.bye:0 "I have everything I wanted."
