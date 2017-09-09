@@ -13,6 +13,7 @@
 #}
 
 civic_blood_demon_cult = {
+	modification = no
 	potential = { ethics = { value = ethic_demon_cultists } }
 	possible = {
 		civics = {
@@ -32,6 +33,7 @@ civic_blood_demon_cult = {
 }
 
 civic_plague_demon_cult = {
+	modification = no
 	potential = { ethics = { value = ethic_demon_cultists } }
 	possible = {
 		civics = {
@@ -51,6 +53,7 @@ civic_plague_demon_cult = {
 }
 
 civic_pleasure_demon_cult = {
+	modification = no
 	potential = { ethics = { value = ethic_demon_cultists } }
 	possible = {
 		civics = {
@@ -70,6 +73,7 @@ civic_pleasure_demon_cult = {
 }
 
 civic_wisdom_demon_cult = {
+	modification = no
 	potential = { ethics = { value = ethic_demon_cultists } }
 	possible = {
 		civics = {
