@@ -92,3 +92,28 @@
  demc_demon.wisdom.temple.blessingwindow.opt.markresearcher:0 "A researcher should wear the wisdom brand!"
  demc_demon.wisdom.temple.blessingwindow.reply.markresearcher:0 "Your chosen researcher is blessed by $PANTHEON_MAJOR_PLAGUE$! He will unravel the truths of the universe!"
  demc_demon.wisdom.temple.blessingwindow.opt.bye:0 "I have everything I wanted."
+
+
+
+ demc_demon.generic.temple.mainwindow.title:0 "Temple of the Dark Gods"
+ demc_demon.generic.temple.mainwindow.desc:0 "Welcome to the the dark temple. [Root.GetRulerName], pray to our unholy masters."
+ demc_demon.generic.temple.mainwindow.desc.fromblessing:0 "Anything else?"
+ demc_demon.generic.temple.mainwindow.desc.upset:0 "The signs show that the gods are angry!"
+ demc_demon.generic.temple.mainwindow.desc.sinner:0 "Sinner! Repent now!"
+ demc_demon.generic.temple.mainwindow.opt.blessings:0 "I want to receive blessings."
+ demc_demon.generic.temple.mainwindow.opt.upset:0 "A sacrifice will please him."
+ demc_demon.generic.temple.mainwindow.opt.sinner:0 "I will atone my sins!"
+ demc_demon.generic.temple.mainwindow.opt.bye:0 "I don't need anything."
+
+
+ demc_demon.generic.temple.blessingwindow.title:0 "Wisdom temple"
+ demc_demon.generic.temple.blessingwindow.desc:0 "What blessing of the dark gods do you want?"
+ demc_demon.generic.temple.blessingwindow.opt.morefire:0 "Ask the help of the Blood God!"
+ demc_demon.generic.temple.blessingwindow.reply.morefire:0 "$PANTHEON_MAJOR_BLOOD$ will make your weapons deadlier!"
+ demc_demon.generic.temple.blessingwindow.opt.morehull:0 "Ask the help of the Plague God!"
+ demc_demon.generic.temple.blessingwindow.reply.morehull:0 "$PANTHEON_MAJOR_PLAGUE$ will make your armors sturdier!"
+ demc_demon.generic.temple.blessingwindow.opt.makemeloved:0 "Ask the help of the Pleasure God!"
+ demc_demon.generic.temple.blessingwindow.reply.makemeloved:0 "$PANTHEON_MAJOR_PLEASURE$ will make your people happier!"
+ demc_demon.generic.temple.blessingwindow.opt.smartass:0 "Ask the help of the Wisdom God!"
+ demc_demon.generic.temple.blessingwindow.reply.smartass:0 "$PANTHEON_MAJOR_WISDOM$ will help you in your research!"
+ demc_demon.generic.temple.blessingwindow.opt.bye:0 "I have everything I wanted."

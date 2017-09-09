@@ -13,6 +13,16 @@
 #	}
 #
 
+is_generic_cultist = {
+	has_ethic = ethic_demon_cultists
+	NOR = {
+		has_civic = civic_blood_demon_cult
+		has_civic = civic_plague_demon_cult
+		has_civic = civic_pleasure_demon_cult
+		has_civic = civic_wisdom_demon_cult
+	}
+}
+
 has_sacrificial_energy = {
 	check_variable = {
 		which = sacrifical_energy_count

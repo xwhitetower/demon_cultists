@@ -340,6 +340,72 @@ guiTypes = {
 			clicksound = interface
 			effect = "button_pantheon_minor_wisdom_6"
 		}
+
+		#######################
+		### Generic         ###
+		#######################
+		effectButtonType = {
+			name = "pantheon_demon_major_generic"
+			spriteType = "GFX_pantheon_major_generic"
+			size = { x = 125 y = 105 }
+			position = { x = 213 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_major_generic"
+		}
+
+		effectButtonType = {
+			name = "pantheon_demon_minor_generic_1"
+			spriteType = "GFX_pantheon_minor_generic_1"
+			size = { x = 125 y = 105 }
+			position = { x = 33 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_minor_generic_1"
+		}
+
+		effectButtonType = {
+			name = "pantheon_demon_minor_generic_2"
+			spriteType = "GFX_pantheon_minor_generic_2"
+			size = { x = 125 y = 105 }
+			position = { x = 124 y = 125 }
+			clicksound = interface
+			effect = "button_pantheon_minor_generic_2"
+		}
+
+		effectButtonType = {
+			name = "pantheon_demon_minor_generic_3"
+			spriteType = "GFX_pantheon_minor_generic_3"
+			size = { x = 125 y = 105 }
+			position = { x = 302 y = 125 }
+			clicksound = interface
+			effect = "button_pantheon_minor_generic_3"
+		}
+
+		effectButtonType = {
+			name = "pantheon_demon_minor_generic_4"
+			spriteType = "GFX_pantheon_minor_generic_4"
+			size = { x = 125 y = 105 }
+			position = { x = 393 y = 280 }
+			clicksound = interface
+			effect = "button_pantheon_minor_generic_4"
+		}
+
+		effectButtonType = {
+			name = "pantheon_demon_minor_generic_5"
+			spriteType = "GFX_pantheon_minor_generic_5"
+			size = { x = 125 y = 105 }
+			position = { x = 124 y = 435 }
+			clicksound = interface
+			effect = "button_pantheon_minor_generic_5"
+		}
+
+		effectButtonType = {
+			name = "pantheon_demon_minor_generic_6"
+			spriteType = "GFX_pantheon_minor_generic_6"
+			size = { x = 125 y = 105 }
+			position = { x = 302 y = 435 }
+			clicksound = interface
+			effect = "button_pantheon_minor_generic_6"
+		}
 	}
 
 
@@ -398,7 +464,7 @@ guiTypes = {
 				pdx_tooltip = "MUSICPLAYER_OPEN_PLAYER"
 				clicksound = interface
 			}
-		}		
+		}
 	}
 
 	positionType = {
@@ -444,7 +510,7 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 		}
-		
+
 		containerWindowType = {
 			name = "system_cap"
 			size = { width = 60 height = 20 }
@@ -464,7 +530,7 @@ guiTypes = {
 				tooltip_mode_enabled = yes
 				alwaysTransparent = yes
 			}
-		
+
 			instantTextBoxType={
 				name = "system_cap_text"
 				font = "cg_16b"
@@ -495,7 +561,7 @@ guiTypes = {
 				tooltip_mode_enabled = yes
 				alwaysTransparent = yes
 			}
-		
+
 			instantTextBoxType={
 				name = "navy_size_text"
 				font = "cg_16b"
@@ -530,7 +596,7 @@ guiTypes = {
 			orientation = "CENTER"
 			scale = 1
 		}
-		
+
 		### TOPBAR
 
 		containerWindowType = {
@@ -619,7 +685,7 @@ guiTypes = {
 				alwaysTransparent = yes
 				tooltip_mode_enabled = yes
 			}
-			
+
 			buttonType = {
 				name = "energy"
 				spriteType = "GFX_invisible"
@@ -650,7 +716,7 @@ guiTypes = {
 				maxWidth = 65
 				maxHeight = 16
 			}
-			
+
 			iconType = {
 				name = "food_icon"
 				spriteType = "GFX_resource_food"
@@ -664,7 +730,7 @@ guiTypes = {
 				font = "cg_16b"
 				maxWidth = 65
 				maxHeight = 16
-			}			
+			}
 
 			iconType = {
 				name ="influence_icon"
@@ -700,7 +766,7 @@ guiTypes = {
 					tooltip_mode_enabled = yes
 					alwaysTransparent = yes
 				}
-			
+
 				instantTextBoxType={
 					name = "text"
 					font = "cg_16b"
@@ -731,7 +797,7 @@ guiTypes = {
 					tooltip_mode_enabled = yes
 					alwaysTransparent = yes
 				}
-			
+
 				instantTextBoxType={
 					name = "text"
 					font = "cg_16b"
@@ -762,7 +828,7 @@ guiTypes = {
 					tooltip_mode_enabled = yes
 					alwaysTransparent = yes
 				}
-			
+
 				instantTextBoxType={
 					name = "text"
 					font = "cg_16b"
@@ -793,7 +859,7 @@ guiTypes = {
 					tooltip_mode_enabled = yes
 					alwaysTransparent = yes
 				}
-			
+
 				instantTextBoxType={
 					name = "text"
 					font = "cg_16b"
@@ -1079,7 +1145,7 @@ guiTypes = {
 			alwaysTransparent = yes
 			format = center
 		}
-		
+
 		iconType = {
 			name = "hotkey"
 			spriteType = "GFX_text_f2"
@@ -1098,11 +1164,11 @@ guiTypes = {
 	containerWindowType = {
 		name = "maingui_topbar_buttons_dropdown"
 		size = { width = 54 height = 32 }
-		
+
 		dropDownBoxType = {
 			name = "dropdown"
 			size = { width = 166 height = 58 }
-			
+
 			checkboxType = {
 				name = "expand"
 				spriteType = "GFX_topbar_more_button"

@@ -60,3 +60,25 @@ wisdom_demon_smartass_blessing = {
 	tile_resource_society_research_mult = 0.05
 	tile_resource_engineering_research_mult = 0.05
 }
+
+##########################################################################
+# Generic demon Blessings
+##########################################################################
+
+generic_demon_morefire_blessing = {
+	ship_weapon_damage = 0.05
+}
+
+generic_demon_morehull_blessing = {
+	ship_hitpoints_mult = 0.05
+}
+
+generic_demon_makemeloved_blessing = {
+	pop_happiness = 0.025
+}
+
+generic_demon_smartass_blessing = {
+	tile_resource_physics_research_mult = 0.025
+	tile_resource_society_research_mult = 0.025
+	tile_resource_engineering_research_mult = 0.025
+}

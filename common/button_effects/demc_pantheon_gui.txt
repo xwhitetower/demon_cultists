@@ -49,10 +49,8 @@ button_pantheon_screen_title = {
 #######################
 button_pantheon_major_blood = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_blood_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
 	}
 
 	# You cannot stop following a major demon for 5 years after selecting one
@@ -70,10 +68,8 @@ button_pantheon_major_blood = {
 
 button_pantheon_minor_blood_1 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_blood_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
 	}
 
 	allow = {
@@ -90,10 +86,8 @@ button_pantheon_minor_blood_1 = {
 
 button_pantheon_minor_blood_2 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_blood_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
 	}
 
 	allow = {
@@ -110,10 +104,8 @@ button_pantheon_minor_blood_2 = {
 
 button_pantheon_minor_blood_3 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_blood_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
 	}
 
 	allow = {
@@ -130,10 +122,8 @@ button_pantheon_minor_blood_3 = {
 
 button_pantheon_minor_blood_4 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_blood_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
 	}
 
 	allow = {
@@ -150,10 +140,8 @@ button_pantheon_minor_blood_4 = {
 
 button_pantheon_minor_blood_5 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_blood_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
 	}
 
 	allow = {
@@ -170,10 +158,8 @@ button_pantheon_minor_blood_5 = {
 
 button_pantheon_minor_blood_6 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_blood_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
 	}
 
 	allow = {
@@ -193,10 +179,8 @@ button_pantheon_minor_blood_6 = {
 #######################
 button_pantheon_major_plague = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_plague_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_plague_demon_cult
 	}
 
 	effect = {
@@ -210,55 +194,43 @@ button_pantheon_major_plague = {
 
 button_pantheon_minor_plague_1 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_plague_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_plague_demon_cult
 	}
 }
 
 button_pantheon_minor_plague_2 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_plague_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_plague_demon_cult
 	}
 }
 
 button_pantheon_minor_plague_3 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_plague_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_plague_demon_cult
 	}
 }
 
 button_pantheon_minor_plague_4 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_plague_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_plague_demon_cult
 	}
 }
 
 button_pantheon_minor_plague_5 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_plague_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_plague_demon_cult
 	}
 }
 
 button_pantheon_minor_plague_6 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_plague_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_plague_demon_cult
 	}
 }
 
@@ -267,10 +239,8 @@ button_pantheon_minor_plague_6 = {
 #######################
 button_pantheon_major_pleasure = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_pleasure_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_pleasure_demon_cult
 	}
 
 	effect = {
@@ -284,55 +254,43 @@ button_pantheon_major_pleasure = {
 
 button_pantheon_minor_pleasure_1 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_pleasure_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_pleasure_demon_cult
 	}
 }
 
 button_pantheon_minor_pleasure_2 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_pleasure_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_pleasure_demon_cult
 	}
 }
 
 button_pantheon_minor_pleasure_3 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_pleasure_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_pleasure_demon_cult
 	}
 }
 
 button_pantheon_minor_pleasure_4 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_pleasure_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_pleasure_demon_cult
 	}
 }
 
 button_pantheon_minor_pleasure_5 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_pleasure_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_pleasure_demon_cult
 	}
 }
 
 button_pantheon_minor_pleasure_6 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_pleasure_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_pleasure_demon_cult
 	}
 }
 
@@ -341,10 +299,8 @@ button_pantheon_minor_pleasure_6 = {
 #######################
 button_pantheon_major_wisdom = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_wisdom_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
 	}
 
 	effect = {
@@ -358,54 +314,103 @@ button_pantheon_major_wisdom = {
 
 button_pantheon_minor_wisdom_1 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_wisdom_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
 	}
 }
 
 button_pantheon_minor_wisdom_2 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_wisdom_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
 	}
 }
 
 button_pantheon_minor_wisdom_3 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_wisdom_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
 	}
 }
 
 button_pantheon_minor_wisdom_4 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_wisdom_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
 	}
 }
 
 button_pantheon_minor_wisdom_5 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_wisdom_demon_cult
-		}
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
 	}
 }
 
 button_pantheon_minor_wisdom_6 = {
 	potential = {
-		AND = {
-			has_country_flag = pantheon_screen_open
-			has_civic = civic_wisdom_demon_cult
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
+	}
+}
+
+
+#######################
+### GENERIC         ###
+#######################
+button_pantheon_major_generic = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+
+	effect = {
+#		custom_tooltip = PANTHEON_MAJOR_GENERIC_DESC
+		hidden_effect = {
+			country_event = { id = demc_generic_contact.1 }
+			remove_country_flag = pantheon_screen_open
 		}
+	}
+}
+
+button_pantheon_minor_generic_1 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_2 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_3 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_4 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_5 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_6 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
 	}
 }
