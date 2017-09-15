@@ -1,0 +1,24 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+
+opinion_pleasure_demon_sexy_blessing = {
+	opinion = {
+		base = 10
+	}
+}
+
+opinion_mark_pleasure_god = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 25
+			FROM = {
+				exists = ruler
+				ruler = {
+					has_trait = "leader_trait_ruler_mark_pleasure_god"
+				}
+			}
+		}
+	}
+}
