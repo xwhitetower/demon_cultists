@@ -106,7 +106,7 @@
  demc_demon.generic.temple.mainwindow.opt.bye:0 "I don't need anything."
 
 
- demc_demon.generic.temple.blessingwindow.title:0 "Wisdom temple"
+ demc_demon.generic.temple.blessingwindow.title:0 "Temple of the Dark Gods"
  demc_demon.generic.temple.blessingwindow.desc:0 "What blessing of the dark gods do you want?"
  demc_demon.generic.temple.blessingwindow.opt.morefire:0 "Ask the help of the Blood God!"
  demc_demon.generic.temple.blessingwindow.reply.morefire:0 "$PANTHEON_MAJOR_BLOOD$ will make your weapons deadlier!"
