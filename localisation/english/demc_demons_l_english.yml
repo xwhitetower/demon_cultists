@@ -21,3 +21,6 @@
  PANTHEON_MINOR_BLOOD_4:0 "§HPuig, the Demon. [Not final]"
  PANTHEON_MINOR_BLOOD_5:0 "§HXaparod. [Not final]"
  PANTHEON_MINOR_BLOOD_6:0 "§HRegge a ton. [Not final]"
+
+ edict_sacrifice_pop_to_the_dark_gods:0 "Make a sacrifice"
+ edict_sacrifice_pop_to_the_dark_gods_desc:0 "Performs the rite of sacrifice killing a pop and generating a soul that can be offer to the demons in exchange of a boon."
