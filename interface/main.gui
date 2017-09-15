@@ -59,6 +59,114 @@ guiTypes = {
 		}
 
 		effectButtonType = {
+			name = "pantheon_screen_energy_1"
+			spriteType = "GFX_pantheon_energy_1"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_1"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_2"
+			spriteType = "GFX_pantheon_energy_2"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_2"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_3"
+			spriteType = "GFX_pantheon_energy_3"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_3"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_4"
+			spriteType = "GFX_pantheon_energy_4"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_4"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_5"
+			spriteType = "GFX_pantheon_energy_5"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_5"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_6"
+			spriteType = "GFX_pantheon_energy_6"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_6"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_7"
+			spriteType = "GFX_pantheon_energy_7"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_7"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_8"
+			spriteType = "GFX_pantheon_energy_8"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_8"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_9"
+			spriteType = "GFX_pantheon_energy_9"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_9"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_A"
+			spriteType = "GFX_pantheon_energy_A"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_A"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_B"
+			spriteType = "GFX_pantheon_energy_B"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_B"
+		}
+
+		effectButtonType = {
+			name = "pantheon_screen_energy_C"
+			spriteType = "GFX_pantheon_energy_C"
+			size = { x = 562 y = 641 }
+			position = { x = 5 y = 40 }
+			clicksound = none
+			effect = "button_pantheon_screen_energy_C"
+		}
+
+		effectButtonType = {
 			name = "pantheon_screen_title"
 			spriteType = "GFX_invisible"
 			position = { x = 44 y = 46 }
