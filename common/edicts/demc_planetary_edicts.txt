@@ -30,7 +30,7 @@ planet_edict = {
 				has_building = building_sacrificial_altar
 			}
 			check_variable = {
-				which = "demc_sacrifical_energy_count" 
+				which = "sacrifical_energy_count" 
 				value < 12
 			}
 		}
@@ -46,7 +46,7 @@ planet_edict = {
 		}
 		owner = {
 			change_variable = {
-				which = "demc_sacrifical_energy_count"
+				which = "sacrifical_energy_count"
 				value = 1
 			}
 		}
@@ -70,7 +70,7 @@ planet_edict = {
 	effect = {
 		owner = {
 			change_variable = {
-				which = "demc_sacrifical_energy_count"
+				which = "sacrifical_energy_count"
 				value = 1
 			}
 		}
@@ -97,7 +97,7 @@ planet_edict = {
 			text = need_sacrifice_power
 			owner = {
 				check_variable = {
-					which = "demc_sacrifical_energy_count"
+					which = "sacrifical_energy_count"
 					value > 0
 				}
 			}
@@ -107,7 +107,7 @@ planet_edict = {
 	effect = {
 		owner = {
 			change_variable = {
-				which = "demc_sacrifical_energy_count"
+				which = "sacrifical_energy_count"
 				value = -1
 			}
 		}
