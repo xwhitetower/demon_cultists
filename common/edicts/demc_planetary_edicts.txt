@@ -31,7 +31,7 @@ planet_edict = {
 			}
 			check_variable = {
 				which = "demc_sacrifical_energy_count" 
-				value <= 10
+				value < 12
 			}
 		}
 	}
@@ -43,8 +43,34 @@ planet_edict = {
 				has_building = building_sacrificial_altar
 			}
 			kill_pop = yes
-			change_variable = { #check_variable
-				which = "sacrifical_energy_count"
+		}
+		owner = {
+			change_variable = {
+				which = "demc_sacrifical_energy_count"
+				value = 1
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = "debug_simulate_get_one_sacrifical_energy"
+	influence_cost = 0
+
+	potential = {
+		owner = { has_ethic = ethic_demon_cultists }
+	}
+
+	length = 30
+
+	effect = {
+		owner = {
+			change_variable = {
+				which = "demc_sacrifical_energy_count"
 				value = 1
 			}
 		}
@@ -69,18 +95,21 @@ planet_edict = {
 	allow = {
 		custom_tooltip = {
 			text = need_sacrifice_power
-			check_variable = {
-				which = "sacrifical_energy_count"
-				value > 0
+			owner = {
+				check_variable = {
+					which = "demc_sacrifical_energy_count"
+					value > 0
+				}
 			}
 		}
 	}
 
 	effect = {
-		# Remove sacrifice energy as debug by 1
-		change_variable = { #check_variable
-			which = "sacrifical_energy_count"
-			value = -1
+		owner = {
+			change_variable = {
+				which = "demc_sacrifical_energy_count"
+				value = -1
+			}
 		}
 	}
 
