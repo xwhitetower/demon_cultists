@@ -42,7 +42,7 @@ button_pantheon_screen_energy_1 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value = 1
 		}
 	}
@@ -52,7 +52,7 @@ button_pantheon_screen_energy_2 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value > 1
 		}
 	}
@@ -62,7 +62,7 @@ button_pantheon_screen_energy_3 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value = 3
 		}
 	}
@@ -72,7 +72,7 @@ button_pantheon_screen_energy_4 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value > 3
 		}
 	}
@@ -82,7 +82,7 @@ button_pantheon_screen_energy_5 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value = 5
 		}
 	}
@@ -92,7 +92,7 @@ button_pantheon_screen_energy_6 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value > 5
 		}
 	}
@@ -102,7 +102,7 @@ button_pantheon_screen_energy_7 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value = 7
 		}
 	}
@@ -112,7 +112,7 @@ button_pantheon_screen_energy_8 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value > 7
 		}
 	}
@@ -122,7 +122,7 @@ button_pantheon_screen_energy_9 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value = 9
 		}
 	}
@@ -132,7 +132,7 @@ button_pantheon_screen_energy_A = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value > 9
 		}
 	}
@@ -142,7 +142,7 @@ button_pantheon_screen_energy_B = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value = 11
 		}
 	}
@@ -152,7 +152,7 @@ button_pantheon_screen_energy_C = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "demc_sacrifical_energy_count" 
+			which = "sacrifical_energy_count" 
 			value > 11
 		}
 	}
@@ -225,10 +225,6 @@ button_pantheon_minor_blood_1 = {
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
-		change_variable = {
-			which = "demc_sacrifical_energy_count" 
-			value = -1
-		}
 	}
 }
 
@@ -249,10 +245,6 @@ button_pantheon_minor_blood_2 = {
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_2_DESC
-		change_variable = {
-			which = "demc_sacrifical_energy_count" 
-			value = 1
-		}
 	}
 }
 
