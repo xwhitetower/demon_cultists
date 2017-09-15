@@ -49,7 +49,7 @@
 
 
  demc_demon.pleasure.temple.mainwindow.title:0 "Pleasure temple"
- demc_demon.pleasure.temple.mainwindow.desc:0 "Hi! The joys of our lord $PANTHEON_MAJOR_PLEASURE$ awaits you in this chamber."
+ demc_demon.pleasure.temple.mainwindow.desc:0 "Hi! The joys of $PANTHEON_MAJOR_PLEASURE$ awaits you in this chamber."
  demc_demon.pleasure.temple.mainwindow.desc.fromblessing:0 "Anything else, Darling?"
  demc_demon.pleasure.temple.mainwindow.desc.upset:0 "You are soooo booooring. $PANTHEON_MAJOR_PLEASURE$ is starting to lose faith in us. We must organise a party!"
  demc_demon.pleasure.temple.mainwindow.desc.sinner:0 "[Root.GetRulerName], you are not trendy anymore! You must be expelled!"
@@ -67,7 +67,7 @@
  demc_demon.pleasure.temple.blessingwindow.opt.makemeloved:0 "I want to be loved!"
  demc_demon.pleasure.temple.blessingwindow.reply.makemeloved:0 "Your openess has been really well received by your subjects!"
  demc_demon.pleasure.temple.blessingwindow.opt.markruler:0 "I want the pleasure brand!"
- demc_demon.pleasure.temple.blessingwindow.reply.markruler:0 "Here you have! You are now a VIP in the eyes of our master!"
+ demc_demon.pleasure.temple.blessingwindow.reply.markruler:0 "Here you have! You are now a VIP in the eyes of our mistress!"
  demc_demon.pleasure.temple.blessingwindow.opt.bye:0 "Bye!"
 
 
