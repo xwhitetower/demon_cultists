@@ -12,14 +12,73 @@ demc_demon_gate = {
 # Demon Modifiers
 ##########################################################################
 
-champion_of_the_blood_lord = {
-	pop_happiness = 0.10
+dark_gods_are_upset = {
+	pop_happiness = -0.25
 }
 
-champion_of_the_blood_lord_effect = {
-	ship_weapon_damage = 6.66
+sinner_in_the_eyes_of_the_dark_gods = {
+	pop_happiness = -0.75
 }
 
-betrayer_of_the_blood_lord = {
-	pop_happiness = -0.10
+##########################################################################
+# Blood demon Blessings
+##########################################################################
+
+blood_demon_morefire_blessing = {
+	ship_weapon_damage = 0.10
+}
+blood_demon_morepunch_blessing = {
+	army_damage_mult = 0.10
+}
+
+##########################################################################
+# Plague demon Blessings
+##########################################################################
+
+plague_demon_morehull_blessing = {
+	ship_hitpoints_mult = 0.10
+}
+
+plague_demon_regenhull_blessing = {
+	ship_auto_repair_add = 0.05
+}
+
+##########################################################################
+# Pleasure demon Blessings
+##########################################################################
+
+pleasure_demon_makemeloved_blessing = {
+	pop_happiness = 0.05
+}
+
+##########################################################################
+# Wisdom demon Blessings
+##########################################################################
+
+wisdom_demon_smartass_blessing = {
+	tile_resource_physics_research_mult = 0.05
+	tile_resource_society_research_mult = 0.05
+	tile_resource_engineering_research_mult = 0.05
+}
+
+##########################################################################
+# Generic demon Blessings
+##########################################################################
+
+generic_demon_morefire_blessing = {
+	ship_weapon_damage = 0.05
+}
+
+generic_demon_morehull_blessing = {
+	ship_hitpoints_mult = 0.05
+}
+
+generic_demon_makemeloved_blessing = {
+	pop_happiness = 0.025
+}
+
+generic_demon_smartass_blessing = {
+	tile_resource_physics_research_mult = 0.025
+	tile_resource_society_research_mult = 0.025
+	tile_resource_engineering_research_mult = 0.025
 }

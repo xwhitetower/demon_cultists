@@ -1,4 +1,4 @@
-spriteTypes = {	
+spriteTypes = {
 	spriteType = {
 		name = "GFX_pantheon_background"
 		texturefile = "gfx/interface/pantheon/pantheon_bg.dds"
@@ -254,7 +254,7 @@ spriteTypes = {
 		name = "GFX_pantheon_minor_blood_1"
 		texturefile = "gfx/interface/pantheon/blood/minor_blood_1.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_pantheon_minor_blood_2"
 		texturefile = "gfx/interface/pantheon/blood/minor_blood_2.dds"
@@ -279,7 +279,7 @@ spriteTypes = {
 		name = "GFX_pantheon_minor_blood_6"
 		texturefile = "gfx/interface/pantheon/blood/minor_blood_6.dds"
 	}
-	
+
 	#######################
 	### PLAGUE 			###
 	#######################
@@ -292,7 +292,7 @@ spriteTypes = {
 		name = "GFX_pantheon_minor_plague_1"
 		texturefile = "gfx/interface/pantheon/plague/minor_plague_1.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_pantheon_minor_plague_2"
 		texturefile = "gfx/interface/pantheon/plague/minor_plague_2.dds"
@@ -330,7 +330,7 @@ spriteTypes = {
 		name = "GFX_pantheon_minor_pleasure_1"
 		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_1.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_pantheon_minor_pleasure_2"
 		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_2.dds"
@@ -368,7 +368,7 @@ spriteTypes = {
 		name = "GFX_pantheon_minor_wisdom_1"
 		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_1.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_pantheon_minor_wisdom_2"
 		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_2.dds"
@@ -392,6 +392,44 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pantheon_minor_wisdom_6"
 		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_6.dds"
+	}
+
+	#######################
+	### Generic         ###
+	#######################
+	spriteType = {
+		name = "GFX_pantheon_major_generic"
+		texturefile = "gfx/interface/pantheon/generic/major_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_generic_1"
+		texturefile = "gfx/interface/pantheon/generic/minor_generic_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_generic_2"
+		texturefile = "gfx/interface/pantheon/generic/minor_generic_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_generic_3"
+		texturefile = "gfx/interface/pantheon/generic/minor_generic_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_generic_4"
+		texturefile = "gfx/interface/pantheon/generic/minor_generic_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_generic_5"
+		texturefile = "gfx/interface/pantheon/generic/minor_generic_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_generic_6"
+		texturefile = "gfx/interface/pantheon/generic/minor_generic_6.dds"
 	}
 
 }

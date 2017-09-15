@@ -89,3 +89,54 @@
  requires_actor_not_blood_demon_cultists:0 "§RNot possible because they are a §HBlood Demon Worshippers§!.§!"
  requires_target_not_blood_demon_cultists:0 "§RNot possible because we are a §HBlood Demon Worshippers§!.§!"
  requires_being_unholy_alliance:0 "§RNot possible because both parties are not §HDemon Worshippers§!.§!"
+
+
+ leader_trait_admiral_mark_blood_god:0 "Mark of the Blood God"
+ leader_trait_admiral_mark_blood_god_desc:0 "This leader has been branded by the Blood God giving him exceptional fighting habilities. The mark can be lost if the leader acts against the teachings of the Blood God."
+ leader_trait_general_mark_blood_god:0 "Mark of the Blood God"
+ leader_trait_general_mark_blood_god_desc:0 "This leader has been branded by the Blood God giving him exceptional fighting habilities. The mark can be lost if the leader acts against the teachings of the Blood God."
+
+ leader_trait_admiral_mark_plague_god:0 "Mark of the Plague God"
+ leader_trait_admiral_mark_plague_god_desc:0 "This leader has been branded by the Plague God giving him exceptional defensive habilities. The mark can be lost if the leader acts against the teachings of the Plague God."
+ leader_trait_general_mark_plague_god:0 "Mark of the Plague God"
+ leader_trait_general_mark_plague_god_desc:0 "This leader has been branded by the Plague God giving him exceptional defensive habilities. The mark can be lost if the leader acts against the teachings of the Plague God."
+
+ leader_trait_ruler_mark_pleasure_god:0 "Mark of the Pleasure God"
+ leader_trait_ruler_mark_pleasure_god_desc:0 "The brand has an aphrodisiac effect on people, making them attracted to you damaging they hability to think clearly. The mark can be lost if the leader acts against the teachings of the Pleasure God."
+
+ leader_trait_explorer_mark_wisdom_god:0 "Mark of the Wisdom God"
+ leader_trait_explorer_mark_wisdom_god_desc:0 "The brand of the Wisdom God for those with the need to explore the universe. The mark can be lost if the leader acts against the teachings of the Wisdom God."
+ leader_trait_researcher_mark_wisdom_god:0 "Mark of the Wisdom God"
+ leader_trait_researcher_mark_wisdom_god_desc:0 "The brand of the Wisdom God for those with an inquisitive mind that tries to unravel the truth of the universe. The mark can be lost if the leader acts against the teachings of the Wisdom God."
+
+ dark_gods_are_upset:0 "Dissapointed Gods"
+ dark_gods_are_upset_desc:0 "The dark gods are dissapointed with our actions. We are still in time to search their forgiveness."
+ sinner_in_the_eyes_of_the_dark_gods:0 "Sinner"
+ sinner_in_the_eyes_of_the_dark_gods_desc:0 "You have commit sins against the dark gods. Such act of treason can not be tolerated."
+
+ blood_demon_morefire_blessing:0 "Fire blessing of the Blood God"
+ blood_demon_morefire_blessing_desc:0 "The fire of the Shroud will bring holy joy to our enemies!"
+ blood_demon_morepunch_blessing:0 "Strength blessing of the Blood God"
+ blood_demon_morepunch_blessing_desc:0 "Our armies zeal will tear our enemies apart!"
+
+ plague_demon_morehull_blessing:0 "Hull blessing of the Plague God"
+ plague_demon_morehull_blessing_desc:0 "Layers of unholy rotten flesh protects the vessels."
+ plague_demon_regenhull_blessing:0 "Regenerative blessing of the Plague God"
+ plague_demon_regenhull_blessing_desc:0 "This vessel has been possessed by minor plague demons. The organic rotting hull is able to repair any damage."
+
+ opinion_pleasure_demon_sexy_blessing:0 "So sexy!"
+ opinion_mark_pleasure_god:0 "Pleasure mark blessing"
+ pleasure_demon_makemeloved_blessing:0 "Love blessing of the Pleasure God"
+ pleasure_demon_makemeloved_blessing_desc:0 "The aphrodisiac effects of the Pleasure God makes subjects to happily serve their master."
+
+ wisdom_demon_smartass_blessing:0 "Intelligence blessing of the Wisdom God"
+ wisdom_demon_smartass_blessing_desc:0 "The Wisdom God bestowed its knowledge to our people."
+
+ generic_demon_morefire_blessing:0 "Minor fire blessing of the Blood God"
+ generic_demon_morefire_blessing_desc:0 "The fire of the Shroud will bring holy joy to our enemies!"
+ generic_demon_morehull_blessing:0 "Minor hull blessing of the Plague God"
+ generic_demon_morehull_blessing_desc:0 "Layers of unholy rotten flesh protects the vessels."
+ generic_demon_makemeloved_blessing:0 "Minor love blessing of the Pleasure God"
+ generic_demon_makemeloved_blessing_desc:0 "The aphrodisiac effects of the Pleasure God makes subjects to happily serve their master."
+ generic_demon_smartass_blessing:0 "Minor ntelligence blessing of the Wisdom God"
+ generic_demon_smartass_blessing_desc:0 "The Wisdom God bestowed its knowledge to our people."
