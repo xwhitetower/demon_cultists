@@ -1,6 +1,59 @@
+#	Example:
+#
+#	example_trigger = {
+#		is_country_type = default
+#		free_leader_slots > 0
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		example_trigger = yes
+#	}
+#
+
+is_generic_cultist = {
+	has_ethic = ethic_demon_cultists
+	NOR = {
+		has_civic = civic_blood_demon_cult
+		has_civic = civic_plague_demon_cult
+		has_civic = civic_pleasure_demon_cult
+		has_civic = civic_wisdom_demon_cult
+	}
+}
+
+has_sacrificial_energy = {
+	check_variable = {
+		which = sacrifical_energy_count
+		value > 0
+	}
+}
+
+has_2_sacrificial_energy = {
+	check_variable = {
+		which = sacrifical_energy_count
+		value > 2
+	}
+}
+
+has_3_sacrificial_energy = {
+	check_variable = {
+		which = sacrifical_energy_count
+		value > 3
+	}
+}
+
 has_max_sacrificial_energy = {
 	check_variable = {
 		which = sacrifical_energy_count
 		value < 12
+	}
+}
+
+in_dark_gods_good_grace = {
+	NOR = {
+		has_modifier = dark_gods_are_upset
+		has_modifier = sinner_in_the_eyes_of_the_dark_gods
 	}
 }

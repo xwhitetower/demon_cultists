@@ -5,3 +5,12 @@ on_game_start = {
 		demc_game_start.2
 	}
 }
+
+# Executed as a leader has died
+# This = Country
+# From = Leader
+on_leader_death = {
+	events = {
+		demc_pleasure_contact.4
+	}
+}
