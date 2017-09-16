@@ -33,7 +33,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = owner_species = { species_portrait }
-		room = personality_evangelizing_zealots_room
+		room = personality_demc_temple_room
 	}
 	trigger = {
 		OR = {
@@ -112,7 +112,7 @@ country_event = {
 
 	picture_event_data = {
 		portrait = owner_species = { species_portrait }
-		room = personality_evangelizing_zealots_room
+		room = personality_demc_temple_room
 	}
 	immediate = {
 		set_country_flag = major_wisdom_demon_diplomacy_engaged
