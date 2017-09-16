@@ -29,7 +29,7 @@ planet_edict = {
 				has_pop = yes
 				has_building = building_sacrificial_altar
 			}
-			has_max_sacrificial_energy = yes
+			has_max_sacrificial_energy = no
 		}
 	}
 
