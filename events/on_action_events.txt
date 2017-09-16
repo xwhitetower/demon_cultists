@@ -1157,9 +1157,9 @@ country_event = {
 		}
 	}
 
-	# vanilla cultist
+	# generic cultist
 	desc = {
-		text = action.1.vanilla_demon_cultist_desc
+		text = action.1.generic_demon_cultist_desc
 		trigger = {
 			event_target:contact_empire = {
 				is_country_type = default
@@ -1739,7 +1739,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.vanilla_demon_cultist_vs_heretic
+		name = action.1.opt.generic_demon_cultist_vs_heretic
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			event_target:contact_empire = {
@@ -1749,7 +1749,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.vanilla_demon_cultist_vs_other_demon_cultist
+		name = action.1.opt.generic_demon_cultist_vs_other_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			event_target:contact_empire = {
@@ -1770,7 +1770,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.blood_demon_cultist_vs_vanilla_demon_cultist
+		name = action.1.opt.blood_demon_cultist_vs_generic_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_blood_demon_cult
@@ -1846,7 +1846,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.plague_demon_cultist_vs_vanilla_demon_cultist
+		name = action.1.opt.plague_demon_cultist_vs_generic_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_plague_demon_cult
@@ -1922,7 +1922,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.pleasure_demon_cultist_vs_vanilla_demon_cultist
+		name = action.1.opt.pleasure_demon_cultist_vs_generic_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_pleasure_demon_cult
@@ -1998,7 +1998,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.wisdom_demon_cultist_vs_vanilla_demon_cultist
+		name = action.1.opt.wisdom_demon_cultist_vs_generic_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_wisdom_demon_cult
@@ -3142,9 +3142,9 @@ country_event = {
 		}
 	}
 
-	# vanilla cultist
+	# generic cultist
 	desc = {
-		text = action.1.vanilla_demon_cultist_desc
+		text = action.1.generic_demon_cultist_desc
 		trigger = {
 			event_target:contact_empire = {
 				is_country_type = default
@@ -3764,7 +3764,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.vanilla_demon_cultist_vs_heretic
+		name = action.1.opt.generic_demon_cultist_vs_heretic
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			event_target:contact_empire = {
@@ -3774,7 +3774,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.vanilla_demon_cultist_vs_other_demon_cultist
+		name = action.1.opt.generic_demon_cultist_vs_other_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			event_target:contact_empire = {
@@ -3795,7 +3795,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.blood_demon_cultist_vs_vanilla_demon_cultist
+		name = action.1.opt.blood_demon_cultist_vs_generic_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_blood_demon_cult
@@ -3871,7 +3871,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.plague_demon_cultist_vs_vanilla_demon_cultist
+		name = action.1.opt.plague_demon_cultist_vs_generic_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_plague_demon_cult
@@ -3947,7 +3947,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.pleasure_demon_cultist_vs_vanilla_demon_cultist
+		name = action.1.opt.pleasure_demon_cultist_vs_generic_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_pleasure_demon_cult
@@ -4023,7 +4023,7 @@ country_event = {
 	}
 
 	option = {
-		name = action.1.opt.wisdom_demon_cultist_vs_vanilla_demon_cultist
+		name = action.1.opt.wisdom_demon_cultist_vs_generic_demon_cultist
 		trigger = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_wisdom_demon_cult
