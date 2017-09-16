@@ -47,7 +47,7 @@ has_3_sacrificial_energy = {
 has_max_sacrificial_energy = {
 	check_variable = {
 		which = sacrifical_energy_count
-		value < 12
+		value = 12
 	}
 }
 
