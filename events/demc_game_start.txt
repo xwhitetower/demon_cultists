@@ -11,6 +11,13 @@ event = {
 			limit = { has_ethic = ethic_demon_cultists }
 			home_planet = {
 				add_modifier = { modifier = demc_demon_gate }
+				random_tile = {
+					limit = {
+						has_blocker = no
+						has_building = no 
+					}
+					set_building = building_sacrificial_altar
+				}
 			}
 		}
 	}

@@ -6,6 +6,222 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_energy_1"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_1.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_2"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_2.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_3"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_3.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_4"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_4.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_5"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_5.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_6"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_6.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_7"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_7.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_7.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_8"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_8.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_8.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_9"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_9.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_9.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_A"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_A.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_A.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_B"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_B.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_B.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_energy_C"
+		texturefile = "gfx/interface/pantheon/pantheon_energy_C.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/pantheon_energy_C.dds"
+			animationtexturefile = "gfx/interface/pantheon/pantheon_energy_mask.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 120.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+
+	spriteType = {
 		name = "GFX_topbar_pantheon_button"
 		texturefile = "gfx/interface/buttons/topbar_pantheon_button.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"

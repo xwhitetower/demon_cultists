@@ -44,6 +44,13 @@ has_3_sacrificial_energy = {
 	}
 }
 
+has_max_sacrificial_energy = {
+	check_variable = {
+		which = sacrifical_energy_count
+		value = 12
+	}
+}
+
 in_dark_gods_good_grace = {
 	NOR = {
 		has_modifier = dark_gods_are_upset
