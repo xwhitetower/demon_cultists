@@ -9,7 +9,47 @@ part = {
 	localization = "START_SCREEN_PART_TWO_DEMON_CULTIST"
 
 	trigger = {
-		has_ethic = ethic_demon_cultists
+		is_generic_cultist = yes
+		NOT = { has_country_flag = custom_start_screen }
+	}
+}
+
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_TWO_BLOOD_CULTIST"
+
+	trigger = {
+		has_valid_civic = civic_blood_demon_cult
+		NOT = { has_country_flag = custom_start_screen }
+	}
+}
+
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_TWO_PLAGUE_CULTIST"
+
+	trigger = {
+		has_valid_civic = civic_plague_demon_cult
+		NOT = { has_country_flag = custom_start_screen }
+	}
+}
+
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_TWO_PLEASURE_CULTIST"
+
+	trigger = {
+		has_valid_civic = civic_pleasure_demon_cult
+		NOT = { has_country_flag = custom_start_screen }
+	}
+}
+
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_TWO_WISDOM_CULTIST"
+
+	trigger = {
+		has_valid_civic = civic_wisdom_demon_cult
 		NOT = { has_country_flag = custom_start_screen }
 	}
 }
