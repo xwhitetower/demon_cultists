@@ -29,10 +29,7 @@ planet_edict = {
 				has_pop = yes
 				has_building = building_sacrificial_altar
 			}
-			check_variable = {
-				which = "sacrifical_energy_count" 
-				value < 12
-			}
+			has_max_sacrificial_energy = yes
 		}
 	}
 
@@ -96,10 +93,7 @@ planet_edict = {
 		custom_tooltip = {
 			text = need_sacrifice_power
 			owner = {
-				check_variable = {
-					which = "sacrifical_energy_count"
-					value > 0
-				}
+				has_sacrificial_energy = yes
 			}
 		}
 	}
