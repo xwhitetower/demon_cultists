@@ -45,9 +45,6 @@
  civic_charimatic_leader_demon_cult:0 "Charismatic leader"
  civic_charimatic_leader_demon_cult_desc:0 "The charisma of our beloved leader allowes him to take over more matters of the sect directly."
 
- demc_demon_gate:0 "Demon gate"
- demc_demon_gate_desc:0 "This world has a demon gate. It weakness the fabric of reality and allowing for demons to interact with the normal universe."
-
  START_SCREEN_PART_TWO_DEMON_CULTIST:0 "One day, our masters gate opened on [GetHomeWorldName]. The demons wispered knowledge to our ancestors and a contract was signed and thus the demon cult started. With each blood sacrifice performed our cult grew stronger. It didn't took long that no unbeliever remained on [GetHomeWorldName]."
  DARK_PANTHEON_TITLE:0 "The Dark Pantheon"
 
