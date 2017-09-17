@@ -49,7 +49,7 @@
  DARK_PANTHEON_TITLE:0 "The Dark Pantheon"
 
  building_sacrificial_altar:0 "Sacrificial altar"
- building_sacrificial_altar_desc:0 "An altar to perform unholy sacrifices in honor of the dark gods."
+ building_sacrificial_altar_desc:0 "An altar to perform sacrifices in honor of the dark gods."
 
  action.1.generic_demon_cultist_desc:0 "I, [contact_empire.GetRulerName], am the voice of the gods of the Shroud. The people of [Root.GetName] has still not see the light! Repent! Stop your heretic ways and join us!"
  action.1.blood_demon_cultist_desc:0 "Weak warriors of [Root.GetName] we will meet you anytime on the battlefield. Lets honor our lord $MAJOR_BLOOD_DEMON$ and shed our blood on holy battle."
