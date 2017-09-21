@@ -131,7 +131,9 @@ country_event = {
 					distance = {
 						source = PREV
 						min_distance = 400 #50
-						max_distance = 9999 #100
+						#Distance trigger distances are squared and stored in CFixedPoint which will overflow at values larger than +-2^31/1000 ~= +-2147483
+						#Largest value for a distance trigger distance is therefore sqrt(2147483) ~= +-1465
+						max_distance = 1450 #9999 #100
 					}
 				}
 				set_star_flag = nomad_end_point
@@ -149,7 +151,9 @@ country_event = {
 						distance = {
 							source = PREV
 							min_distance = 250
-							max_distance = 9999
+							#Distance trigger distances are squared and stored in CFixedPoint which will overflow at values larger than +-2^31/1000 ~= +-2147483
+							#Largest value for a distance trigger distance is therefore sqrt(2147483) ~= +-1465
+							max_distance = 1450 #9999
 						}
 					}
 					set_star_flag = nomad_end_point
@@ -157,8 +161,8 @@ country_event = {
 			}
 			create_species = {
 				name = NAME_Namarian
-				plural = NAME_Namarians
-				adjective = NAME_Namarian
+				plural = "NAME_Namarians"
+				adjective = "NAME_Namarian"
 				class = AVI
 				portrait = random
 				traits = {
@@ -1229,7 +1233,6 @@ country_event = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_demon_cultists
 			}
 		}
 	}
@@ -1736,13 +1739,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_blood_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -1812,13 +1809,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_plague_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -1888,13 +1879,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_pleasure_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -1964,13 +1949,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_wisdom_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -2022,6 +2001,7 @@ country_event = {
 			}
 		}
 	}
+
 
 	after = {
 		if = {
