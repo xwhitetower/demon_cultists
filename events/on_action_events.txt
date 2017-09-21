@@ -81,7 +81,7 @@ country_event = {
 		planet_background = event_target:contact_empire
 		graphical_culture = event_target:contact_empire
 		city_level = event_target:contact_empire
-		room = event_target:contact_empire
+		room = event_target:contact_empire.ruler
 	}
 
 	### Normal (Not Xenophobe or Xenophile)
@@ -194,9 +194,10 @@ country_event = {
 				}
 				OR = {
 					has_government = gov_despotic_empire
+					has_government = gov_feudal_empire
 					has_government = gov_constitutional_dictatorship
 					has_government = gov_enlightened_monarchy
-					has_government = gov_enlightened_dictatorship
+					has_government = gov_elective_monarchy
 				}
 			}
 		}
@@ -430,10 +431,8 @@ country_event = {
 					has_government = gov_martial_empire
 					has_government = gov_martial_dictatorship
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -453,10 +452,8 @@ country_event = {
 					has_government = gov_theocratic_dictatorship
 					has_government = gov_divine_empire
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -477,10 +474,8 @@ country_event = {
 					has_government = gov_illuminated_autocracy
 					has_government = gov_technocratic_dictatorship
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -500,10 +495,8 @@ country_event = {
 					has_government = gov_irenic_dictatorship
 					has_government = gov_celestial_empire
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -520,14 +513,13 @@ country_event = {
 				}
 				OR = {
 					has_government = gov_despotic_empire
+					has_government = gov_feudal_empire
 					has_government = gov_constitutional_dictatorship
 					has_government = gov_enlightened_monarchy
-					has_government = gov_enlightened_dictatorship
+					has_government = gov_elective_monarchy
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -547,10 +539,8 @@ country_event = {
 					has_government = gov_war_council
 					has_government = gov_citizen_stratocracy
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -569,10 +559,8 @@ country_event = {
 					has_government = gov_theocratic_oligarchy
 					has_government = gov_holy_tribunal
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -591,10 +579,8 @@ country_event = {
 					has_government = gov_executive_committee
 					has_government = gov_science_directorate
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -610,10 +596,8 @@ country_event = {
 					has_ethic = ethic_fanatic_xenophobe
 				}
 				has_government = gov_irenic_bureaucracy
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -632,10 +616,8 @@ country_event = {
 					has_government = gov_megacorporation
 					has_government = gov_plutocratic_oligarchy
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -655,10 +637,8 @@ country_event = {
 					has_government = gov_assembly_of_clans
 					has_government = gov_citizen_republic
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -674,10 +654,8 @@ country_event = {
 					has_ethic = ethic_fanatic_xenophobe
 				}
 				has_government = gov_theocratic_republic
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -696,10 +674,8 @@ country_event = {
 					has_government = gov_direct_democracy
 					has_government = gov_rational_consensus
 				}
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -715,10 +691,8 @@ country_event = {
 					has_ethic = ethic_fanatic_xenophobe
 				}
 				has_government = gov_moral_democracy
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -734,10 +708,8 @@ country_event = {
 					has_ethic = ethic_fanatic_xenophobe
 				}
 				has_government = gov_representative_democracy
-				OR = {
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
-					NOT = { species_portrait = mam3 }
-				}
+				NOT = { has_valid_civic = civic_fanatic_purifiers }
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -760,6 +732,7 @@ country_event = {
 					has_government = gov_martial_empire
 					has_government = gov_martial_dictatorship
 				}
+
 			}
 		}
 	}
@@ -834,9 +807,10 @@ country_event = {
 				}
 				OR = {
 					has_government = gov_despotic_empire
+					has_government = gov_feudal_empire
 					has_government = gov_constitutional_dictatorship
 					has_government = gov_enlightened_monarchy
-					has_government = gov_enlightened_dictatorship
+					has_government = gov_elective_monarchy
 				}
 			}
 		}
@@ -1011,6 +985,7 @@ country_event = {
 			}
 		}
 	}
+
 	# Cruel Foxcat
 	desc = {
 		text = action.1.desc_49
@@ -1032,6 +1007,7 @@ country_event = {
 			event_target:contact_empire = {
 				is_country_type = default
 				has_authority = auth_hive_mind
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -1052,31 +1028,204 @@ country_event = {
 		}
 	}
 
+	# Devouring Swarm
+	desc = {
+		text = action.1.desc_52
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			event_target:contact_empire = {
+				is_country_type = default
+				has_authority = auth_hive_mind
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+		}
+	}
+
+
+	# Generic Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_70
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				OR = {
+					has_government = gov_machine_empire
+					has_government = gov_machine_research
+					has_government = gov_machine_industrial
+				}
+			}
+		}
+	}
+
+	# Generic Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_71
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				OR = {
+					has_government = gov_machine_empire
+					has_government = gov_machine_research
+					has_government = gov_machine_industrial
+				}
+			}
+		}
+	}
+
+	# Terminator Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_72
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_terminator
+			}
+		}
+	}
+
+	# Terminator Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_73
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_terminator
+			}
+		}
+	}
+
+	# Assimilator Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_74
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_assimilator
+			}
+		}
+	}
+
+	# Assimilator Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_75
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_assimilator
+			}
+		}
+	}
+
+	# Servitor Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_76
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_servitor
+			}
+		}
+	}
+
+	# Servitor Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_77
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_servitor
+			}
+		}
+	}
+
+	#Fallen Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_78
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = fallen_empire
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+
+	# Fallen Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_79
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = fallen_empire
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+
+
 	# Fallen Empire 1
 	desc = {
 		text = action.1.desc_60
 		trigger = {
 			event_target:contact_empire = {
 				is_country_type = fallen_empire
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
-	}
-	# Fallen Empire 2
-	desc = {
-		text = action.1.desc_61
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = fallen_empire
+				NOT = { has_ethic = ethic_gestalt_consciousness }
 				NOT = { has_ethic = ethic_fanatic_xenophobe }
 				NOT = { has_ethic = ethic_fanatic_xenophile }
-				NOT = { has_ethic = ethic_fanatic_militarist }
 				NOT = { has_ethic = ethic_fanatic_materialist }
 				NOT = { has_ethic = ethic_fanatic_spiritualist }
 			}
 		}
 	}
-	# Fallen Empire 3
+	# Fallen Empire 2
 	desc = {
 		text = action.1.desc_62
 		trigger = {
@@ -1086,7 +1235,7 @@ country_event = {
 			}
 		}
 	}
-	# Fallen Empire 4
+	# Fallen Empire 3
 	desc = {
 		text = action.1.desc_63
 		trigger = {
@@ -1096,7 +1245,7 @@ country_event = {
 			}
 		}
 	}
-	# Fallen Empire 5
+	# Fallen Empire 4
 	desc = {
 		text = action.1.desc_64
 		trigger = {
@@ -1106,7 +1255,7 @@ country_event = {
 			}
 		}
 	}
-	# Fallen Empire 6
+	# Fallen Empire 5
 	desc = {
 		text = action.1.desc_65
 		trigger = {
@@ -1153,67 +1302,6 @@ country_event = {
 			event_target:contact_empire = {
 				is_country_type = awakened_fallen_empire
 				has_ethic = ethic_fanatic_materialist
-			}
-		}
-	}
-
-	# generic cultist
-	desc = {
-		text = action.1.generic_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
-			}
-		}
-	}
-	# blood cultist
-	desc = {
-		text = action.1.blood_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				has_valid_civic = civic_blood_demon_cult
-			}
-		}
-	}
-	# plague cultist
-	desc = {
-		text = action.1.plague_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				has_valid_civic = civic_plague_demon_cult
-			}
-		}
-	}
-	# pleasure cultist
-	desc = {
-		text = action.1.pleasure_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				has_valid_civic = civic_pleasure_demon_cult
-			}
-		}
-	}
-	# wisdom cultist
-	desc = {
-		text = action.1.wisdom_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				has_valid_civic = civic_wisdom_demon_cult
 			}
 		}
 	}
@@ -1269,8 +1357,58 @@ country_event = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_demon_cultists
+				has_ethic = ethic_gestalt_consciousness
 			}
+		}
+	}
+	option = {
+		name = action.1.ds
+		trigger = {
+			has_valid_civic = civic_hive_devouring_swarm
+		}
+	}
+	option = {
+		name = action.1.hm
+		trigger = {
+			has_authority = auth_hive_mind
+			NOT = { has_valid_civic = civic_hive_devouring_swarm }
+		}
+	}
+	option = {
+		name = action.1.me
+		trigger = {
+			has_authority = auth_machine_intelligence
+			OR = {
+				has_government = gov_machine_empire
+				has_government = gov_machine_research
+				has_government = gov_machine_industrial
+			}
+		}
+	}
+	option = {
+		name = action.1.mt
+		trigger = {
+			has_valid_civic = civic_machine_terminator
+			event_target:contact_empire = { NOT = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	option = {
+		name = action.1.mtm
+		trigger = {
+			has_valid_civic = civic_machine_terminator
+			event_target:contact_empire = { has_authority = auth_machine_intelligence }
+		}
+	}
+	option = {
+		name = action.1.ma
+		trigger = {
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+	option = {
+		name = action.1.ms
+		trigger = {
+			has_valid_civic = civic_machine_servitor
 		}
 	}
 	option = {
@@ -1362,6 +1500,7 @@ country_event = {
 		trigger = {
 			has_ethic = ethic_spiritualist
 			num_ethics < 3
+			event_target:contact_empire = { NOT = { has_authority = auth_machine_intelligence } }
 		}
 	}
 	option = {
@@ -1369,6 +1508,7 @@ country_event = {
 		trigger = {
 			has_ethic = ethic_fanatic_spiritualist
 			num_ethics < 3
+			event_target:contact_empire = { NOT = { has_authority = auth_machine_intelligence } }
 		}
 	}
 	option = {
@@ -1383,6 +1523,22 @@ country_event = {
 		trigger = {
 			has_ethic = ethic_fanatic_materialist
 			num_ethics < 3
+		}
+	}
+	option = {
+		name = action.1.r
+		trigger = {
+			has_ethic = ethic_spiritualist
+			num_ethics < 3
+			event_target:contact_empire = { has_authority = auth_machine_intelligence }
+		}
+	}
+	option = {
+		name = action.1.s
+		trigger = {
+			has_ethic = ethic_fanatic_spiritualist
+			num_ethics < 3
+			event_target:contact_empire = { has_authority = auth_machine_intelligence }
 		}
 	}
 	option = {
@@ -1738,6 +1894,7 @@ country_event = {
 		}
 	}
 
+
 	option = {
 		name = action.1.opt.generic_demon_cultist_vs_heretic
 		trigger = {
@@ -1775,13 +1932,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_blood_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -1851,13 +2002,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_plague_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -1927,13 +2072,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_pleasure_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -2003,13 +2142,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_wisdom_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -2062,6 +2195,7 @@ country_event = {
 		}
 	}
 
+
 	after = {
 		if = {
 			limit = {
@@ -2106,7 +2240,7 @@ country_event = {
 		planet_background = event_target:contact_empire
 		graphical_culture = event_target:contact_empire
 		city_level = event_target:contact_empire
-		room = event_target:contact_empire
+		room = event_target:contact_empire.ruler
 	}
 
 	### Normal (Not Xenophobe or Xenophile)
@@ -2219,9 +2353,10 @@ country_event = {
 				}
 				OR = {
 					has_government = gov_despotic_empire
+					has_government = gov_feudal_empire
 					has_government = gov_constitutional_dictatorship
 					has_government = gov_enlightened_monarchy
-					has_government = gov_enlightened_dictatorship
+					has_government = gov_elective_monarchy
 				}
 			}
 		}
@@ -2545,9 +2680,10 @@ country_event = {
 				}
 				OR = {
 					has_government = gov_despotic_empire
+					has_government = gov_feudal_empire
 					has_government = gov_constitutional_dictatorship
 					has_government = gov_enlightened_monarchy
-					has_government = gov_enlightened_dictatorship
+					has_government = gov_elective_monarchy
 				}
 				OR = {
 					NOT = { has_valid_civic = civic_fanatic_purifiers }
@@ -2859,9 +2995,10 @@ country_event = {
 				}
 				OR = {
 					has_government = gov_despotic_empire
+					has_government = gov_feudal_empire
 					has_government = gov_constitutional_dictatorship
 					has_government = gov_enlightened_monarchy
-					has_government = gov_enlightened_dictatorship
+					has_government = gov_elective_monarchy
 				}
 			}
 		}
@@ -3142,67 +3279,6 @@ country_event = {
 		}
 	}
 
-	# generic cultist
-	desc = {
-		text = action.1.generic_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
-			}
-		}
-	}
-	# blood cultist
-	desc = {
-		text = action.1.blood_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				has_valid_civic = civic_blood_demon_cult
-			}
-		}
-	}
-	# plague cultist
-	desc = {
-		text = action.1.plague_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				has_valid_civic = civic_plague_demon_cult
-			}
-		}
-	}
-	# pleasure cultist
-	desc = {
-		text = action.1.pleasure_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				has_valid_civic = civic_pleasure_demon_cult
-			}
-		}
-	}
-	# wisdom cultist
-	desc = {
-		text = action.1.wisdom_demon_cultist_desc
-		trigger = {
-			event_target:contact_empire = {
-				is_country_type = default
-				has_ethic = ethic_demon_cultists
-				has_valid_civic = civic_wisdom_demon_cult
-			}
-		}
-	}
-
 	# Cruel Foxcat
 	desc = {
 		text = action.1.desc_49
@@ -3224,6 +3300,7 @@ country_event = {
 			event_target:contact_empire = {
 				is_country_type = default
 				has_authority = auth_hive_mind
+				NOT = { has_valid_civic = civic_hive_devouring_swarm }
 			}
 		}
 	}
@@ -3243,6 +3320,188 @@ country_event = {
 			}
 		}
 	}
+
+	# Devouring Swarm
+	desc = {
+		text = action.1.desc_52
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			event_target:contact_empire = {
+				is_country_type = default
+				has_authority = auth_hive_mind
+				has_valid_civic = civic_hive_devouring_swarm
+			}
+		}
+	}
+
+	# Generic Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_70
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				OR = {
+					has_government = gov_machine_empire
+					has_government = gov_machine_research
+					has_government = gov_machine_industrial
+				}
+			}
+		}
+	}
+
+	# Generic Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_71
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				OR = {
+					has_government = gov_machine_empire
+					has_government = gov_machine_research
+					has_government = gov_machine_industrial
+				}
+			}
+		}
+	}
+
+	# Terminator Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_72
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_terminator
+			}
+		}
+	}
+
+	# Terminator Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_73
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_terminator
+			}
+		}
+	}
+
+	# Assimilator Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_74
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_assimilator
+			}
+		}
+	}
+
+	# Assimilator Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_75
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_assimilator
+			}
+		}
+	}
+
+	# Servitor Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_76
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_servitor
+			}
+		}
+	}
+
+	# Servitor Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_77
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = default
+				has_government = gov_machine_servitor
+			}
+		}
+	}
+
+	#Fallen Machine Empire (To Organics)
+	desc = {
+		text = action.1.desc_78
+		trigger = {
+			NOT = {
+				is_same_species = event_target:contact_empire
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = fallen_empire
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+
+	# Fallen Machine Empire (To Machines)
+	desc = {
+		text = action.1.desc_79
+		trigger = {
+			NOT = { is_same_species = event_target:contact_empire }
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_country_flag = synthetic_empire
+			}
+			event_target:contact_empire = {
+				is_country_type = fallen_empire
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+
 
 	diplomatic = yes
 	is_triggered_only = yes
@@ -3294,8 +3553,58 @@ country_event = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_demon_cultists
+				has_ethic = ethic_gestalt_consciousness
 			}
+		}
+	}
+	option = {
+		name = action.1.ds
+		trigger = {
+			has_valid_civic = civic_hive_devouring_swarm
+		}
+	}
+	option = {
+		name = action.1.hm
+		trigger = {
+			has_authority = auth_hive_mind
+			NOT = { has_valid_civic = civic_hive_devouring_swarm }
+		}
+	}
+	option = {
+		name = action.1.me
+		trigger = {
+			has_authority = auth_machine_intelligence
+			OR = {
+				has_government = gov_machine_empire
+				has_government = gov_machine_research
+				has_government = gov_machine_industrial
+			}
+		}
+	}
+	option = {
+		name = action.1.mt
+		trigger = {
+			has_valid_civic = civic_machine_terminator
+			event_target:contact_empire = { NOT = { has_authority = auth_machine_intelligence } }
+		}
+	}
+	option = {
+		name = action.1.mtm
+		trigger = {
+			has_valid_civic = civic_machine_terminator
+			event_target:contact_empire = { has_authority = auth_machine_intelligence }
+		}
+	}
+	option = {
+		name = action.1.ma
+		trigger = {
+			has_valid_civic = civic_machine_assimilator
+		}
+	}
+	option = {
+		name = action.1.ms
+		trigger = {
+			has_valid_civic = civic_machine_servitor
 		}
 	}
 	option = {
@@ -3387,6 +3696,7 @@ country_event = {
 		trigger = {
 			has_ethic = ethic_spiritualist
 			num_ethics < 3
+			event_target:contact_empire = { NOT = { has_authority = auth_machine_intelligence } }
 		}
 	}
 	option = {
@@ -3394,6 +3704,7 @@ country_event = {
 		trigger = {
 			has_ethic = ethic_fanatic_spiritualist
 			num_ethics < 3
+			event_target:contact_empire = { NOT = { has_authority = auth_machine_intelligence } }
 		}
 	}
 	option = {
@@ -3757,11 +4068,12 @@ country_event = {
 	option = {
 		name = action.1.aae
 		trigger = {
-			has_ethic = ethic_xenophobe
+			has_ethic = ethic_xenophile
 			has_ethic = ethic_authoritarian
 			has_ethic = ethic_militarist
 		}
 	}
+
 
 	option = {
 		name = action.1.opt.generic_demon_cultist_vs_heretic
@@ -3800,13 +4112,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_blood_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -3876,13 +4182,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_plague_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -3952,13 +4252,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_pleasure_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -4028,13 +4322,7 @@ country_event = {
 			has_ethic = ethic_demon_cultists
 			has_valid_civic = civic_wisdom_demon_cult
 			event_target:contact_empire = {
-				has_ethic = ethic_demon_cultists
-				NOR = {
-					has_valid_civic = civic_blood_demon_cult
-					has_valid_civic = civic_plague_demon_cult
-					has_valid_civic = civic_pleasure_demon_cult
-					has_valid_civic = civic_wisdom_demon_cult
-				}
+				is_generic_cultist = yes
 			}
 		}
 	}
@@ -4815,7 +5103,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_stone_age
-							days = 41400 #115
+							years = 50
 						}
 					}
 				}
@@ -4824,7 +5112,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_bronze_age
-							days = 36000 #100
+							years = 45
 						}
 					}
 				}
@@ -4833,7 +5121,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_iron_age
-							days = 30600 #85
+							years = 40
 						}
 					}
 				}
@@ -4842,7 +5130,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_late_medieval_age
-							days = 25200 #70
+							years = 35
 						}
 					}
 				}
@@ -4851,7 +5139,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_renaissance_age
-							days = 21600 #60
+							years = 30
 						}
 					}
 				}
@@ -4860,7 +5148,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_steam_age
-							days = 18000 #50
+							years = 25
 						}
 					}
 				}
@@ -4869,7 +5157,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_industrial_age
-							days = 12600 #35
+							years = 20
 						}
 					}
 				}
@@ -4878,7 +5166,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_machine_age
-							days = 9000 #25
+							years = 15
 						}
 					}
 				}
@@ -4887,7 +5175,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_atomic_age
-							days = 7200 #20
+							years = 10
 						}
 					}
 				}
@@ -4896,7 +5184,7 @@ country_event = {
 					every_owned_pop = {
 						add_modifier = {
 							modifier = culture_shock_early_space_age
-							days = 3600 #10
+							years = 5
 						}
 					}
 				}
@@ -5013,189 +5301,6 @@ country_event = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_materialist
-			}
-		}
-	}
-}
-
-# Culture Shock transfered to newly-born pops
-pop_event = {
-	id = action.141
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		exists = planet
-		planet = {
-			exists = owner
-			owner = { is_country_type = default }
-			any_owned_pop = {
-				OR = {
-					has_modifier = culture_shock_stone_age
-					has_modifier = culture_shock_bronze_age
-					has_modifier = culture_shock_iron_age
-					has_modifier = culture_shock_late_medieval_age
-					has_modifier = culture_shock_renaissance_age
-					has_modifier = culture_shock_steam_age
-					has_modifier = culture_shock_industrial_age
-					has_modifier = culture_shock_machine_age
-					has_modifier = culture_shock_atomic_age
-					has_modifier = culture_shock_early_space_age
-				}
-			}
-		}
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_stone_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_stone_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_stone_age
-				days = 8000
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_bronze_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_bronze_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_bronze_age
-				days = 7200
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_iron_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_iron_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_iron_age
-				days = 6120
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_late_medieval_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_late_medieval_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_late_medieval_age
-				days = 5040
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_renaissance_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_renaissance_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_renaissance_age
-				days = 4320
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_steam_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_steam_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_steam_age
-				days = 3600
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_industrial_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_industrial_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_industrial_age
-				days = 2520
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_machine_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_machine_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_machine_age
-				days = 1800
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_atomic_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_atomic_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_atomic_age
-				days = 1440
-			}
-		}
-		if = {
-			limit = {
-				planet = {
-					any_owned_pop = {
-						is_same_species = root
-						has_modifier = culture_shock_early_space_age
-					}
-				}
-				NOT = { has_modifier = culture_shock_early_space_age }
-			}
-			add_modifier = {
-				modifier = culture_shock_early_space_age
-				days = 720
 			}
 		}
 	}
@@ -5477,70 +5582,6 @@ country_event = {
 	}
 }
 
-# AI Outlawed
-country_event = {
-	id = action.20
-	title = "action.20.name"
-	desc = "action.20.desc"
-	picture = GFX_evt_robot_assembly_plant
-	show_sound = event_construction
-
-	is_triggered_only = yes
-
-	trigger = {
-		last_changed_policy = artificial_intelligence_policy
-		has_policy_flag = ai_outlawed
-		OR = {
-			count_owned_pops = {
-				limit = { is_species = ROBOT_POP_SPECIES_3 }
-				count > 0
-			}
-			count_owned_pops = {
-				limit = { is_species = ROBOT_POP_SPECIES_2 }
-				count > 0
-			}
-			#any_owned_planet = {
-			#	OR = {
-			#		has_building = "building_robotics_assembly_plant_2"
-			#		has_building = "building_robotics_assembly_plant_3"
-			#	}
-			#}
-		}
-	}
-
-	immediate = {
-		every_owned_pop = {
-			limit = {
-				OR = {
-					is_species = ROBOT_POP_SPECIES_3
-					is_species = ROBOT_POP_SPECIES_2
-				}
-			}
-			purge = yes
-			# Should not be possible for player to abort this while the outlawed policy is in effect
-		}
-		#every_owned_planet = {
-		#	limit = { has_building = "building_robotics_assembly_plant_2" }
-		#	every_tile = {
-		#		limit = { has_building = "building_robotics_assembly_plant_2" }
-		#		set_building = building_robotics_assembly_plant
-		#	}
-		#}
-		#every_owned_planet = {
-		#	limit = { has_building = "building_robotics_assembly_plant_3" }
-		#	every_tile = {
-		#		limit = { has_building = "building_robotics_assembly_plant_3" }
-		#		set_building = building_robotics_assembly_plant
-		#	}
-		#}
-	}
-
-	option = {
-		name = "action.20.a"
-		custom_tooltip = action.20.tooltip
-	}
-}
-
 # Other Empires react to a Pop dying in a purge
 planet_event = {
 	id = action.21
@@ -5552,7 +5593,7 @@ planet_event = {
 	trigger = {
 		FROMFROM = {
 			is_robot_pop = no
-			is_sentient = yes
+			is_sapient = yes
 			NOT = { has_trait = "trait_hive_mind" }
 			NOT = { has_purge_type = { country = from type = purge_neutering } }
 		}
@@ -5784,6 +5825,120 @@ country_event = {
 
 	immediate = {
 		set_country_type = default
+		if = {
+			limit = {
+				has_country_flag = slave_rebels
+			}
+			random_playable_country = {
+				limit = {
+					reverse_has_relation_flag = {
+						flag = rebelling_slaves_former_owner
+						who = root
+					}
+				}
+				save_event_target_as = rsfo
+			}
+			random_list = {
+				random_list = {
+					1 = { country_add_ethic = ethic_fanatic_materialist		modifier = { factor = 0 event_target:rsfo = { has_ethic = ethic_fanatic_materialist } } }
+					1 = { country_add_ethic = ethic_fanatic_spiritualist	modifier = { factor = 0 event_target:rsfo = { has_ethic = ethic_fanatic_spiritualist } } }
+					1 = { country_add_ethic = ethic_fanatic_militarist		modifier = { factor = 0 event_target:rsfo = { has_ethic = ethic_fanatic_militarist } } }
+					1 = { country_add_ethic = ethic_fanatic_pacifist		modifier = { factor = 0 event_target:rsfo = { has_ethic = ethic_fanatic_pacifist } } }
+					1 = { country_add_ethic = ethic_fanatic_xenophile		modifier = { factor = 0 event_target:rsfo = { has_ethic = ethic_fanatic_xenophile } } }
+					1 = { country_add_ethic = ethic_fanatic_xenophobe		modifier = { factor = 0 event_target:rsfo = { has_ethic = ethic_fanatic_xenophobe } } }
+					1 = { country_add_ethic = ethic_fanatic_egalitarian		modifier = { factor = 0 event_target:rsfo = { has_ethic = ethic_fanatic_egalitarian } } }
+					1 = { country_add_ethic = ethic_fanatic_authoritarian	modifier = { factor = 0 event_target:rsfo = { has_ethic = ethic_fanatic_authoritarian } } }
+				}
+				random_list = {
+					1 = { country_add_ethic = ethic_materialist modifier = { factor = 0
+					OR = { has_ethic = ethic_fanatic_materialist has_ethic = ethic_fanatic_spiritualist event_target:rsfo = { has_ethic = ethic_fanatic_materialist } } } }
+
+					1 = { country_add_ethic = ethic_spiritualist modifier = { factor = 0
+					OR = { has_ethic = ethic_fanatic_spiritualist has_ethic = ethic_fanatic_materialist event_target:rsfo = { has_ethic = ethic_fanatic_spiritualist } } } }
+
+					1 = { country_add_ethic = ethic_militarist modifier = { factor = 0
+					OR = { has_ethic = ethic_fanatic_militarist has_ethic = ethic_fanatic_pacifist event_target:rsfo = { has_ethic = ethic_fanatic_militarist } } } }
+
+					1 = { country_add_ethic = ethic_pacifist modifier = { factor = 0
+					OR = { has_ethic = ethic_fanatic_pacifist has_ethic = ethic_fanatic_militarist event_target:rsfo = { has_ethic = ethic_fanatic_pacifist } } } }
+
+					1 = { country_add_ethic = ethic_xenophile modifier = { factor = 0
+					OR = { has_ethic = ethic_fanatic_xenophile has_ethic = ethic_fanatic_xenophobe event_target:rsfo = { has_ethic = ethic_fanatic_xenophile } } } }
+
+					1 = { country_add_ethic = ethic_xenophobe modifier = { factor = 0
+					OR = { has_ethic = ethic_fanatic_xenophobe has_ethic = ethic_fanatic_xenophile event_target:rsfo = { has_ethic = ethic_fanatic_xenophobe } } } }
+
+					1 = { country_add_ethic = ethic_egalitarian modifier = { factor = 0
+					OR = { has_ethic = ethic_fanatic_egalitarian has_ethic = ethic_fanatic_authoritarian event_target:rsfo = { has_ethic = ethic_fanatic_egalitarian } } } }
+
+					1 = { country_add_ethic = ethic_authoritarian modifier = { factor = 0
+					OR = { has_ethic = ethic_fanatic_authoritarian has_ethic = ethic_fanatic_egalitarian event_target:rsfo = { has_ethic = ethic_fanatic_authoritarian } } } }
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						has_country_flag = standard_unrest_rebels
+					}
+					random_list = {
+						70 = { # fanatic and non-fanatic
+							random_list = {
+								1 = { country_add_ethic = ethic_fanatic_materialist }
+								1 = { country_add_ethic = ethic_fanatic_spiritualist }
+								1 = { country_add_ethic = ethic_fanatic_militarist }
+								1 = { country_add_ethic = ethic_fanatic_pacifist }
+								1 = { country_add_ethic = ethic_fanatic_xenophile }
+								1 = { country_add_ethic = ethic_fanatic_xenophobe }
+								1 = { country_add_ethic = ethic_fanatic_egalitarian }
+								1 = { country_add_ethic = ethic_fanatic_authoritarian }
+							}
+							random_list = {
+								1 = { country_add_ethic = ethic_materialist 	modifier = { factor = 0 OR = { has_ethic = ethic_fanatic_materialist   has_ethic = ethic_fanatic_spiritualist } } }
+								1 = { country_add_ethic = ethic_spiritualist 	modifier = { factor = 0 OR = { has_ethic = ethic_fanatic_spiritualist  has_ethic = ethic_fanatic_materialist } } }
+								1 = { country_add_ethic = ethic_militarist 		modifier = { factor = 0 OR = { has_ethic = ethic_fanatic_militarist    has_ethic = ethic_fanatic_pacifist } } }
+								1 = { country_add_ethic = ethic_pacifist 		modifier = { factor = 0 OR = { has_ethic = ethic_fanatic_pacifist      has_ethic = ethic_fanatic_militarist } } }
+								1 = { country_add_ethic = ethic_xenophile 		modifier = { factor = 0 OR = { has_ethic = ethic_fanatic_xenophile     has_ethic = ethic_fanatic_xenophobe } } }
+								1 = { country_add_ethic = ethic_xenophobe 		modifier = { factor = 0 OR = { has_ethic = ethic_fanatic_xenophobe     has_ethic = ethic_fanatic_xenophile } } }
+								1 = { country_add_ethic = ethic_egalitarian 	modifier = { factor = 0 OR = { has_ethic = ethic_fanatic_egalitarian   has_ethic = ethic_fanatic_authoritarian} } }
+								1 = { country_add_ethic = ethic_authoritarian 	modifier = { factor = 0 OR = { has_ethic = ethic_fanatic_authoritarian has_ethic = ethic_fanatic_egalitarian} } }
+							}
+						}
+						30 = { # only non-fanatic
+							random_list = {
+								1 = { country_add_ethic = ethic_fanatic_materialist }
+								1 = { country_add_ethic = ethic_fanatic_spiritualist }
+								1 = { country_add_ethic = ethic_fanatic_militarist }
+								1 = { country_add_ethic = ethic_fanatic_pacifist }
+								1 = { country_add_ethic = ethic_fanatic_xenophile }
+								1 = { country_add_ethic = ethic_fanatic_xenophobe }
+								1 = { country_add_ethic = ethic_fanatic_egalitarian }
+								1 = { country_add_ethic = ethic_fanatic_authoritarian }
+							}
+							random_list = {
+								1 = { country_add_ethic = ethic_materialist 	modifier = { factor = 0 OR = { has_ethic = ethic_materialist   has_ethic = ethic_spiritualist } } }
+								1 = { country_add_ethic = ethic_spiritualist 	modifier = { factor = 0 OR = { has_ethic = ethic_spiritualist  has_ethic = ethic_materialist } } }
+								1 = { country_add_ethic = ethic_militarist 		modifier = { factor = 0 OR = { has_ethic = ethic_militarist    has_ethic = ethic_pacifist } } }
+								1 = { country_add_ethic = ethic_pacifist 		modifier = { factor = 0 OR = { has_ethic = ethic_pacifist      has_ethic = ethic_militarist } } }
+								1 = { country_add_ethic = ethic_xenophile 		modifier = { factor = 0 OR = { has_ethic = ethic_xenophile     has_ethic = ethic_xenophobe } } }
+								1 = { country_add_ethic = ethic_xenophobe 		modifier = { factor = 0 OR = { has_ethic = ethic_xenophobe     has_ethic = ethic_xenophile } } }
+								1 = { country_add_ethic = ethic_egalitarian 	modifier = { factor = 0 OR = { has_ethic = ethic_egalitarian   has_ethic = ethic_authoritarian } } }
+								1 = { country_add_ethic = ethic_authoritarian 	modifier = { factor = 0 OR = { has_ethic = ethic_authoritarian has_ethic = ethic_egalitarian } } }
+							}
+							random_list = {
+								1 = { country_add_ethic = ethic_materialist 	modifier = { factor = 0 OR = { has_ethic = ethic_materialist   has_ethic = ethic_spiritualist } } }
+								1 = { country_add_ethic = ethic_spiritualist 	modifier = { factor = 0 OR = { has_ethic = ethic_spiritualist  has_ethic = ethic_materialist } } }
+								1 = { country_add_ethic = ethic_militarist 		modifier = { factor = 0 OR = { has_ethic = ethic_militarist    has_ethic = ethic_pacifist } } }
+								1 = { country_add_ethic = ethic_pacifist 		modifier = { factor = 0 OR = { has_ethic = ethic_pacifist      has_ethic = ethic_militarist } } }
+								1 = { country_add_ethic = ethic_xenophile 		modifier = { factor = 0 OR = { has_ethic = ethic_xenophile     has_ethic = ethic_xenophobe } } }
+								1 = { country_add_ethic = ethic_xenophobe 		modifier = { factor = 0 OR = { has_ethic = ethic_xenophobe     has_ethic = ethic_xenophile } } }
+								1 = { country_add_ethic = ethic_egalitarian 	modifier = { factor = 0 OR = { has_ethic = ethic_egalitarian   has_ethic = ethic_authoritarian } } }
+								1 = { country_add_ethic = ethic_authoritarian 	modifier = { factor = 0 OR = { has_ethic = ethic_authoritarian has_ethic = ethic_egalitarian } } }
+							}
+						}
+					}
+				}
+			}
+		}
 		from = {
 			solar_system = {
 				every_fleet_in_system = {
@@ -5888,7 +6043,7 @@ country_event = {
 		planet_background = FROM
 		graphical_culture = FROM
 		city_level = FROM
-		room = FROM
+		room = FROM.ruler
 	}
 
 	desc = {
@@ -5916,6 +6071,9 @@ country_event = {
 					fallen_empire_materialist = { text = action.37.desc.kk }
 					fallen_empire_xenophobe = { text = action.37.desc.mi }
 					fallen_empire_xenophile = { text = action.37.desc.eo }
+					fallen_empire_machine = { text = action.37.desc.fme }
+					awakened_fallen_empire_machine = { text = action.37.desc.fme }
+					berserk_fallen_empire_machine = { text = action.37.desc.bme }
 					metalhead = { text = action.37.desc.mh }
 					default = { text = action.37.desc.default }
 				}
@@ -5946,7 +6104,7 @@ country_event = {
 		planet_background = FROM
 		graphical_culture = FROM
 		city_level = FROM
-		room = FROM
+		room = FROM.ruler
 	}
 
 	desc = {
@@ -5974,6 +6132,14 @@ country_event = {
 					fallen_empire_materialist = { text = action.38.desc.kk }
 					fallen_empire_xenophobe = { text = action.38.desc.mi }
 					fallen_empire_xenophile = { text = action.38.desc.eo }
+					fallen_empire_machine = { text = action.38.desc.fme }
+					awakened_fallen_empire_spiritualist = { text = action.38.desc.hg }
+					awakened_fallen_empire_materialist = { text = action.38.desc.kk }
+					awakened_fallen_empire_xenophobe = { text = action.38.desc.mi }
+					awakened_fallen_empire_xenophile = { text = action.38.desc.eo }
+					fallen_empire_machine = { text = action.38.desc.fme }
+					awakened_fallen_empire_machine = { text = action.38.desc.fme }
+					berserk_fallen_empire_machine = { text = action.38.desc.bme }
 					metalhead = { text = action.38.desc.mh }
 					default = { text = action.38.desc.default }
 				}
@@ -6004,7 +6170,7 @@ country_event = {
 		planet_background = FROM
 		graphical_culture = FROM
 		city_level = FROM
-		room = FROM
+		room = FROM.ruler
 	}
 
 	desc = {
@@ -6032,6 +6198,13 @@ country_event = {
 					fallen_empire_materialist = { text = action.39.desc.kk }
 					fallen_empire_xenophobe = { text = action.39.desc.mi }
 					fallen_empire_xenophile = { text = action.39.desc.eo }
+					awakened_fallen_empire_spiritualist = { text = action.39.desc.hg }
+					awakened_fallen_empire_materialist = { text = action.39.desc.kk }
+					awakened_fallen_empire_xenophobe = { text = action.39.desc.mi }
+					awakened_fallen_empire_xenophile = { text = action.39.desc.eo }
+					fallen_empire_machine = { text = action.39.desc.fme }
+					awakened_fallen_empire_machine = { text = action.39.desc.fme }
+					berserk_fallen_empire_machine = { text = action.39.desc.bme }
 					metalhead = { text = action.39.desc.mh }
 					default = { text = action.39.desc.default }
 				}
@@ -6061,21 +6234,64 @@ fleet_event = {
 	trigger = {
 		owner = { is_country_type = default }
 		from = {
-			exists = space_owner
-			space_owner = {
-				OR = {
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+			OR = {
+				AND = {
+					exists = space_owner
+					space_owner = {
+						OR = {
+							is_country_type = fallen_empire
+							is_country_type = awakened_fallen_empire
+						}
+						NOT = { has_communications = root.owner }
+					}
 				}
-				NOT = { has_communications = root.owner }
+				any_neighbor_system = {
+					exists = space_owner
+					space_owner = {
+						OR = {
+							is_country_type = fallen_empire
+							is_country_type = awakened_fallen_empire
+						}
+						NOT = { has_communications = root.owner }
+					}
+				}
 			}
 		}
 	}
 
 	immediate = {
 		from = {
-			space_owner = {
-				save_event_target_as = contact_empire
+			if = {
+				limit = {
+					exists = space_owner
+					space_owner = {
+						OR = {
+							is_country_type = fallen_empire
+							is_country_type = awakened_fallen_empire
+						}
+						NOT = { has_communications = root.owner }
+					}
+				}
+				space_owner = {
+					save_event_target_as = contact_empire
+				}
+				else = {
+					random_neighbor_system = {
+						limit = {
+							exists = space_owner
+							space_owner = {
+								OR = {
+									is_country_type = fallen_empire
+									is_country_type = awakened_fallen_empire
+								}
+								NOT = { has_communications = root.owner }
+							}
+						}
+						space_owner = {
+							save_event_target_as = contact_empire
+						}
+					}
+				}
 			}
 		}
 		owner = {
@@ -6171,6 +6387,331 @@ planet_event = {
 				}
 				remove_building = yes
 			}
+		}
+
+		# Land Appropriation
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_policy_flag = appropriation_allowed
+						AND = {
+							has_ethic = ethic_gestalt_consciousness
+							NOT = { has_valid_civic = civic_machine_servitor }
+						}
+						AND = {
+							NOT = { has_authority = auth_machine_intelligence }
+							root = {
+								any_owned_pop = {
+									has_trait = trait_machine_unit
+								}
+							}
+						}
+					}
+				}
+				count_tile = {
+					limit = { has_pop = no has_blocker = no }
+					count < 5
+				}
+			}
+			while = {
+				limit = {
+					count_tile = {
+						limit = { has_pop = no has_blocker = no }
+						count < 5
+					}
+					any_owned_pop = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 5
+							}
+						}
+					}
+				}
+				random_owned_pop = {
+					limit = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 5
+							}
+						}
+					}
+					random_list = {
+						33 = { pop_event = { id = refugees.4 } }
+						66 = { kill_pop = yes }
+					}
+					set_global_flag = land_appropriated
+				}
+			}
+			while = {
+				limit = {
+					count_tile = {
+						limit = { has_pop = no has_blocker = no }
+						count < 5
+					}
+					any_owned_pop = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 4
+							}
+						}
+					}
+				}
+				random_owned_pop = {
+					limit = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 4
+							}
+						}
+					}
+					random_list = {
+						33 = { pop_event = { id = refugees.4 } }
+						66 = { kill_pop = yes }
+					}
+					set_global_flag = land_appropriated
+				}
+			}
+			while = {
+				limit = {
+					count_tile = {
+						limit = { has_pop = no has_blocker = no }
+						count < 5
+					}
+					any_owned_pop = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 3
+							}
+						}
+					}
+				}
+				random_owned_pop = {
+					limit = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 3
+							}
+						}
+					}
+					random_list = {
+						33 = { pop_event = { id = refugees.4 } }
+						66 = { kill_pop = yes }
+					}
+					set_global_flag = land_appropriated
+				}
+			}
+			while = {
+				limit = {
+					count_tile = {
+						limit = { has_pop = no has_blocker = no }
+						count < 5
+					}
+					any_owned_pop = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 2
+							}
+						}
+					}
+				}
+				random_owned_pop = {
+					limit = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 2
+							}
+						}
+					}
+					random_list = {
+						33 = { pop_event = { id = refugees.4 } }
+						66 = { kill_pop = yes }
+					}
+					set_global_flag = land_appropriated
+				}
+			}
+			while = {
+				limit = {
+					count_tile = {
+						limit = { has_pop = no has_blocker = no }
+						count < 5
+					}
+					any_owned_pop = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 1
+							}
+						}
+					}
+				}
+				random_owned_pop = {
+					limit = {
+						OR = {
+							root.owner = { has_policy_flag = appropriation_allowed }
+							AND = {
+								root.owner = { NOT = { has_authority = auth_machine_intelligence } }
+								has_trait = trait_machine_unit
+							}
+						}
+						is_sapient = yes
+						has_citizenship_rights = no
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 1
+							}
+						}
+					}
+					random_list = {
+						33 = { pop_event = { id = refugees.4 } }
+						66 = { kill_pop = yes }
+					}
+					set_global_flag = land_appropriated
+				}
+			}
+			if = {
+				limit = { has_global_flag = land_appropriated }
+				add_modifier = {
+					modifier = "land_appropriation"
+					years = 5
+				}
+				remove_global_flag = land_appropriated
+			}
+
+		}
+
+		# Servitors
+		if = {
+			limit = {
+				owner = { has_valid_civic = civic_machine_servitor }
+				count_tile = {
+					limit = { has_pop = no has_blocker = no }
+					count < 10
+				}
+			}
+			while = {
+				limit = {
+					count_tile = {
+						limit = { has_pop = no has_blocker = no }
+						count < 10
+					}
+					any_owned_pop = {
+						is_robot_pop = no
+						is_sapient = yes
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 4
+							}
+						}
+					}
+				}
+				random_owned_pop = {
+					limit = {
+						is_robot_pop = no
+						is_sapient = yes
+						root = {
+							count_pops = {
+								limit = { is_same_species = prev }
+								count > 4
+							}
+						}
+					}
+					kill_pop = yes
+				}
+			}
+			add_organic_sanctuaries = yes
+			upgrade_organic_sanctuaries = yes
 		}
 	}
 }
@@ -6329,28 +6870,6 @@ country_event = {
 	}
 }
 
-# Fail-safe regularly disassembling robots when AI outlawed
-country_event = {
-	id = action.49
-	hide_window = yes
-	mean_time_to_happen = { months = 1 }
-
-	trigger = {
-		is_country_type = default
-		has_policy_flag = ai_outlawed
-		any_owned_pop = { is_robot_pop = yes }
-	}
-
-	immediate = {
-		every_owned_pop = {
-			limit = {
-				is_robot_pop = yes
-			}
-			kill_pop = yes
-		}
-	}
-}
-
 # Outside Context
 country_event = {
 	id = action.51
@@ -6439,7 +6958,10 @@ ship_event = {
 		if = {
 			limit = {
 				owner = {
-					has_tradition = tr_discovery_planetary_survey_corps
+					OR = {
+						has_non_swapped_tradition = tr_discovery_planetary_survey_corps
+						has_swapped_tradition = tr_discovery_planetary_survey_corps_machine
+					}
 				}
 			}
 			owner = {
@@ -6543,18 +7065,18 @@ ship_event = {
 #						last_created_pop = {
 #							save_event_target_as = og_bot
 #						}
-#						else = {
-#							build_pop = {
+#	    				else = {
+#	    					build_pop = {
 #								name = buildable_robot_pop_3
 #								grown = yes
 #							}
 #							last_created_pop = {
 #								save_event_target_as = og_bot
 #							}
-#						}
+#	    				}
 #					}
-#				}
-#			}
+#	    		}
+#	    	}
 #	   	}
 #	}
 #
@@ -6642,6 +7164,8 @@ pop_event = {
 	hide_window = yes
 	is_triggered_only = yes
 
+	trigger = { exists = planet }
+
 	immediate = {
 		if = {
 			limit = { has_pop_flag = pop_refugee }
@@ -6687,15 +7211,21 @@ country_event = {
 			is_country_type = fallen_empire
 			is_country_type = awakened_fallen_empire
 		}
+		NOT = { has_country_flag = silence_destroy_event }
 	}
 
 	immediate = {
 		if = {
 			limit = { is_country_type = default }
-			every_country = { country_event = { id = action.62 } }
-
+			every_country = {
+				limit = { has_communications = root }
+				country_event = { id = action.62 }
+			}
 			else = {
-				every_country = { country_event = { id = action.63 } }
+				every_country = {
+					limit = { has_communications = root }
+					country_event = { id = action.63 }
+				}
 			}
 		}
 	}
@@ -6709,6 +7239,7 @@ country_event = {
 	show_sound = event_default
 	picture = "GFX_evt_city_ruins"
 	is_triggered_only = yes
+
 	option = {
 		name = OK
 	}
@@ -6722,7 +7253,660 @@ country_event = {
 	show_sound = event_default
 	picture = "GFX_evt_city_ruins"
 	is_triggered_only = yes
+
 	option = {
 		name = OK
+	}
+}
+
+# Assimilate Pops on Yearly Pulse
+event = {
+	id = action.64
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_playable_country = {
+			country_event = { id = action.65 }
+		}
+	}
+}
+
+# Assimilate Pops
+country_event = {
+	id = action.65
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_pop = {
+			has_citizenship_type = {
+				type = citizenship_assimilation
+				country = root
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			50 = { # 1 pop
+				random_owned_pop = {
+					limit = {
+						has_citizenship_type = {
+							type = citizenship_assimilation
+							country = root
+						}
+					}
+
+					if = { # assimilator empire
+						limit = {
+							root = {
+								has_authority = auth_machine_intelligence
+								has_civic = civic_machine_assimilator
+							}
+						}
+						if = {
+							limit = { NOT = { has_trait = trait_cybernetic } }
+							modify_species = {
+								species = this
+								add_trait = trait_cybernetic
+								add_traits_at_start_of_list = yes
+								change_scoped_species = yes # change only this pop's species
+							}
+							remove_culture_shock = yes
+							remove_hive_minded = yes # scripted effect
+							remove_self_modified = yes # scripted effect
+						}
+						else = {
+							if = { # hive mind
+								limit = {
+									root = {
+										has_authority = auth_hive_mind
+										NOT = { has_civic = civic_hive_devouring_swarm }
+									}
+								}
+								modify_species = {
+									species = this
+									add_trait = trait_hive_mind
+									add_traits_at_start_of_list = yes
+									#change_scoped_species = no
+								}
+								remove_culture_shock = yes
+								remove_self_modified = yes # scripted effect
+								else = {
+									if = { # ascended synths
+										limit = {
+											root = {
+												has_country_flag = synthetic_empire
+											}
+										}
+										tile = {
+											prev = { kill_pop = yes }
+											create_pop = {
+												species = root
+												ethos = root
+											}
+										}
+										else = {
+											if = { # cyborg empire
+												limit = {
+													root = {
+														has_country_flag = flesh_weakened
+													}
+												}
+												modify_species = {
+													species = this
+													add_trait = trait_cybernetic
+													add_traits_at_start_of_list = yes
+													change_scoped_species = yes
+												}
+												remove_culture_shock = yes
+												remove_hive_minded = yes
+												remove_self_modified = yes # scripted effect
+												else = {
+													if = {
+														limit = {
+															root = {
+																NOR = {
+																	has_ethic = ethic_gestalt_consciousness
+																	has_country_flag = synthetic_empire
+																	has_country_flag = flesh_weakened
+																}
+															}
+															has_trait = trait_hive_mind
+														}
+														modify_species = {
+															species = this
+															remove_trait = trait_hive_mind
+															change_scoped_species = yes
+															# change only this pop's species
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					if = { # set citizenship
+						limit = { root = { has_authority = auth_machine_intelligence } }
+						set_citizenship_type = {
+							type = citizenship_full_machine
+							country = root
+						}
+						else = {
+							set_citizenship_type = {
+								type = citizenship_full
+								country = root
+							}
+						}
+					}
+
+					if = { # set citizenship
+						limit = { root = { has_ethic = ethic_gestalt_consciousness } }
+						set_living_standard = {
+							type = living_standard_hive_mind
+							country = root
+						}
+					}
+				}
+			}
+
+			30 = { # 2 pops
+				while = {
+					count = 2
+					limit = {
+						any_owned_pop = {
+							has_citizenship_type = {
+								type = citizenship_assimilation
+								country = root
+							}
+						}
+					}
+					random_owned_pop = {
+						limit = {
+							has_citizenship_type = {
+								type = citizenship_assimilation
+								country = root
+							}
+						}
+
+						if = { # assimilator empire
+							limit = {
+								root = {
+									has_authority = auth_machine_intelligence
+									has_civic = civic_machine_assimilator
+								}
+							}
+							if = {
+								limit = { NOT = { has_trait = trait_cybernetic } }
+								modify_species = {
+									species = this
+									add_trait = trait_cybernetic
+									add_traits_at_start_of_list = yes
+									change_scoped_species = yes # change only this pop's species
+								}
+								remove_hive_minded = yes # scripted effect
+								remove_culture_shock = yes
+								remove_self_modified = yes # scripted effect
+							}
+							else = {
+								if = { # hive mind
+									limit = {
+										root = {
+											has_authority = auth_hive_mind
+											NOT = { has_civic = civic_hive_devouring_swarm }
+										}
+									}
+									modify_species = {
+										species = this
+										add_trait = trait_hive_mind
+										add_traits_at_start_of_list = yes
+										#change_scoped_species = no
+									}
+									remove_culture_shock = yes
+									remove_self_modified = yes # scripted effect
+									else = {
+										if = { # ascended synths
+											limit = {
+												root = {
+													has_country_flag = synthetic_empire
+												}
+											}
+											tile = {
+												prev = { kill_pop = yes }
+												create_pop = {
+													species = root
+													ethos = root
+												}
+											}
+											else = {
+												if = { # cyborg empire
+													limit = {
+														root = {
+															has_country_flag = flesh_weakened
+														}
+													}
+													modify_species = {
+														species = this
+														add_trait = trait_cybernetic
+														add_traits_at_start_of_list = yes
+														change_scoped_species = yes
+													}
+													remove_hive_minded = yes
+													remove_culture_shock = yes
+													remove_self_modified = yes # scripted effect
+													else = {
+														if = {
+															limit = {
+																root = {
+																	NOR = {
+																		has_ethic = ethic_gestalt_consciousness
+																		has_country_flag = synthetic_empire
+																		has_country_flag = flesh_weakened
+																	}
+																}
+																has_trait = trait_hive_mind
+															}
+															modify_species = {
+																species = this
+																remove_trait = trait_hive_mind
+																change_scoped_species = yes
+																# change only this pop's species
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						if = { # set citizenship
+							limit = { root = { has_authority = auth_machine_intelligence } }
+							set_citizenship_type = {
+								type = citizenship_full_machine
+								country = root
+							}
+							else = {
+								set_citizenship_type = {
+									type = citizenship_full
+									country = root
+								}
+							}
+						}
+
+						if = { # set citizenship
+							limit = { root = { has_ethic = ethic_gestalt_consciousness } }
+							set_living_standard = {
+								type = living_standard_hive_mind
+								country = root
+							}
+						}
+					}
+				}
+			}
+
+			20 = { # 4 pops
+				while = {
+					count = 4
+					limit = {
+						any_owned_pop = {
+							has_citizenship_type = {
+								type = citizenship_assimilation
+								country = root
+							}
+						}
+					}
+					random_owned_pop = {
+						limit = {
+							has_citizenship_type = {
+								type = citizenship_assimilation
+								country = root
+							}
+						}
+
+						if = { # assimilator empire
+							limit = {
+								root = {
+									has_authority = auth_machine_intelligence
+									has_civic = civic_machine_assimilator
+								}
+							}
+							if = {
+								limit = { NOT = { has_trait = trait_cybernetic } }
+								modify_species = {
+									species = this
+									add_trait = trait_cybernetic
+									add_traits_at_start_of_list = yes
+									change_scoped_species = yes # change only this pop's species
+								}
+								remove_hive_minded = yes # scripted effect
+								remove_culture_shock = yes
+								remove_self_modified = yes # scripted effect
+							}
+							else = {
+								if = { # hive mind
+									limit = {
+										root = {
+											has_authority = auth_hive_mind
+											NOT = { has_civic = civic_hive_devouring_swarm }
+										}
+									}
+									modify_species = {
+										species = this
+										add_trait = trait_hive_mind
+										add_traits_at_start_of_list = yes
+										#change_scoped_species = no
+									}
+									remove_culture_shock = yes
+									remove_self_modified = yes # scripted effect
+									else = {
+										if = { # ascended synths
+											limit = {
+												root = {
+													has_country_flag = synthetic_empire
+												}
+											}
+											tile = {
+												prev = { kill_pop = yes }
+												create_pop = {
+													species = root
+													ethos = root
+												}
+											}
+											else = {
+												if = { # cyborg empire
+													limit = {
+														root = {
+															has_country_flag = flesh_weakened
+														}
+													}
+													modify_species = {
+														species = this
+														add_trait = trait_cybernetic
+														add_traits_at_start_of_list = yes
+														change_scoped_species = yes
+													}
+													remove_hive_minded = yes
+													remove_culture_shock = yes
+													remove_self_modified = yes # scripted effect
+													else = {
+														if = {
+															limit = {
+																root = {
+																	NOR = {
+																		has_ethic = ethic_gestalt_consciousness
+																		has_country_flag = synthetic_empire
+																		has_country_flag = flesh_weakened
+																	}
+																}
+																has_trait = trait_hive_mind
+															}
+															modify_species = {
+																species = this
+																remove_trait = trait_hive_mind
+																change_scoped_species = yes
+																# change only this pop's species
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						if = { # set citizenship
+							limit = { root = { has_authority = auth_machine_intelligence } }
+							set_citizenship_type = {
+								type = citizenship_full_machine
+								country = root
+							}
+							else = {
+								set_citizenship_type = {
+									type = citizenship_full
+									country = root
+								}
+							}
+						}
+
+						if = { # set citizenship
+							limit = { root = { has_ethic = ethic_gestalt_consciousness } }
+							set_living_standard = {
+								type = living_standard_hive_mind
+								country = root
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Add new organic sanctuaries & remove unused ones
+pop_event = {
+	id = action.66
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_valid_civic = civic_machine_servitor }
+	}
+
+	immediate = {
+		planet = {
+			clear_organic_sanctuaries = yes
+			add_organic_sanctuaries = yes
+		}
+	}
+}
+
+pop_event = {
+	id = action.67
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { has_valid_civic = civic_machine_servitor }
+	}
+
+	immediate = {
+		from = {
+			planet = {
+				clear_organic_sanctuaries = yes
+				add_organic_sanctuaries = yes
+			}
+		}
+		planet = {
+			clear_organic_sanctuaries = yes
+			add_organic_sanctuaries = yes
+		}
+	}
+}
+
+# Clear food tiles on machine worlds
+planet_event = {
+	id = action.68
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = { is_planet_class = pc_machine }
+			every_tile = {
+				limit = {
+					OR = {
+						has_deposit = d_farmland_deposit
+						has_deposit = d_rich_farmland_deposit
+						has_deposit = d_vast_farmland_deposit
+						has_deposit = d_immense_farmland_deposit
+					}
+				}
+				clear_deposits = yes
+			}
+			every_tile = {
+				limit = {
+					has_deposit = d_mineral_food_deposit
+				}
+				set_deposit = d_mineral_deposit
+			}
+			every_tile = {
+				limit = {
+					has_deposit = d_rich_food_mineral_deposit
+				}
+				set_deposit = d_rich_mineral_deposit
+			}
+			remove_modifier = "natural_beauty"
+			remove_modifier = "atmospheric_aphrodisiac"
+			remove_modifier = "atmospheric_hallucinogen"
+			remove_modifier = "lush_planet"
+		}
+
+		remove_modifier = "bleak_planet"
+		remove_modifier = "dangerous_wildlife"
+		remove_modifier = "hazardous_weather"
+		remove_modifier = "wild_storms"
+		remove_modifier = "irradiated_planet"
+	}
+}
+
+# Synth leaders die
+# surveying scientist dies
+country_event = {
+	id = action.71
+	title = action.71.name
+	desc = action.71.desc
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_ship_bridge
+	location = event_target:malfunctioning_leader.Fleet
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:malfunctioning_leader = {
+			kill_leader = { type = scientist show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+# engineering scientist dies
+country_event = {
+	id = action.72
+	title = action.72.name
+	desc = action.72.desc
+	picture = GFX_evt_news_room
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:malfunctioning_leader = {
+			kill_leader = { type = scientist show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+# society scientist dies
+country_event = {
+	id = action.73
+	title = action.73.name
+	desc = action.73.desc
+	picture = GFX_evt_news_room
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:malfunctioning_leader = {
+			kill_leader = { type = scientist show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+# physics scientist dies
+country_event = {
+	id = action.74
+	title = action.74.name
+	desc = action.74.desc
+	picture = GFX_evt_news_room
+	show_sound = event_ship_bridge
+	location = capital_scope
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:malfunctioning_leader = {
+			kill_leader = { type = scientist show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+# admiral dies
+country_event = {
+	id = action.75
+	title = action.75.name
+	desc = action.75.desc
+	picture = GFX_evt_space_debris
+	show_sound = event_ship_bridge
+	location = event_target:malfunctioning_leader.Fleet
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:malfunctioning_leader = {
+			kill_leader = { type = admiral show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+# governor dies
+country_event = {
+	id = action.76
+	title = action.76.name
+	desc = action.76.desc
+	picture = GFX_evt_throne_room
+	show_sound = event_ship_bridge
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:malfunctioning_leader = {
+			kill_leader = { type = governor show_notification = no }
+		}
+	}
+
+	option = {
+		name = UNFORTUNATE
 	}
 }
