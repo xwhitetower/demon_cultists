@@ -1,6 +1,9 @@
 #auth_example = {
 #	potential = {}									# requirements list, see ../readme_requirements.txt
 #	possible = {}									# requirements list, see ../readme_requirements.txt
+#	random_weight = { value = 1 }					# random weight, no scope (DLC check etc only); default: 1
+#
+#	traits = { trait = tait1 trait = tait2 }		# force listed traits on the founder species (only verified for empire designs, no eefect after game start)
 #
 #	has_heir = yes / no								# default: no; you can either have a hereditary system (has_heir = yes), or an election system (has_heir = no)
 #	election_type = oligarchic / democratic	/ none	# default: none; oligarchic generate candidates only from leaders in the country
@@ -10,9 +13,12 @@
 #	can_have_emergency_elections = yes / no			# default: no
 #	emergency_election_cost = 42.5					# default: 0; influence cost for starting an emergency election
 #	max_election_candidates = 5						# default: -1; -1 == no limit
+#	can_reform = yes / no 							# default = yes, whether you can reform into/out of this government type
 #
 #	has_agendas = yes / no							# default: no
 #	uses_mandates = yes / no						# default: no
+#
+#	tags = { <key> <key2> }							# add these translation tags to the description
 #}
 
 
@@ -26,18 +32,21 @@ auth_democratic = {
 	possible = {
 		ethics = {
 			NOR = {
-				value = ethic_hive_mind
+				value = ethic_gestalt_consciousness
 				value = ethic_authoritarian
 				value = ethic_fanatic_authoritarian
 				value = ethic_demon_cultists
 			}
 		}
 	}
+
+	tags = {
+		AUTHORITY_ELECTION_DEMOCRATIC
+	}
 }
 
 auth_oligarchic = {
-	election_term_years = 40
-	election_term_variance = 10 # +/- 10 years
+	election_term_years = 20
 	election_type = oligarchic
 	can_have_emergency_elections = yes
 	emergency_election_cost = 250
@@ -48,12 +57,16 @@ auth_oligarchic = {
 	possible = {
 		ethics = {
 			NOR = {
-				value = ethic_hive_mind
+				value = ethic_gestalt_consciousness
 				value = ethic_fanatic_egalitarian
 				value = ethic_fanatic_authoritarian
 				value = ethic_demon_cultists
 			}
 		}
+	}
+
+	tags = {
+		AUTHORITY_ELECTION_OLIGARCHIC
 	}
 }
 
@@ -66,12 +79,16 @@ auth_dictatorial = {
 	possible = {
 		ethics = {
 			NOR = {
-				value = ethic_hive_mind
+				value = ethic_gestalt_consciousness
 				value = ethic_egalitarian
 				value = ethic_fanatic_egalitarian
 				value = ethic_demon_cultists
 			}
 		}
+	}
+
+	tags = {
+		AUTHORITY_ELECTION_ON_RULER_DEATH
 	}
 }
 
@@ -83,12 +100,16 @@ auth_imperial = {
 	possible = {
 		ethics = {
 			NOR = {
-				value = ethic_hive_mind
+				value = ethic_gestalt_consciousness
 				value = ethic_egalitarian
 				value = ethic_fanatic_egalitarian
 				value = ethic_demon_cultists
 			}
 		}
+	}
+
+	tags = {
+		AUTHORITY_HAS_HEIR
 	}
 }
 
@@ -96,18 +117,85 @@ auth_hive_mind = {
 	has_heir = no
 	election_type = none
 	has_factions = no
+	can_reform = no
+	localization_postfix = hive_mind
 
 	playable = { host_has_dlc = "Utopia" }
 	possible = {
 		ethics = {
-			value = ethic_hive_mind
+			value = ethic_gestalt_consciousness
 		}
+	}
+	random_weight = {
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Utopia" }
+		}
+	}
+
+	traits = {
+		trait = trait_hive_mind
+	}
+
+	country_modifier = {
+		pop_growth_speed = 0.25
+		pop_resettlement_cost_mult = -0.5
+	}
+
+	tags = {
+		#AUTHORITY_HIVE_MIND
+		AUTH_HIVE_MIND_AI_RESTRICTIONS
+		AUTH_HIVE_MIND_FOREIGN_POP_SURVIVAL
+		AUTH_HIVE_MIND_GENEMODDING
+		AUTH_HIVE_MIND_ASCENSION_RESTRICTIONS
 	}
 }
 
-auth_machine_consciousness = {
+auth_machine_intelligence = {
 	has_heir = no
 	election_type = none
+	has_factions = no
+	can_reform = no
+	localization_postfix = machine_intelligence
+
+	playable = {
+		host_has_dlc = "Synthetic Dawn Story Pack"
+	}
+	possible = {
+		ethics = {
+			value = ethic_gestalt_consciousness
+		}
+	}
+	random_weight = {
+		modifier = {
+			factor = 0
+			NOT = { host_has_dlc = "Synthetic Dawn Story Pack" }
+		}
+	}
+
+	traits = {
+		trait = trait_machine_unit
+	}
+
+	country_modifier = {
+		#leader_influence_cost = 1
+	}
+
+	tags = {
+		AUTH_MACHINE_INTELLIGENCE_IMMORTAL_LEADERS
+		AUTH_MACHINE_INTELLIGENCE_EXPENSIVE_NATIVE_LEADERS
+		AUTH_MACHINE_NATIVE_POPS
+		AUTH_MACHINE_FOREIGN_POP_SURVIVAL
+		AUTH_MACHINE_TECH_ADDITIONS
+		AUTH_MACHINE_TECH_RESTRICTIONS
+		AUTH_MACHINE_ASCENSION_RESTRICTIONS
+	}
+}
+
+auth_ancient_machine_intelligence = {
+	has_heir = no
+	election_type = none
+	can_reform = no
 
 	icon = "gfx/interface/icons/governments/authorities/auth_hive_mind.dds"
 
