@@ -1,19 +1,13 @@
 ethic_categories = {
-	col = {
-		opinions = { 1 1 1 1 1 }
-	}
+	col = {}
 
-	xen = {
-		opinions = { 0 0 1 1 1 }
-	}
+	xen = {}
 
-	mil = {
-		opinions = { 1 1 1 1 1 }
-	}
+	mil = {}
 
-	spi = {
-		opinions = { 1 1 1 1 1 }
-	}
+	spi = {}
+
+	hive = {}
 }
 
 ethic_fanatic_authoritarian = {
@@ -26,14 +20,13 @@ ethic_fanatic_authoritarian = {
 	regular_variant = ethic_authoritarian
 
 	country_modifier = {
-		pop_resettlement_cost_mult = -0.5
-		country_unrest_unhappy_slave_effect_mult = -0.2
+		country_resource_influence_add = 1
+		pop_slave_resource_output = 0.10
 	}
 
 	tags = {
 		ETHIC_ALLOWS_CASTE_SYSTEM
 		ETHIC_ONLY_AUTOCRACY
-		ETHIC_ALLOWS_DISPLACE
 	}
 
 	random_weight = {
@@ -49,14 +42,13 @@ ethic_authoritarian = {
 	fanatic_variant = ethic_fanatic_authoritarian
 
 	country_modifier = {
-		pop_resettlement_cost_mult = -0.25
-		country_unrest_unhappy_slave_effect_mult = -0.1
+		country_resource_influence_add = 0.5
+		pop_slave_resource_output = 0.05
 	}
 
 	tags = {
 		ETHIC_ALLOWS_CASTE_SYSTEM
 		ETHIC_NEVER_DEMOCRACY
-		ETHIC_ALLOWS_DISPLACE
 	}
 
 	random_weight = {
@@ -142,10 +134,10 @@ ethic_authoritarian = {
 
 	country_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			NOR = {
@@ -227,10 +219,10 @@ ethic_authoritarian = {
 	pop_attraction = {
 		value = 1
 
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			has_trait = trait_hive_mind
@@ -240,7 +232,7 @@ ethic_authoritarian = {
 			is_enslaved = yes
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			has_trait = "trait_decadent"
 		}
 		modifier = {
@@ -296,7 +288,6 @@ ethic_fanatic_egalitarian = {
 		ETHIC_ONLY_DEMOCRACY
 		ETHIC_ALLOW_UTOPIA
 		ETHIC_DISALLOW_POVERTY
-		ETHIC_DISALLOW_MIGRATION_CONTROL
 	}
 
 	country_modifier = {
@@ -321,7 +312,7 @@ ethic_egalitarian = {
 	tags = {
 		ETHIC_NEVER_AUTOCRACY
 		ETHIC_ALLOW_UTOPIA
-		ETHIC_DISALLOW_MIGRATION_CONTROL
+		ETHIC_DISALLOW_POVERTY
 	}
 
 	country_modifier = {
@@ -381,7 +372,10 @@ ethic_egalitarian = {
 		trigger = {
 			any_relation = {
 				OR = {
-					has_migration_access = root
+					AND = {
+						is_subject = no
+						has_migration_access = root
+					}
 					is_in_federation_with = root
 					has_defensive_pact = root
 				}
@@ -432,10 +426,10 @@ ethic_egalitarian = {
 
 	country_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			NOR = {
@@ -529,6 +523,7 @@ ethic_egalitarian = {
 		modifier = {
 			factor = 2.0
 			any_relation = {
+				is_subject = no
 				has_migration_access = root
 				OR = {
 					has_ethic = ethic_egalitarian
@@ -542,10 +537,10 @@ ethic_egalitarian = {
 	pop_attraction = {
 		value = 1
 
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			has_trait = trait_hive_mind
@@ -703,7 +698,7 @@ ethic_xenophobe = {
 			any_owned_planet = {
 				any_owned_pop = {
 					NOT = { has_trait = "trait_repugnant" }
-					is_non_sentient_robot = no
+					is_non_sapient_robot = no
 				}
 				any_owned_pop = {
 					has_trait = "trait_repugnant"
@@ -766,8 +761,9 @@ ethic_xenophobe = {
 					not = { is_same_species = root }
 					is_enslaved = no
 					is_being_purged = no
-					is_sentient = yes
+					is_sapient = yes
 					is_robot_pop = no
+					NOT = { has_citizenship_type = { type = citizenship_purge } }
 				}
 			}
 		}
@@ -777,32 +773,18 @@ ethic_xenophobe = {
 		desc = POP_ATTRACTION_MIGRATION_TREATIES_NEG
 		trigger = {
 			any_relation = {
+				is_subject = no
 				has_migration_access = root
-			}
-		}
-	}
-
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_CHARISMATIC_NEG
-		trigger = {
-			any_owned_planet = {
-				any_owned_pop = {
-					NOT = { has_trait = "trait_charismatic" }
-					is_non_sentient_robot = no
-				}
-				any_owned_pop = {
-					has_trait = "trait_charismatic"
-				}
 			}
 		}
 	}
 
 	country_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			NOR = {
@@ -862,6 +844,7 @@ ethic_xenophobe = {
 		modifier = {
 			factor = 0.75
 			any_relation = {
+				is_subject = no
 				has_migration_access = root
 			}
 		}
@@ -933,10 +916,10 @@ ethic_xenophobe = {
 	pop_attraction = {
 		value = 1
 
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			has_trait = trait_hive_mind
@@ -960,27 +943,20 @@ ethic_xenophobe = {
 			from = {
 				any_owned_pop = {
 					not = { is_same_species = root }
-					is_robot_pop = no
 					is_enslaved = no
 					is_being_purged = no
+					is_sapient = yes
+					is_robot_pop = no
+					NOT = { has_citizenship_type = { type = citizenship_purge } }
 				}
 			}
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			from = {
 				any_pop = {
 					NOT = { is_same_species = root }
 					has_trait = "trait_repugnant"
-				}
-			}
-		}
-		modifier = {
-			factor = 0.75
-			from = {
-				any_pop = {
-					NOT = { is_same_species = root }
-					has_trait = "trait_charismatic"
 				}
 			}
 		}
@@ -999,14 +975,14 @@ ethic_fanatic_xenophile = {
 	use_for_pops = no
 
 	tags = {
-		ETHIC_ALWAYS_MUST_ALIEN_CITIZENSHIP
 		ETHIC_IMPROVED_DIPLOMACY
 		ETHIC_DISALLOW_FULL_NATIVE_TAMPERING
 		ETHIC_ALWAYS_REFUGEES
+		ETHIC_DISALLOWS_DISPLACE
 	}
 
 	country_modifier = {
-		country_trust_growth = 0.5
+		country_border_friction_mult = -0.5
 		diplomacy_influence_cost = -0.5
 	}
 
@@ -1028,10 +1004,11 @@ ethic_xenophile = {
 		ETHIC_IMPROVED_DIPLOMACY
 		ETHIC_DISALLOW_FULL_NATIVE_TAMPERING
 		ETHIC_ALWAYS_REFUGEES
+		ETHIC_DISALLOWS_DISPLACE
 	}
 
 	country_modifier = {
-		country_trust_growth = 0.25
+		country_border_friction_mult = -0.25
 		diplomacy_influence_cost = -0.25
 	}
 
@@ -1075,8 +1052,10 @@ ethic_xenophile = {
 				any_owned_pop = {
 					not = { is_same_species = root }
 					is_enslaved = no
-					is_sentient = yes
+					is_being_purged = no
+					is_sapient = yes
 					is_robot_pop = no
+					NOT = { has_citizenship_type = { type = citizenship_purge } }
 				}
 			}
 		}
@@ -1099,7 +1078,9 @@ ethic_xenophile = {
 		desc = POP_ATTRACTION_MIGRATION_TREATIES_POS
 		trigger = {
 			any_relation = {
+				is_subject = no
 				has_migration_access = root
+				NOT = { is_same_species = root }
 			}
 		}
 	}
@@ -1110,25 +1091,10 @@ ethic_xenophile = {
 			any_owned_planet = {
 				any_owned_pop = {
 					NOT = { has_trait = "trait_charismatic" }
-					is_non_sentient_robot = no
+					is_non_sapient_robot = no
 				}
 				any_owned_pop = {
 					has_trait = "trait_charismatic"
-				}
-			}
-		}
-	}
-
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_REPUGNANT_NEG
-		trigger = {
-			any_owned_planet = {
-				any_owned_pop = {
-					NOT = { has_trait = "trait_repugnant" }
-					is_non_sentient_robot = no
-				}
-				any_owned_pop = {
-					has_trait = "trait_repugnant"
 				}
 			}
 		}
@@ -1162,10 +1128,10 @@ ethic_xenophile = {
 
 	country_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			NOR = {
@@ -1220,6 +1186,7 @@ ethic_xenophile = {
 			factor = 1.5
 			any_relation = {
 				NOT = { is_same_species = root }
+				is_subject = no
 				has_migration_access = root
 			}
 		}
@@ -1284,10 +1251,10 @@ ethic_xenophile = {
 	pop_attraction = {
 		value = 1
 
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			has_trait = trait_hive_mind
@@ -1304,17 +1271,11 @@ ethic_xenophile = {
 			fromfrom = {
 				any_owned_pop = {
 					not = { is_same_species = root }
-					is_robot_pop = no
 					is_enslaved = no
-				}
-			}
-		}
-		modifier = {
-			factor = 0.25
-			from = {
-				any_pop = {
-					NOT = { is_same_species = root }
-					has_trait = "trait_repugnant"
+					is_being_purged = no
+					is_sapient = yes
+					is_robot_pop = no
+					NOT = { has_citizenship_type = { type = citizenship_purge } }
 				}
 			}
 		}
@@ -1425,7 +1386,7 @@ ethic_militarist = {
 		trigger = {
 			any_relation = {
 				any_owned_planet = {
-					is_original_owner = from.owner
+					is_original_owner = root
 				}
 			}
 		}
@@ -1445,9 +1406,9 @@ ethic_militarist = {
 		trigger = {
 			any_neighbor_country = {
 				OR = {
-					is_hostile_to = from.owner
-					is_domineering_to = from.owner
-					is_rival = from.owner
+					is_hostile_to = from
+					is_domineering_to = from
+					is_rival = from
 				}
 			}
 		}
@@ -1470,7 +1431,10 @@ ethic_militarist = {
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_EMPIRE_PEACEFUL_NEG
 		trigger = {
-			years_of_peace > 20
+			years_of_peace = {
+				value > 20
+				delay = 50
+			}
 		}
 	}
 
@@ -1485,13 +1449,20 @@ ethic_militarist = {
 		}
 	}
 
+	pop_attraction_tag = {
+		desc = POP_ATTRACTION_INWARDS_PERFECTION_NEG
+		trigger = {
+			has_valid_civic = civic_inwards_perfection
+		}
+	}
+
 	# from = planet
 	country_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			NOR = {
@@ -1543,29 +1514,49 @@ ethic_militarist = {
 		}
 
 		modifier = {
+			factor = 0.33
+			has_valid_civic = civic_inwards_perfection
+		}
+
+		modifier = {
 			factor = 0.75
 			is_country_type = default
-			years_of_peace > 20
+			years_of_peace = {
+				value > 20
+				delay = 50
+			}
 		}
 		modifier = {
 			factor = 0.75
 			is_country_type = default
-			years_of_peace > 40
+			years_of_peace = {
+				value > 40
+				delay = 50
+			}
 		}
 		modifier = {
 			factor = 0.75
 			is_country_type = default
-			years_of_peace > 60
+			years_of_peace = {
+				value > 60
+				delay = 50
+			}
 		}
 		modifier = {
 			factor = 0.75
 			is_country_type = default
-			years_of_peace > 80
+			years_of_peace = {
+				value > 80
+				delay = 50
+			}
 		}
 		modifier = {
 			factor = 0.75
 			is_country_type = default
-			years_of_peace > 100
+			years_of_peace = {
+				value > 100
+				delay = 50
+			}
 		}
 		# Effects of indoctrination mission
 		modifier = {
@@ -1590,16 +1581,24 @@ ethic_militarist = {
 				observation_outpost_owner = { has_ethic = ethic_militarist }
 			}
 		}
+		modifier = {
+			factor = 1.25
+			any_relation = {
+				any_owned_planet = {
+					is_original_owner = root
+				}
+			}
+		}
 	}
 
 	# from = planet
 	pop_attraction = {
 		value = 1
 
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			has_trait = trait_hive_mind
@@ -1629,6 +1628,7 @@ ethic_militarist = {
 			from = {
 				owner = {
 					any_neighbor_country = {
+						from = { is_neighbor_of = prev }
 						OR = {
 							is_hostile_to = from.owner
 							is_domineering_to = from.owner
@@ -1639,27 +1639,11 @@ ethic_militarist = {
 			}
 		}
 		modifier = {
-			factor = 2.0
-			OR = {
-				has_citizenship_rights = yes
-				can_be_military_leader = yes
-			}
-			from = {
-				owner = {
-					any_relation = {
-						any_owned_planet = {
-							is_original_owner = from.owner
-						}
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 1.2
+			factor = 1.1
 			has_trait = "trait_strong"
 		}
 		modifier = {
-			factor = 1.4
+			factor = 1.2
 			has_trait = "trait_very_strong"
 		}
 		modifier = {
@@ -1691,7 +1675,7 @@ ethic_fanatic_pacifist = {
 	}
 
 	country_modifier = {
-		country_resource_unity_mult = 0.4
+		pop_resource_output = 0.10
 		country_core_sector_system_cap = 4
 	}
 
@@ -1710,7 +1694,7 @@ ethic_pacifist = {
 	fanatic_variant = ethic_fanatic_pacifist
 
 	country_modifier = {
-		country_resource_unity_mult = 0.2
+		pop_resource_output = 0.05
 		country_core_sector_system_cap = 2
 	}
 
@@ -1754,7 +1738,10 @@ ethic_pacifist = {
 	pop_attraction_tag = {
 		desc = POP_ATTRACTION_EMPIRE_PEACEFUL_POS
 		trigger = {
-			years_of_peace > 20
+			years_of_peace = {
+				value > 20
+				delay = 50
+			}
 		}
 	}
 
@@ -1763,20 +1750,27 @@ ethic_pacifist = {
 		trigger = {
 			any_neighbor_country = {
 				OR = {
-					is_hostile_to = from.owner
-					is_domineering_to = from.owner
-					is_rival = from.owner
+					is_hostile_to = from
+					is_domineering_to = from
+					is_rival = from
 				}
 			}
 		}
 	}
 
+	pop_attraction_tag = {
+		desc = POP_ATTRACTION_FANATIC_PURIFIERS_NEG
+		trigger = {
+			has_valid_civic = civic_fanatic_purifiers
+		}
+	}
+
 	country_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			NOR = {
@@ -1809,6 +1803,10 @@ ethic_pacifist = {
 			has_faction = prosperity
 		}
 		modifier = {
+			factor = 0.5
+			has_valid_civic = civic_fanatic_purifiers
+		}
+		modifier = {
 			factor = 1.5
 			is_country_type = default
 			exists = ruler
@@ -1823,39 +1821,44 @@ ethic_pacifist = {
 			has_ethic = ethic_fanatic_pacifist
 		}
 		modifier = {
-			factor = 0.75
-			any_neighbor_country = {
-				OR = {
-					is_hostile_to = from.owner
-					is_domineering_to = from.owner
-					is_rival = from.owner
-				}
+			factor = 1.33
+			is_country_type = default
+			years_of_peace = {
+				value > 20
+				delay = 50
 			}
 		}
 		modifier = {
 			factor = 1.33
 			is_country_type = default
-			years_of_peace > 20
+			years_of_peace = {
+				value > 40
+				delay = 50
+			}
 		}
 		modifier = {
 			factor = 1.33
 			is_country_type = default
-			years_of_peace > 40
+			years_of_peace = {
+				value > 60
+				delay = 50
+			}
 		}
 		modifier = {
 			factor = 1.33
 			is_country_type = default
-			years_of_peace > 60
+			years_of_peace = {
+				value > 80
+				delay = 50
+			}
 		}
 		modifier = {
 			factor = 1.33
 			is_country_type = default
-			years_of_peace > 80
-		}
-		modifier = {
-			factor = 1.33
-			is_country_type = default
-			years_of_peace > 100
+			years_of_peace = {
+				value > 100
+				delay = 50
+			}
 		}
 		# Effects of indoctrination mission
 		modifier = {
@@ -1886,30 +1889,28 @@ ethic_pacifist = {
 	pop_attraction = {
 		value = 1
 
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			has_trait = trait_hive_mind
 		}
 		modifier = {
-			factor = 1.5
+			factor = 0.5
 			OR = {
 				has_citizenship_rights = yes
 				can_be_military_leader = yes
 			}
 			from = {
 				owner = {
-					any_neighbor_country = {}
-					NOT = {
-						any_neighbor_country = {
-							OR = {
-								is_hostile_to = from.owner
-								is_domineering_to = from.owner
-								is_rival = from.owner
-							}
+					any_neighbor_country = {
+						from = { is_neighbor_of = prev }
+						OR = {
+							is_hostile_to = from.owner
+							is_domineering_to = from.owner
+							is_rival = from.owner
 						}
 					}
 				}
@@ -1928,13 +1929,12 @@ ethic_fanatic_spiritualist = {
 	use_for_pops = no
 
 	tags = {
-		ETHIC_ALLOWS_PSIONICS
 		ETHIC_ALLOWS_TEMPLE
 		ETHIC_DISALLOW_AI
 	}
 
 	country_modifier = {
-		planet_unrest_add = -20
+		planet_unrest_mult = -0.3
 		pop_government_ethic_attraction = 0.3
 	}
 
@@ -1951,13 +1951,12 @@ ethic_spiritualist = {
 	fanatic_variant = ethic_fanatic_spiritualist
 
 	tags = {
-		ETHIC_ALLOWS_PSIONICS
 		ETHIC_ALLOWS_TEMPLE
 		ETHIC_DISALLOW_AI
 	}
 
 	country_modifier = {
-		planet_unrest_add = -10
+		planet_unrest_mult = -0.15
 		pop_government_ethic_attraction = 0.15
 	}
 
@@ -2011,8 +2010,24 @@ ethic_spiritualist = {
 				OR = {
 					is_in_federation_with = root
 					has_defensive_pact = root
-					has_migration_access = root
+					AND = {
+						is_subject = no
+						has_migration_access = root
+					}
 				}
+				OR = {
+					has_ethic = ethic_spiritualist
+					has_ethic = ethic_fanatic_spiritualist
+				}
+			}
+		}
+	}
+
+	pop_attraction_tag = {
+		desc = POP_ATTRACTION_SPIRITUALIST_OVERLORD_POS
+		trigger = {
+			is_subject = yes
+			overlord = {
 				OR = {
 					has_ethic = ethic_spiritualist
 					has_ethic = ethic_fanatic_spiritualist
@@ -2041,10 +2056,11 @@ ethic_spiritualist = {
 
 	country_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			NOR = {
@@ -2114,24 +2130,34 @@ ethic_spiritualist = {
 			has_ethic = ethic_fanatic_spiritualist
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.25
 			is_country_type = default
 			has_technology = "tech_psionic_theory"
 		}
 		modifier = {
-			factor = 1.33
+			factor = 1.5
 			is_country_type = default
 			has_ascension_perk = ap_mind_over_matter
 		}
 		modifier = {
-			factor = 1.33
+			factor = 1.5
 			is_country_type = default
 			has_ascension_perk = ap_transcendence
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			is_country_type = default
 			has_policy_flag = ai_full_rights
+		}
+		modifier = {
+			factor = 2.0
+			is_subject = yes
+			overlord = {
+				OR = {
+					has_ethic = ethic_spiritualist
+					has_ethic = ethic_fanatic_spiritualist
+				}
+			}
 		}
 		modifier = {
 			factor = 1.5
@@ -2149,6 +2175,7 @@ ethic_spiritualist = {
 		modifier = {
 			factor = 2.0
 			any_relation = {
+				is_subject = no
 				has_migration_access = root
 				OR = {
 					has_ethic = ethic_spiritualist
@@ -2162,26 +2189,17 @@ ethic_spiritualist = {
 	pop_attraction = {
 		value = 1
 
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			has_trait = trait_hive_mind
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.25
 			is_robot_pop = yes
-		}
-		modifier = {
-			factor = 0.5
-			is_robot_pop = no
-			from = {
-				any_owned_pop = {
-					is_robot_pop = yes
-				}
-			}
 		}
 	}
 }
@@ -2198,11 +2216,13 @@ ethic_fanatic_materialist = {
 	use_for_pops = no
 
 	tags = {
-		ETHIC_ALLOWS_AI_RIGHTS
+		ETHIC_ALLOWS_ACADEMIC_PRIVILEGE
+		ETHIC_DISALLOW_BAN_AI
+		ETHIC_DISALLOW_BAN_ROBOTS
 	}
 
 	country_modifier = {
-		country_robot_maintenance_mult = -0.2
+		pop_robot_upkeep_mult = -0.2
 		all_technology_research_speed = 0.10
 	}
 
@@ -2221,11 +2241,13 @@ ethic_materialist = {
 	category_opposite = yes
 
 	tags = {
-		ETHIC_ALLOWS_AI_RIGHTS
+		ETHIC_ALLOWS_ACADEMIC_PRIVILEGE
+		ETHIC_DISALLOW_BAN_AI
+		ETHIC_DISALLOW_BAN_ROBOTS
 	}
 
 	country_modifier = {
-		country_robot_maintenance_mult = -0.1
+		pop_robot_upkeep_mult = -0.1
 		all_technology_research_speed = 0.05
 	}
 
@@ -2266,6 +2288,17 @@ ethic_materialist = {
 		trigger = {
 			exists = ruler
 			ruler = { leader_of_faction = technologist }
+		}
+	}
+
+	pop_attraction_tag = {
+		desc = POP_ATTRACTION_CYBORGS_POS
+		trigger = {
+			any_owned_planet = {
+				any_owned_pop = {
+					has_trait = trait_cybernetic
+				}
+			}
 		}
 	}
 
@@ -2315,22 +2348,12 @@ ethic_materialist = {
 		}
 	}
 
-	pop_attraction_tag = {
-		desc = POP_ATTRACTION_PSIONICS_NEG
-		trigger = {
-			OR = {
-				has_technology = "tech_telepathy"
-				has_technology = "tech_psionic_theory"
-			}
-		}
-	}
-
 	country_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			NOR = {
@@ -2404,21 +2427,6 @@ ethic_materialist = {
 			has_valid_civic = civic_mechanists
 		}
 		modifier = {
-			factor = 0.5
-			is_country_type = default
-			has_technology = "tech_psionic_theory"
-		}
-		modifier = {
-			factor = 0.75
-			is_country_type = default
-			has_ascension_perk = ap_mind_over_matter
-		}
-		modifier = {
-			factor = 0.75
-			is_country_type = default
-			has_ascension_perk = ap_transcendence
-		}
-		modifier = {
 			factor = 1.25
 			is_country_type = default
 			has_policy_flag = ai_full_rights
@@ -2438,24 +2446,24 @@ ethic_materialist = {
 	# from = planet
 	pop_attraction = {
 		value = 1
-        modifier = {
-            factor = 0
-            has_ethic = ethic_demon_cultists
-        }
+		modifier = {
+			factor = 0
+			has_ethic = ethic_demon_cultists
+		}
 		modifier = {
 			factor = 0
 			has_trait = trait_hive_mind
 		}
 		modifier = {
-			factor = 5.0
+			factor = 2.0
 			is_robot_pop = yes
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			has_trait = "trait_cybernetic"
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.25
 			is_robot_pop = no
 			from = {
 				any_owned_pop = {
@@ -2478,44 +2486,50 @@ ethic_materialist = {
 	}
 }
 
-ethic_hive_mind = {
-	playable = { host_has_dlc = "Utopia" }
+ethic_gestalt_consciousness = {
+	playable = {
+		OR = {
+			host_has_dlc = "Utopia"
+			host_has_dlc = "Synthetic Dawn Story Pack"
+		}
+	}
 
 	cost = 3
-	category = "col"
+	category = "hive"
 	category_value = 0
 	use_for_pops = no
 
 	country_modifier = {
 		country_resource_influence_add = 1
-		country_resource_unity_mult = 0.20
-		pop_environment_tolerance = 0.10
-		pop_growth_speed = 0.25
+		country_core_sector_system_cap = 2
 	}
 
 	tags = {
-		ETHIC_HIVE_MIND_NO_TUTORIAL
-		ETHIC_HIVE_MIND_AUTHORITY
+		ETHIC_GESTALT_CONSCIOUSNESS_NO_TUTORIAL
+		ETHIC_GESTALT_CONSCIOUSNESS_AUTHORITY
 		ETHIC_ALLOW_FULL_BOMBARDMENT
-		ETHIC_HIVE_MIND_IMMORTAL_RULER
-		ETHIC_HIVE_MIND_NO_FACTIONS
-		ETHIC_HIVE_MIND_DOMESTIC_POP_SURVIVAL
-		ETHIC_HIVE_MIND_FOREIGN_POP_SURVIVAL
-		ETHIC_DISALLOW_AI
-		ETHIC_HIVE_MIND_ASCENSION_RESTRICTIONS
-		ETHIC_HIVE_MIND_GENEMODDING
+		ETHIC_GESTALT_CONSCIOUSNESS_IMMORTAL_RULER
+		ETHIC_GESTALT_CONSCIOUSNESS_NO_FACTIONS
+		ETHIC_GESTALT_CONSCIOUSNESS_DOMESTIC_POP_SURVIVAL
 	}
 
 	random_weight = {
-		value = 75
+		value = 100
 		modifier = {
 			factor = 0
 			OR = {
-				NOT = { host_has_dlc = "Utopia" }
-
-				# needs setup at galaxy generation time (see game_start.7)
-				has_global_flag = game_started
+				NOR = {
+					host_has_dlc = "Utopia"
+					host_has_dlc = "Synthetic Dawn Story Pack"
+				}
+				has_global_flag = game_started # additional traits (trait_hive_mind, trait_machine_unit) are only assigned and verified for empire designs, no effect after game start
 			}
+		}
+		modifier = {
+			factor = 2
+			host_has_dlc = "Synthetic Dawn Story Pack"
+			host_has_dlc = "Utopia"
+			NOT = { has_global_flag = game_started }
 		}
 	}
 }
