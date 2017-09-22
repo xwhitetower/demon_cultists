@@ -36,7 +36,6 @@ guiTypes = {
 			oversound = menu_over_01
 			shortcut = "F1"
 		}
-	}
 
 	#######################
 	### PHANTEON SCREEN ###
