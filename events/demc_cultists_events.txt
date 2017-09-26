@@ -1,0 +1,43 @@
+namespace = demc_cultists
+
+### post contact event of empires. Adds cultist ethos opinion modifier
+# This = Country which established the communications
+# From = Country which communications were established with
+event = {
+	id = demc_cultists.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_ethic = "ethic_demon_cultists"
+				From = { NOT = { has_ethic = "ethic_demon_cultists" } }
+			}
+			add_opinion_modifier = { who = FROM modifier = opinion_demon_cultist_ethos_on_normals }
+			FROM = {
+				add_opinion_modifier = { who = ROOT modifier = opinion_normals_on_demon_cultist_ethos }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_ethic = "ethic_demon_cultists" }
+				From = { has_ethic = "ethic_demon_cultists" }
+			}
+			add_opinion_modifier = { who = FROM modifier = opinion_normals_on_demon_cultist_ethos }
+			FROM = {
+				add_opinion_modifier = { who = ROOT modifier = opinion_demon_cultist_ethos_on_normals }
+			}
+		}
+		if = {
+			limit = {
+				has_ethic = "ethic_demon_cultists"
+				From = { has_ethic = "ethic_demon_cultists" }
+			}
+			add_opinion_modifier = { who = FROM modifier = opinion_demon_cultist_ethos_on_demon_cultist_ethos }
+			FROM = {
+				add_opinion_modifier = { who = ROOT modifier = opinion_demon_cultist_ethos_on_demon_cultist_ethos }
+			}
+		}
+	}
+}

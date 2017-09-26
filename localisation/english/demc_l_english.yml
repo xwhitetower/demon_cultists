@@ -145,3 +145,7 @@
  generic_demon_makemeloved_blessing_desc:0 "The aphrodisiac effects of the Pleasure God makes subjects to happily serve their master."
  generic_demon_smartass_blessing:0 "Minor intelligence blessing of the Wisdom God"
  generic_demon_smartass_blessing_desc:0 "The Wisdom God bestowed its knowledge to our people."
+
+ opinion_normals_on_demon_cultist_ethos:0 "Cultist"
+ opinion_demon_cultist_ethos_on_normals:0 "Heathen"
+ opinion_demon_cultist_ethos_on_demon_cultist_ethos:0 "Fellow cultists"
