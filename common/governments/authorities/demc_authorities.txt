@@ -20,7 +20,7 @@ auth_demon_cultists = {
 	election_type = oligarchic
 	uses_mandates = no
 	has_agendas = yes
-	has_factions = yes
+	has_factions = no
 
 	possible = {
 		ethics = {
