@@ -9,33 +9,9 @@ opinion_normals_on_demon_cultist_ethos = {
 	opinion = {
 		base = 0
 
-		# If spiritualists slight repulsion. They are nasty but confirms that something immaterial exists.
-		modifier = {
-			add = -10
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
-			NOT = { has_ethic = "ethic_demon_cultists" }
-			FROM = { has_ethic = "ethic_demon_cultists" }
-		}
 		# normal ethos hates those filthy heretics
 		modifier = {
 			add = -25
-			NOR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
-			NOT = { has_ethic = "ethic_demon_cultists" }
-			FROM = { has_ethic = "ethic_demon_cultists" }
-		}
-		# Xenophiles hate you a bit less. The could tolerate cultist weird worship
-		modifier = {
-			add = 5
-			OR = {
-				has_ethic = "ethic_xenophile"
-				has_ethic = "ethic_fanatic_xenophile"
-			}
 			NOT = { has_ethic = "ethic_demon_cultists" }
 			FROM = { has_ethic = "ethic_demon_cultists" }
 		}
@@ -46,7 +22,7 @@ opinion_demon_cultist_ethos_on_normals = {
 	opinion = {
 		base = 0
 
-		# Unbelievers are not to be trusted
+		# Unbelievers must be sacrificed
 		modifier = {
 			add = -25
 			has_ethic = "ethic_demon_cultists"
@@ -59,7 +35,7 @@ opinion_demon_cultist_ethos_on_demon_cultist_ethos = {
 	opinion = {
 		base = 0
 
-		# Unbelievers are not to be trusted
+		# Brother!
 		modifier = {
 			add = 10
 			has_ethic = "ethic_demon_cultists"
