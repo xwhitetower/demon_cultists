@@ -4,6 +4,11 @@
  auth_demon_cultists:0 "Demon cultists"
  auth_demon_cultists_desc:0 "Cultists sects are ruled by a small group of individuals blessed enough to be able to listen the words of the demons."
 
+ ETHIC_DEMON_CULTIST_AUTHORITY:0 "§ECannot use §HDemocratic§!, §HOligarchic§!, §HDictatorial§!, or §HImperial§! authority§!"
+ ETHIC_DEMON_CULTIST_NO_FACTIONS:0 "§EPops are brainwashed and will not join §HFactions§!§!"
+ ETHIC_DEMON_CULTIST_ALLOW_DEMONS:0 "§EGives access to the §HDark Pantheon§! to receive benefits from the Shroud demons§!"
+ ETHIC_DEMON_CULTIST_SACRIFICES:0 "§ECan sacrifice Pops to gain §H$sacrificial_energy$§!§!"
+
  gov_blood_demon_cultists:0 "Blood Cult"
  gov_blood_demon_cultists_desc:0 "This government is a sect of blood demon worshippers. The cultists of this sect are more aggressive than other sects."
  gov_plague_demon_cultists:0 "Plague Cult"
