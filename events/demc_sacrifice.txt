@@ -1,0 +1,30 @@
+namespace = demc_sacrifice
+
+pop_event = {
+	id = demc_sacrifice.1
+	hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        FROM = { owner = { has_ethic = ethic_demon_cultists } }
+        FROM = { owner = { has_max_sacrificial_energy = no } }
+        is_robot_pop = no
+    }
+
+    immediate = {
+		kill_pop = yes
+		FROM = { 
+            owner = {
+                change_variable = {
+                    which = "sacrifical_energy_count"
+                    value = 1
+                }
+                set_timed_country_flag = {
+				    flag = recent_sacrifice
+				    days = 720 # 2 years, totally final number
+			    }
+            }
+            add_modifier = { modifier = planet_recent_sacrifice days = 360 }
+        }
+	}
+}
