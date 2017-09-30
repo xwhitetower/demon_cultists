@@ -14,3 +14,12 @@ on_leader_death = {
 		demc_pleasure_contact.4
 	}
 }
+
+# Executed right after country has established communications with another country
+# This = Country which established the communications
+# From = Country which communications were established with
+on_post_communications_established = {
+	events = {
+		demc_cultists.1
+	}
+}
