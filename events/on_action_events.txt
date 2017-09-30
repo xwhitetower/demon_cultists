@@ -1358,6 +1358,7 @@ country_event = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
 				has_ethic = ethic_gestalt_consciousness
+				has_ethic = ethic_demon_cultists
 			}
 		}
 	}
@@ -3554,6 +3555,7 @@ country_event = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
 				has_ethic = ethic_gestalt_consciousness
+				has_ethic = ethic_demon_cultists
 			}
 		}
 	}
