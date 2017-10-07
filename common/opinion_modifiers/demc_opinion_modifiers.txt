@@ -2,6 +2,52 @@
 # OPINION MODIFIERS
 ##########################################################################
 
+##################
+# ETHOS & CIVIC
+#################
+opinion_normals_on_demon_cultist_ethos = {
+	opinion = {
+		base = 0
+
+		# normal ethos hates those filthy heretics
+		modifier = {
+			add = -25
+			NOT = { has_ethic = "ethic_demon_cultists" }
+			FROM = { has_ethic = "ethic_demon_cultists" }
+		}
+	}
+}
+
+opinion_demon_cultist_ethos_on_normals = {
+	opinion = {
+		base = 0
+
+		# Unbelievers must be sacrificed
+		modifier = {
+			add = -25
+			has_ethic = "ethic_demon_cultists"
+			FROM = { NOT = { has_ethic = "ethic_demon_cultists" } }
+		}
+	}
+}
+
+opinion_demon_cultist_ethos_on_demon_cultist_ethos = {
+	opinion = {
+		base = 0
+
+		# Brother!
+		modifier = {
+			add = 10
+			has_ethic = "ethic_demon_cultists"
+			FROM = { has_ethic = "ethic_demon_cultists" }
+		}
+	}
+}
+
+
+#################
+# Blessings
+#################
 opinion_pleasure_demon_sexy_blessing = {
 	opinion = {
 		base = 10

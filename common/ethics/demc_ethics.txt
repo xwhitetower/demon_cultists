@@ -5,12 +5,15 @@ ethic_demon_cultists = {
 	category_value = 0
 
 	country_modifier = {
-		country_resource_influence_add = 1
 	}
 
 	tags = {
 		ETHIC_ALLOW_FULL_BOMBARDMENT
 		ETHIC_DISALLOW_AI
+		ETHIC_DEMON_CULTIST_AUTHORITY
+		ETHIC_DEMON_CULTIST_NO_FACTIONS
+		ETHIC_DEMON_CULTIST_ALLOW_DEMONS
+		ETHIC_DEMON_CULTIST_SACRIFICES
 	}
 
 	random_weight = {
