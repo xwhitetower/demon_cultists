@@ -7,7 +7,7 @@
  ETHIC_DEMON_CULTIST_AUTHORITY:0 "§ECannot use §HDemocratic§!, §HOligarchic§!, §HDictatorial§!, or §HImperial§! authority§!"
  ETHIC_DEMON_CULTIST_NO_FACTIONS:0 "§EPops are brainwashed and will not join §HFactions§!§!"
  ETHIC_DEMON_CULTIST_ALLOW_DEMONS:0 "§EGives access to the §HDark Pantheon§! to receive benefits from the Shroud demons§!"
- ETHIC_DEMON_CULTIST_SACRIFICES:0 "§ECan sacrifice Pops to gain §H$sacrificial_energy$§!§!"
+ ETHIC_DEMON_CULTIST_SACRIFICES:0 "§ECan sacrifice Pops to gain §H$sacrifical_energy_count$§!§!"
 
  gov_blood_demon_cultists:0 "Blood Cult"
  gov_blood_demon_cultists_desc:0 "This government is a sect of blood demon worshippers. The cultists of this sect are more aggressive than other sects."
@@ -58,6 +58,9 @@
 
  DARK_PANTHEON_TITLE:0 "The Dark Pantheon"
  POP_ACTION_PURGE:0 "Kill"
+
+ sacrifical_energy_count:0 "Sacrifical Energy"
+ sacrifical_energy_count_desc:0 "Souls of the living ready to feed our Masters"
 
  building_sacrificial_altar:0 "Sacrificial Altar"
  building_sacrificial_altar_desc:0 "A desecrated temple to worship Demons.\nKilling a £pop  §Epop§! while being in the temple will grant you a §ESoul§!.\n§ESouls §!can be exchanged in the §EPhanteon§!"
