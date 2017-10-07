@@ -25,7 +25,7 @@ pop_event = {
 					days = 144 # 4 months, totally final number
 				}
 			}
-			add_modifier = { modifier = planet_recent_sacrifice days = 360 }
+			add_modifier = { modifier = planet_recent_sacrifice days = 144 }
 		}
 	}
 }
