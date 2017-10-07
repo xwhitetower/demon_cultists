@@ -13,6 +13,3 @@
  PANTHEON_MINOR_BLOOD_5_DESC:0 "$PANTHEON_MINOR_BLOOD_5$\n§WMaster of bugs.\n"
  PANTHEON_MINOR_BLOOD_6:0 "§HRegge a ton§!"
  PANTHEON_MINOR_BLOOD_6_DESC:0 "$PANTHEON_MINOR_BLOOD_6$\n§WHe will drive you crazy.\n"
-
- edict_sacrifice_pop_to_the_dark_gods:0 "Make a sacrifice"
- edict_sacrifice_pop_to_the_dark_gods_desc:0 "Performs the rite of sacrifice killing a pop. Pop souls can be offered to demons in the temple."
