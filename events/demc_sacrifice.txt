@@ -6,7 +6,7 @@ pop_event = {
 	is_triggered_only = yes
 
 	trigger = {
-	FROM = { owner = { has_ethic = ethic_demon_cultists } }
+		FROM = { owner = { has_ethic = ethic_demon_cultists } }
 		FROM = { owner = { has_max_sacrificial_energy = no } }
 		is_robot_pop = no
 	}
