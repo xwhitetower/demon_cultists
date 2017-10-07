@@ -12,10 +12,6 @@ can_purge_pop_manually = {
 			is_sapient = no
 			owner = { has_authority = auth_hive_mind }
 			owner = { has_ethic = ethic_demon_cultists }
-            AND = {
-                owner = { has_authority = auth_demon_cultists }
-                tile = { has_building = building_sacrificial_altar }
-            }
 			has_citizenship_type = { type = citizenship_slavery }
 			has_citizenship_type = { type = citizenship_full_machine }
 		}		
@@ -25,7 +21,7 @@ can_purge_pop_manually = {
 		OR = {
 			is_robot_pop = yes
 			is_sapient = no
-			owner = { NOT = { has_authority = auth_demon_cultists }	}
+			owner = { NOT = { has_ethic = ethic_demon_cultists }	}
 			tile = { has_building = building_sacrificial_altar }
 		}
 	}
@@ -34,7 +30,7 @@ can_purge_pop_manually = {
 		OR = {
 			is_robot_pop = yes
 			is_sapient = no
-			owner = { NOT = { has_authority = auth_demon_cultists }	}
+			owner = { NOT = { has_ethic = ethic_demon_cultists }	}
 			owner = { NOT = { has_country_flag = recent_sacrifice } }
 		}
 	}
@@ -43,7 +39,7 @@ can_purge_pop_manually = {
 		OR = {
 			is_robot_pop = yes
 			is_sapient = no
-			owner = { NOT = { has_authority = auth_demon_cultists }	}
+			owner = { NOT = { has_ethic = ethic_demon_cultists }	}
 			owner = { has_max_sacrificial_energy = no }
 		}
 	}
