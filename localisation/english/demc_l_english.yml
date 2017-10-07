@@ -7,7 +7,7 @@
  ETHIC_DEMON_CULTIST_AUTHORITY:0 "§ECannot use §HDemocratic§!, §HOligarchic§!, §HDictatorial§!, or §HImperial§! authority§!"
  ETHIC_DEMON_CULTIST_NO_FACTIONS:0 "§EPops are brainwashed and will not join §HFactions§!§!"
  ETHIC_DEMON_CULTIST_ALLOW_DEMONS:0 "§EGives access to the §HDark Pantheon§! to receive benefits from the Shroud demons§!"
- ETHIC_DEMON_CULTIST_SACRIFICES:0 "§ECan sacrifice Pops to gain §H$sacrificial_energy$§!§!"
+ ETHIC_DEMON_CULTIST_SACRIFICES:0 "§ECan sacrifice Pops to gain §H$sacrifical_energy_count$§!§!"
 
  gov_blood_demon_cultists:0 "Blood Cult"
  gov_blood_demon_cultists_desc:0 "This government is a sect of blood demon worshippers. The cultists of this sect are more aggressive than other sects."
@@ -57,9 +57,20 @@
  START_SCREEN_PART_TWO_WISDOM_CULTIST:0 "The shroud could be faintly sensed in [GetHomeWorldName]. Our ancient shamans, seeking understanding the world, contacted with entities of the Shroud. A contract was made with them, they would provide us with knowledge out of the realm of normal reality and we would serve them for eternity. With the superior technology given to us we were able to unite the planet easily."
 
  DARK_PANTHEON_TITLE:0 "The Dark Pantheon"
+ POP_ACTION_PURGE:0 "Kill"
 
- building_sacrificial_altar:0 "Sacrificial altar"
- building_sacrificial_altar_desc:0 "An altar to perform sacrifices in honor of the dark gods."
+ sacrifical_energy_count:0 "Sacrifical Energy"
+ sacrifical_energy_count_desc:0 "Souls of the living ready to feed our Masters"
+
+ building_sacrificial_altar:0 "Sacrificial Altar"
+ building_sacrificial_altar_desc:0 "A desecrated temple to worship Demons.\nKilling a £pop  §Epop§! while being in the temple will grant you a §ESoul§!.\n§ESouls §!can be exchanged in the §EPhanteon§!"
+
+ planet_recent_sacrifice:0 "Joy of blood"
+ planet_recent_sacrifice_desc:0 "A sacrifice has ben made to our Dark Lords, rejoice!"
+
+ ACTION_SACRIFICE_IN_ALTAR:0 "In order to kill this £pop  §Epop§! it must be placed in a £building  §E$building_sacrificial_altar$§!"
+ ACTION_RECENT_SACRIFICE:0 "A sacrifice was made in our empre recently. You must wait £time  before another soul can be offered."
+ ACTION_CANNOT_STORE_MORE_SOULS:0 "Rivers of blood flow from our altars and corpses pile in our cities, we have no need to sacrifice anyone.\nFor now..."
 
  action.1.generic_demon_cultist_desc:0 "I, [contact_empire.GetRulerName], am the voice of the gods of the Shroud. The people of [Root.GetName] has still not see the light! Repent! Stop your heretic ways and join us!"
  action.1.blood_demon_cultist_desc:0 "Weak warriors of [Root.GetName] we will meet you anytime on the battlefield. Lets honor our lord $MAJOR_BLOOD_DEMON$ and shed our blood on holy battle."

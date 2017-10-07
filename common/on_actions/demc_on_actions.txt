@@ -15,6 +15,14 @@ on_leader_death = {
 	}
 }
 
+# This = Pop scope
+# From = Planet
+on_purge_begun = {
+	events = {
+		demc_sacrifice.1
+	}
+}
+
 # Executed right after country has established communications with another country
 # This = Country which established the communications
 # From = Country which communications were established with

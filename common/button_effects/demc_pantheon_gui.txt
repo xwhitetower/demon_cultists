@@ -1,6 +1,7 @@
 #######################
 ### SHARED 			###
 #######################
+
 button_pantheon_screen_open = {
 	potential = {
 		NOT = { has_country_flag = pantheon_screen_open }
