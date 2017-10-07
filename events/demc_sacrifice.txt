@@ -22,7 +22,7 @@ pop_event = {
 				}
 				set_timed_country_flag = {
 					flag = recent_sacrifice
-					days = 720 # 2 years, totally final number
+					days = 144 # 4 months, totally final number
 				}
 			}
 			add_modifier = { modifier = planet_recent_sacrifice days = 360 }
