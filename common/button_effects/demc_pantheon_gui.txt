@@ -8,11 +8,34 @@ button_pantheon_screen_open = {
 	}
 
 	allow = {
+		custom_tooltip = {
+			text = PANTHEON_BUTTON_NOT_ACTIVE
+			has_ethic = ethic_demon_cultists
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_BUTTON_DESC
+		hidden_effect = {
+			set_country_flag = pantheon_screen_open
+		}
+	}
+}
+
+button_pantheon_screen_open_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+	}
+
+	allow = {
 		always = yes
 	}
 
 	effect = {
-		set_country_flag = pantheon_screen_open
+		custom_tooltip = PANTHEON_BUTTON_DESC
+		hidden_effect = {
+			remove_country_flag = pantheon_screen_open
+		}
 	}
 }
 
