@@ -307,23 +307,14 @@ guiTypes = {
             effect = "button_pantheon_screen_open"
         }
 
-		#effectButtonType = {
-        #    name = "open_pantheon_screen_opened"
-        #    quadTextureSprite ="GFX_topbar_pantheon_button"
-        #    position = { x = 274 y = -9 }
-        #    clicksound = interface
-        #    oversound = menu_over_01
-        #    effect = "button_pantheon_screen_open"
-        #}
-
-		#effectButtonType = {
-        #    name = "open_pantheon_screen_disabled"
-        #    quadTextureSprite ="GFX_topbar_pantheon_button"
-        #    position = { x = 274 y = -9 }
-        #    clicksound = interface
-        #    oversound = menu_over_01
-        #    effect = "button_pantheon_screen_open"
-        #}
+		effectButtonType = {
+            name = "open_pantheon_screen_opened"
+            quadTextureSprite ="GFX_topbar_pantheon_button_selected"
+            position = { x = 274 y = -9 }
+            clicksound = interface
+            oversound = menu_over_01
+            effect = "button_pantheon_screen_open_selected"
+        }
 
 		####################
 		# Resources
