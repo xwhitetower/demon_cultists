@@ -26,15 +26,6 @@ guiTypes = {
         ### PHANTEON SCREEN ###
         #######################
         effectButtonType = {
-            name = "open_pantheon_screen"
-            quadTextureSprite ="GFX_topbar_pantheon_button"
-            position = { x = 1140 y = 9 }
-            clicksound = interface
-            oversound = menu_over_01
-            effect = "button_pantheon_screen_open"
-        }
-
-        effectButtonType = {
             name = "pantheon_screen"
             spriteType = "GFX_pantheon_background"
             size = { x = 562 y = 641 }

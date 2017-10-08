@@ -250,7 +250,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "topbar_bar_03"
 			size = { width = 460 height = 25 }
-			position = { x = 280 y = 13 }
+			position = { x = 334 y = 13 }
 
 				background = {
 					name = "topbar_bar_03"
@@ -262,7 +262,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "topbar_bar_04"
 			size = { width = 205 height = 25 }
-			position = { x = 738 y = 13 }
+			position = { x = 792 y = 13 }
 
 				background = {
 					name = "topbar_bar_04"
@@ -273,7 +273,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "topbar_bar_05"
 			size = { width = 212 height = 25 }
-			position = { x = 941 y = 13 }
+			position = { x = 995 y = 13 }
 
 				background = {
 					name = "topbar_bar_05"
@@ -296,11 +296,41 @@ guiTypes = {
 		@resource_amount_y = 9
 
 		####################
+		# Pantheon Button
+		####################
+		effectButtonType = {
+            name = "open_pantheon_screen"
+            quadTextureSprite ="GFX_topbar_pantheon_button"
+            position = { x = 274 y = -9 }
+            clicksound = interface
+            oversound = menu_over_01
+            effect = "button_pantheon_screen_open"
+        }
+
+		#effectButtonType = {
+        #    name = "open_pantheon_screen_opened"
+        #    quadTextureSprite ="GFX_topbar_pantheon_button"
+        #    position = { x = 274 y = -9 }
+        #    clicksound = interface
+        #    oversound = menu_over_01
+        #    effect = "button_pantheon_screen_open"
+        #}
+
+		#effectButtonType = {
+        #    name = "open_pantheon_screen_disabled"
+        #    quadTextureSprite ="GFX_topbar_pantheon_button"
+        #    position = { x = 274 y = -9 }
+        #    clicksound = interface
+        #    oversound = menu_over_01
+        #    effect = "button_pantheon_screen_open"
+        #}
+
+		####################
 		# Resources
 		####################
 		containerWindowType = {
 			name = "resource_window"
-			position = { x= 290 y = 0 }
+			position = { x= 344 y = 0 }
 			size = { width=200 height=200 }
 			Orientation = UPPER_LEFT
 
