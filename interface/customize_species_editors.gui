@@ -2339,8 +2339,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "authority_description"
-			size = { width = 310 height = 131 }
-			position = { x = 360 y = 140 }
+			size = { width = 310 height = 102 }
+			position = { x = 360 y = 172 }
 
 			background = {
 				name = "background"
@@ -2353,7 +2353,7 @@ guiTypes = {
 				font = "cg_16b"
 				position = { x = 10 y = 10 }
 				maxWidth = 290
-				maxHeight = 111
+				maxHeight = 92
 				text = ""
 				scrollbartype = "standardtext_slider"
 			}
