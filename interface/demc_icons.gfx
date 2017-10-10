@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_notification_blood_demon_contract_end"
+		textureFile = "gfx/interface/icons/governments/civics/civic_blood_demon_cult.dds"
+		noOfFrames = 1
+	}
+}

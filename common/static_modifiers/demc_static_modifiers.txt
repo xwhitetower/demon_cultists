@@ -30,6 +30,30 @@ blood_demon_morepunch_blessing = {
 	army_damage_mult = 0.10
 }
 
+
+##########################################################################
+# Minor Blood demon contracts
+##########################################################################
+
+minor_blood_demon_1_contract = {
+}
+
+minor_blood_demon_2_contract = {
+}
+
+minor_blood_demon_3_contract = {
+}
+
+minor_blood_demon_4_contract = {
+}
+
+minor_blood_demon_5_contract = {
+}
+
+minor_blood_demon_6_contract = {
+}
+
+
 ##########################################################################
 # Plague demon Blessings
 ##########################################################################
