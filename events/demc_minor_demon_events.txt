@@ -21,7 +21,7 @@ country_event = {
 	immediate = {
 		create_message = {
 			target = PREV
-			type = "MINOR_BLOOD_DEMON_CONTRACT_ENDED"
+			type = "MINOR_DEMON_CONTRACT_ENDED"
 		}
 	}
 }

@@ -19,3 +19,6 @@
 
  minor_demon_contract_canceled:0 "Demon contract canceled"
  minor_demon_contract_canceled_desc:0 "Our people are upset. They do not understand why we broken the oath with the demons."
+
+ MINOR_DEMON_CONTRACT_ENDED_TITLE:0 "Minor demon contract ended"
+ MINOR_DEMON_CONTRACT_ENDED_DESC:0 "Minor demon contract ended"
