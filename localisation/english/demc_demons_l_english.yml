@@ -16,3 +16,6 @@
  PANTHEON_MINOR_BLOOD_5_DESC:0 "$PANTHEON_MINOR_BLOOD_5$\n§WMaster of bugs.\n"
  PANTHEON_MINOR_BLOOD_6:0 "§HRegge a ton§!"
  PANTHEON_MINOR_BLOOD_6_DESC:0 "$PANTHEON_MINOR_BLOOD_6$\n§WHe will drive you crazy.\n"
+
+ minor_demon_contract_canceled:0 "Demon contract canceled"
+ minor_demon_contract_canceled_desc:0 "Our people are upset. They do not understand why we broken the oath with the demons."

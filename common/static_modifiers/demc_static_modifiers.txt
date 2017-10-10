@@ -35,6 +35,10 @@ blood_demon_morepunch_blessing = {
 # Minor Blood demon contracts
 ##########################################################################
 
+minor_demon_contract_canceled = {
+	pop_happiness = -0.1
+}
+
 minor_blood_demon_1_contract = {
 }
 

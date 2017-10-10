@@ -1,6 +1,7 @@
 
 @contractTime = 10
 @contractNotificationTime = 11
+@contractCanceledUnhappinessTime = 365
 
 #######################
 ### SHARED 			###
@@ -273,6 +274,7 @@ button_pantheon_minor_blood_1_selected = {
 			value = -5
 		}
 		remove_modifier = minor_blood_demon_1_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
 		}
@@ -338,6 +340,7 @@ button_pantheon_minor_blood_2_selected = {
 			value = -5
 		}
 		remove_modifier = minor_blood_demon_2_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
 		}
@@ -403,6 +406,7 @@ button_pantheon_minor_blood_3_selected = {
 			value = -5
 		}
 		remove_modifier = minor_blood_demon_3_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
 		}
@@ -468,6 +472,7 @@ button_pantheon_minor_blood_4_selected = {
 			value = -5
 		}
 		remove_modifier = minor_blood_demon_4_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
 		}
@@ -533,6 +538,7 @@ button_pantheon_minor_blood_5_selected = {
 			value = -5
 		}
 		remove_modifier = minor_blood_demon_5_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
 		}
@@ -599,6 +605,7 @@ button_pantheon_minor_blood_6_selected = {
 			value = -5
 		}
 		remove_modifier = minor_blood_demon_6_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
 		}
