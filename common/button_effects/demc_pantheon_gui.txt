@@ -235,10 +235,15 @@ button_pantheon_minor_blood_1 = {
 				has_modifier = minor_blood_demon_6_contract
 			}
 		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
 		add_modifier = { modifier = minor_blood_demon_1_contract days = @contractTime }
 		hidden_effect = {
 			remove_country_flag = pantheon_minor_blood_contract_canceled
@@ -255,14 +260,18 @@ button_pantheon_minor_blood_1_selected = {
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_1_DESC
 		}
+		has_5_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
 		remove_modifier = minor_blood_demon_1_contract
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
@@ -291,10 +300,15 @@ button_pantheon_minor_blood_2 = {
 				has_modifier = minor_blood_demon_6_contract
 			}
 		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_2_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
 		add_modifier = { modifier = minor_blood_demon_2_contract days = @contractTime }
 		hidden_effect = {
 			remove_country_flag = pantheon_minor_blood_contract_canceled
@@ -311,14 +325,18 @@ button_pantheon_minor_blood_2_selected = {
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_2_DESC
 		}
+		has_5_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_2_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
 		remove_modifier = minor_blood_demon_2_contract
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
@@ -347,10 +365,15 @@ button_pantheon_minor_blood_3 = {
 				has_modifier = minor_blood_demon_6_contract
 			}
 		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_3_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
 		add_modifier = { modifier = minor_blood_demon_3_contract days = @contractTime }
 		hidden_effect = {
 			remove_country_flag = pantheon_minor_blood_contract_canceled
@@ -367,14 +390,18 @@ button_pantheon_minor_blood_3_selected = {
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_3_DESC
 		}
+		has_5_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_3_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
 		remove_modifier = minor_blood_demon_3_contract
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
@@ -403,10 +430,15 @@ button_pantheon_minor_blood_4 = {
 				has_modifier = minor_blood_demon_6_contract
 			}
 		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_4_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
 		add_modifier = { modifier = minor_blood_demon_4_contract days = @contractTime }
 		hidden_effect = {
 			remove_country_flag = pantheon_minor_blood_contract_canceled
@@ -423,14 +455,18 @@ button_pantheon_minor_blood_4_selected = {
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_4_DESC
 		}
+		has_5_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_4_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
 		remove_modifier = minor_blood_demon_4_contract
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
@@ -459,10 +495,15 @@ button_pantheon_minor_blood_5 = {
 				has_modifier = minor_blood_demon_6_contract
 			}
 		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_5_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
 		add_modifier = { modifier = minor_blood_demon_5_contract days = @contractTime }
 		hidden_effect = {
 			remove_country_flag = pantheon_minor_blood_contract_canceled
@@ -479,14 +520,18 @@ button_pantheon_minor_blood_5_selected = {
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_5_DESC
 		}
+		has_5_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_5_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
 		remove_modifier = minor_blood_demon_5_contract
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
@@ -516,10 +561,15 @@ button_pantheon_minor_blood_6 = {
 				has_modifier = minor_blood_demon_5_contract
 			}
 		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_6_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
 		add_modifier = { modifier = minor_blood_demon_6_contract days = @contractTime }
 		hidden_effect = {
 			remove_country_flag = pantheon_minor_blood_contract_canceled
@@ -536,14 +586,18 @@ button_pantheon_minor_blood_6_selected = {
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_6_DESC
 		}
+		has_5_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_6_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
 		remove_modifier = minor_blood_demon_6_contract
 		hidden_effect = {
 			set_country_flag = pantheon_minor_blood_contract_canceled
