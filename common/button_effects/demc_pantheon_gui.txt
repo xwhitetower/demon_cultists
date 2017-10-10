@@ -66,7 +66,7 @@ button_pantheon_screen_energy_1 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 1
 		}
 	}
@@ -76,7 +76,7 @@ button_pantheon_screen_energy_2 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 1
 		}
 	}
@@ -86,7 +86,7 @@ button_pantheon_screen_energy_3 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 3
 		}
 	}
@@ -96,7 +96,7 @@ button_pantheon_screen_energy_4 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 3
 		}
 	}
@@ -106,7 +106,7 @@ button_pantheon_screen_energy_5 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 5
 		}
 	}
@@ -116,7 +116,7 @@ button_pantheon_screen_energy_6 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 5
 		}
 	}
@@ -126,7 +126,7 @@ button_pantheon_screen_energy_7 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 7
 		}
 	}
@@ -136,7 +136,7 @@ button_pantheon_screen_energy_8 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 7
 		}
 	}
@@ -146,7 +146,7 @@ button_pantheon_screen_energy_9 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 9
 		}
 	}
@@ -156,7 +156,7 @@ button_pantheon_screen_energy_A = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 9
 		}
 	}
@@ -166,7 +166,7 @@ button_pantheon_screen_energy_B = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 11
 		}
 	}
@@ -176,7 +176,7 @@ button_pantheon_screen_energy_C = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 11
 		}
 	}
@@ -214,6 +214,38 @@ button_pantheon_minor_blood_1 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+		NOT = { has_country_flag = pantheon_minor_blood_1_contracted }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_1_DESC
+		}
+		custom_tooltip = {
+			text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_country_flag = pantheon_minor_blood_2_contracted
+				has_country_flag = pantheon_minor_blood_3_contracted
+				has_country_flag = pantheon_minor_blood_4_contracted
+				has_country_flag = pantheon_minor_blood_5_contracted
+				has_country_flag = pantheon_minor_blood_6_contracted
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_1_contracted
+		}
+	}
+}
+
+button_pantheon_minor_blood_1_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_country_flag = pantheon_minor_blood_1_contracted
 	}
 
 	allow = {
@@ -225,6 +257,9 @@ button_pantheon_minor_blood_1 = {
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_1_contracted
+		}
 	}
 }
 
@@ -232,6 +267,37 @@ button_pantheon_minor_blood_2 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_2_DESC
+		}
+		custom_tooltip = {
+			text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_country_flag = pantheon_minor_blood_1_contracted
+				has_country_flag = pantheon_minor_blood_3_contracted
+				has_country_flag = pantheon_minor_blood_4_contracted
+				has_country_flag = pantheon_minor_blood_5_contracted
+				has_country_flag = pantheon_minor_blood_6_contracted
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_2_DESC
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_2_contracted
+		}
+	}
+}
+
+button_pantheon_minor_blood_2_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_country_flag = pantheon_minor_blood_2_contracted
 	}
 
 	allow = {
@@ -243,6 +309,9 @@ button_pantheon_minor_blood_2 = {
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_2_DESC
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_2_contracted
+		}
 	}
 }
 
@@ -250,6 +319,37 @@ button_pantheon_minor_blood_3 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_3_DESC
+		}
+		custom_tooltip = {
+			text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_country_flag = pantheon_minor_blood_1_contracted
+				has_country_flag = pantheon_minor_blood_2_contracted
+				has_country_flag = pantheon_minor_blood_4_contracted
+				has_country_flag = pantheon_minor_blood_5_contracted
+				has_country_flag = pantheon_minor_blood_6_contracted
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_3_DESC
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_3_contracted
+		}
+	}
+}
+
+button_pantheon_minor_blood_3_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_country_flag = pantheon_minor_blood_3_contracted
 	}
 
 	allow = {
@@ -261,6 +361,9 @@ button_pantheon_minor_blood_3 = {
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_3_DESC
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_3_contracted
+		}
 	}
 }
 
@@ -268,6 +371,37 @@ button_pantheon_minor_blood_4 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_4_DESC
+		}
+		custom_tooltip = {
+			text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_country_flag = pantheon_minor_blood_1_contracted
+				has_country_flag = pantheon_minor_blood_2_contracted
+				has_country_flag = pantheon_minor_blood_3_contracted
+				has_country_flag = pantheon_minor_blood_5_contracted
+				has_country_flag = pantheon_minor_blood_6_contracted
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_4_DESC
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_4_contracted
+		}
+	}
+}
+
+button_pantheon_minor_blood_4_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_country_flag = pantheon_minor_blood_4_contracted
 	}
 
 	allow = {
@@ -279,6 +413,9 @@ button_pantheon_minor_blood_4 = {
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_4_DESC
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_4_contracted
+		}
 	}
 }
 
@@ -286,6 +423,37 @@ button_pantheon_minor_blood_5 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_5_DESC
+		}
+		custom_tooltip = {
+			text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_country_flag = pantheon_minor_blood_1_contracted
+				has_country_flag = pantheon_minor_blood_2_contracted
+				has_country_flag = pantheon_minor_blood_3_contracted
+				has_country_flag = pantheon_minor_blood_4_contracted
+				has_country_flag = pantheon_minor_blood_6_contracted
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_5_DESC
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_5_contracted
+		}
+	}
+}
+
+button_pantheon_minor_blood_5_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_country_flag = pantheon_minor_blood_5_contracted
 	}
 
 	allow = {
@@ -297,6 +465,9 @@ button_pantheon_minor_blood_5 = {
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_5_DESC
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_5_contracted
+		}
 	}
 }
 
@@ -311,10 +482,45 @@ button_pantheon_minor_blood_6 = {
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_6_DESC
 		}
+		custom_tooltip = {
+			text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_country_flag = pantheon_minor_blood_1_contracted
+				has_country_flag = pantheon_minor_blood_2_contracted
+				has_country_flag = pantheon_minor_blood_3_contracted
+				has_country_flag = pantheon_minor_blood_4_contracted
+				has_country_flag = pantheon_minor_blood_5_contracted
+			}
+		}
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_6_DESC
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_6_contracted
+		}
+	}
+}
+
+button_pantheon_minor_blood_6_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_country_flag = pantheon_minor_blood_6_contracted
+	}
+
+	allow = {
+		always = yes
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_6_DESC
+		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_6_DESC
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_6_contracted
+		}
 	}
 }
 
