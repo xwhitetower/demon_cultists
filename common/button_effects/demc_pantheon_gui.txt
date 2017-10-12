@@ -227,7 +227,7 @@ button_pantheon_minor_blood_1 = {
 			text = PANTHEON_MINOR_BLOOD_1_DESC
 		}
 		custom_tooltip = {
-			text = PANTHEON_MINOR_CONTRACTED
+			fail_text = PANTHEON_MINOR_CONTRACTED
 			NOR = {
 				has_modifier = minor_blood_demon_2_contract
 				has_modifier = minor_blood_demon_3_contract
@@ -293,7 +293,7 @@ button_pantheon_minor_blood_2 = {
 			text = PANTHEON_MINOR_BLOOD_2_DESC
 		}
 		custom_tooltip = {
-			text = PANTHEON_MINOR_CONTRACTED
+			fail_text = PANTHEON_MINOR_CONTRACTED
 			NOR = {
 				has_modifier = minor_blood_demon_1_contract
 				has_modifier = minor_blood_demon_3_contract
@@ -359,7 +359,7 @@ button_pantheon_minor_blood_3 = {
 			text = PANTHEON_MINOR_BLOOD_3_DESC
 		}
 		custom_tooltip = {
-			text = PANTHEON_MINOR_CONTRACTED
+			fail_text = PANTHEON_MINOR_CONTRACTED
 			NOR = {
 				has_modifier = minor_blood_demon_1_contract
 				has_modifier = minor_blood_demon_2_contract
@@ -425,7 +425,7 @@ button_pantheon_minor_blood_4 = {
 			text = PANTHEON_MINOR_BLOOD_4_DESC
 		}
 		custom_tooltip = {
-			text = PANTHEON_MINOR_CONTRACTED
+			fail_text = PANTHEON_MINOR_CONTRACTED
 			NOR = {
 				has_modifier = minor_blood_demon_1_contract
 				has_modifier = minor_blood_demon_2_contract
@@ -491,7 +491,7 @@ button_pantheon_minor_blood_5 = {
 			text = PANTHEON_MINOR_BLOOD_5_DESC
 		}
 		custom_tooltip = {
-			text = PANTHEON_MINOR_CONTRACTED
+			fail_text = PANTHEON_MINOR_CONTRACTED
 			NOR = {
 				has_modifier = minor_blood_demon_1_contract
 				has_modifier = minor_blood_demon_2_contract
@@ -558,7 +558,7 @@ button_pantheon_minor_blood_6 = {
 			text = PANTHEON_MINOR_BLOOD_6_DESC
 		}
 		custom_tooltip = {
-			text = PANTHEON_MINOR_CONTRACTED
+			fail_text = PANTHEON_MINOR_CONTRACTED
 			NOR = {
 				has_modifier = minor_blood_demon_1_contract
 				has_modifier = minor_blood_demon_2_contract
