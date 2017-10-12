@@ -40,21 +40,27 @@ minor_demon_contract_canceled = {
 }
 
 minor_blood_demon_1_contract = {
+	ship_combat_speed_mult = 0.20
 }
 
 minor_blood_demon_2_contract = {
+	ship_fire_rate_mult = 0.15
 }
 
 minor_blood_demon_3_contract = {
+	ship_weapon_damage = 0.15
 }
 
 minor_blood_demon_4_contract = {
+	army_attack_morale_mult = 0.5
 }
 
 minor_blood_demon_5_contract = {
+	army_attack_damage_mult = 0.5
 }
 
 minor_blood_demon_6_contract = {
+	army_upkeep_mult = -0.25
 }
 
 
