@@ -63,6 +63,28 @@ minor_blood_demon_6_contract = {
 	army_upkeep_mult = -0.25
 }
 
+##########################################################################
+# Minor Plague demon contracts
+##########################################################################
+
+
+minor_plague_demon_1_contract = {
+}
+
+minor_plague_demon_2_contract = {
+}
+
+minor_plague_demon_3_contract = {
+}
+
+minor_plague_demon_4_contract = {
+}
+
+minor_plague_demon_5_contract = {
+}
+
+minor_plague_demon_6_contract = {
+}
 
 ##########################################################################
 # Plague demon Blessings

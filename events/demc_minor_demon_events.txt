@@ -14,7 +14,13 @@ country_event = {
 			has_modifier = minor_blood_demon_4_contract
 			has_modifier = minor_blood_demon_5_contract
 			has_modifier = minor_blood_demon_6_contract
-			has_country_flag = pantheon_minor_blood_contract_canceled
+			has_modifier = minor_plague_demon_1_contract
+			has_modifier = minor_plague_demon_2_contract
+			has_modifier = minor_plague_demon_3_contract
+			has_modifier = minor_plague_demon_4_contract
+			has_modifier = minor_plague_demon_5_contract
+			has_modifier = minor_plague_demon_6_contract
+			has_country_flag = pantheon_minor_contract_canceled
 		}
 	}
 
