@@ -19,7 +19,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -37,7 +37,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -55,7 +55,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -73,7 +73,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -91,7 +91,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -109,7 +109,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -127,7 +127,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -145,7 +145,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -163,7 +163,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -181,7 +181,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -199,7 +199,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -217,7 +217,7 @@ spriteTypes = {
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "rotating"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
+			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 	}
 
@@ -277,8 +277,40 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_blood_1_selected"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/blood/minor_blood_1.dds"
+			animationtexturefile = "gfx/interface/pantheon/blood/minor_blood_1.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+	spriteType = {
 		name = "GFX_pantheon_minor_blood_2"
 		texturefile = "gfx/interface/pantheon/blood/minor_blood_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_2_selected"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/blood/minor_blood_2.dds"
+			animationtexturefile = "gfx/interface/pantheon/blood/minor_blood_2.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
 	}
 
 	spriteType = {
@@ -287,8 +319,40 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_blood_3_selected"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/blood/minor_blood_3.dds"
+			animationtexturefile = "gfx/interface/pantheon/blood/minor_blood_3.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+	spriteType = {
 		name = "GFX_pantheon_minor_blood_4"
 		texturefile = "gfx/interface/pantheon/blood/minor_blood_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_4_selected"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/blood/minor_blood_4.dds"
+			animationtexturefile = "gfx/interface/pantheon/blood/minor_blood_4.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
 	}
 
 	spriteType = {
@@ -297,8 +361,40 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_blood_5_selected"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/blood/minor_blood_5.dds"
+			animationtexturefile = "gfx/interface/pantheon/blood/minor_blood_5.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+	spriteType = {
 		name = "GFX_pantheon_minor_blood_6"
 		texturefile = "gfx/interface/pantheon/blood/minor_blood_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_blood_6_selected"
+		texturefile = "gfx/interface/pantheon/blood/minor_blood_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/blood/minor_blood_6.dds"
+			animationtexturefile = "gfx/interface/pantheon/blood/minor_blood_6.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
 	}
 
 	#######################

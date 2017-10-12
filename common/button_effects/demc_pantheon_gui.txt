@@ -1,3 +1,8 @@
+
+@contractTime = 10
+@contractNotificationTime = 11
+@contractCanceledUnhappinessTime = 365
+
 #######################
 ### SHARED 			###
 #######################
@@ -66,7 +71,7 @@ button_pantheon_screen_energy_1 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 1
 		}
 	}
@@ -76,7 +81,7 @@ button_pantheon_screen_energy_2 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 1
 		}
 	}
@@ -86,7 +91,7 @@ button_pantheon_screen_energy_3 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 3
 		}
 	}
@@ -96,7 +101,7 @@ button_pantheon_screen_energy_4 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 3
 		}
 	}
@@ -106,7 +111,7 @@ button_pantheon_screen_energy_5 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 5
 		}
 	}
@@ -116,7 +121,7 @@ button_pantheon_screen_energy_6 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 5
 		}
 	}
@@ -126,7 +131,7 @@ button_pantheon_screen_energy_7 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 7
 		}
 	}
@@ -136,7 +141,7 @@ button_pantheon_screen_energy_8 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 7
 		}
 	}
@@ -146,7 +151,7 @@ button_pantheon_screen_energy_9 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 9
 		}
 	}
@@ -156,7 +161,7 @@ button_pantheon_screen_energy_A = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 9
 		}
 	}
@@ -166,7 +171,7 @@ button_pantheon_screen_energy_B = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value = 11
 		}
 	}
@@ -176,7 +181,7 @@ button_pantheon_screen_energy_C = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		check_variable = {
-			which = "sacrifical_energy_count" 
+			which = "sacrifical_energy_count"
 			value > 11
 		}
 	}
@@ -214,17 +219,65 @@ button_pantheon_minor_blood_1 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+		NOT = { has_modifier = minor_blood_demon_1_contract }
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_1_DESC
 		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_blood_demon_2_contract
+				has_modifier = minor_blood_demon_3_contract
+				has_modifier = minor_blood_demon_4_contract
+				has_modifier = minor_blood_demon_5_contract
+				has_modifier = minor_blood_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_blood_demon_1_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
+	}
+}
+
+button_pantheon_minor_blood_1_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_modifier = minor_blood_demon_1_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_1_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_1_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_blood_demon_1_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_contract_canceled
+		}
 	}
 }
 
@@ -232,17 +285,65 @@ button_pantheon_minor_blood_2 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+		NOT = { has_modifier = minor_blood_demon_2_contract }
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_2_DESC
 		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_blood_demon_1_contract
+				has_modifier = minor_blood_demon_3_contract
+				has_modifier = minor_blood_demon_4_contract
+				has_modifier = minor_blood_demon_5_contract
+				has_modifier = minor_blood_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_2_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_blood_demon_2_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
+	}
+}
+
+button_pantheon_minor_blood_2_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_modifier = minor_blood_demon_2_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_2_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_2_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_blood_demon_2_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_contract_canceled
+		}
 	}
 }
 
@@ -250,17 +351,65 @@ button_pantheon_minor_blood_3 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+		NOT = { has_modifier = minor_blood_demon_3_contract }
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_3_DESC
 		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_blood_demon_1_contract
+				has_modifier = minor_blood_demon_2_contract
+				has_modifier = minor_blood_demon_4_contract
+				has_modifier = minor_blood_demon_5_contract
+				has_modifier = minor_blood_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_3_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_blood_demon_3_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
+	}
+}
+
+button_pantheon_minor_blood_3_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_modifier = minor_blood_demon_3_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_3_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_3_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_blood_demon_3_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_contract_canceled
+		}
 	}
 }
 
@@ -268,17 +417,65 @@ button_pantheon_minor_blood_4 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+		NOT = { has_modifier = minor_blood_demon_4_contract }
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_4_DESC
 		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_blood_demon_1_contract
+				has_modifier = minor_blood_demon_2_contract
+				has_modifier = minor_blood_demon_3_contract
+				has_modifier = minor_blood_demon_5_contract
+				has_modifier = minor_blood_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_4_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_blood_demon_4_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
+	}
+}
+
+button_pantheon_minor_blood_4_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_modifier = minor_blood_demon_4_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_4_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_4_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_blood_demon_4_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_contract_canceled
+		}
 	}
 }
 
@@ -286,17 +483,65 @@ button_pantheon_minor_blood_5 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+		NOT = { has_modifier = minor_blood_demon_5_contract }
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_5_DESC
 		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_blood_demon_1_contract
+				has_modifier = minor_blood_demon_2_contract
+				has_modifier = minor_blood_demon_3_contract
+				has_modifier = minor_blood_demon_4_contract
+				has_modifier = minor_blood_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_5_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_blood_demon_5_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
+	}
+}
+
+button_pantheon_minor_blood_5_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_modifier = minor_blood_demon_5_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_5_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_5_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_blood_demon_5_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_contract_canceled
+		}
 	}
 }
 
@@ -304,6 +549,7 @@ button_pantheon_minor_blood_6 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_blood_demon_cult
+		NOT = { has_modifier = minor_blood_demon_6_contract }
 	}
 
 	allow = {
@@ -311,10 +557,58 @@ button_pantheon_minor_blood_6 = {
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_6_DESC
 		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_blood_demon_1_contract
+				has_modifier = minor_blood_demon_2_contract
+				has_modifier = minor_blood_demon_3_contract
+				has_modifier = minor_blood_demon_4_contract
+				has_modifier = minor_blood_demon_5_contract
+			}
+		}
+		has_sacrificial_energy = yes
 	}
 
 	effect = {
 		custom_tooltip = PANTHEON_MINOR_BLOOD_6_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_blood_demon_6_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_blood_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
+	}
+}
+
+button_pantheon_minor_blood_6_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_blood_demon_cult
+		has_modifier = minor_blood_demon_6_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_BLOOD_6_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_BLOOD_6_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_blood_demon_6_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_blood_contract_canceled
+		}
 	}
 }
 

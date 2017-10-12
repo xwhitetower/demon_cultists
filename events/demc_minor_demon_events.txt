@@ -1,0 +1,27 @@
+namespace = demc_minor_demon
+
+# End of blood demon minor contract notification
+country_event = {
+	id = demc_minor_demon.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		NOR = {
+			has_modifier = minor_blood_demon_1_contract
+			has_modifier = minor_blood_demon_2_contract
+			has_modifier = minor_blood_demon_3_contract
+			has_modifier = minor_blood_demon_4_contract
+			has_modifier = minor_blood_demon_5_contract
+			has_modifier = minor_blood_demon_6_contract
+			has_country_flag = pantheon_minor_blood_contract_canceled
+		}
+	}
+
+	immediate = {
+		create_message = {
+			target = PREV
+			type = "MINOR_DEMON_CONTRACT_ENDED"
+		}
+	}
+}

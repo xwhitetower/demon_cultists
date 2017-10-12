@@ -2,6 +2,13 @@
  PANTHEON_BUTTON_DESC:0 "§HPantheon\n§W--------------\n§EOpens the Dark Pantheon where you can interact with different demons"
  PANTHEON_BUTTON_NOT_ACTIVE:0 "§RPantheon is only available to Demon Cultists"
 
+ PANTHEON_MINOR_CONTRACTED:0 "You already have a contract wiht a minor demon"
+ minor_demon_contract_canceled:0 "Demon contract canceled"
+ minor_demon_contract_canceled_desc:0 "Our people are upset. They do not understand why we broken the oath with the demons."
+
+ MINOR_DEMON_CONTRACT_ENDED_TITLE:0 "Minor demon contract ended"
+ MINOR_DEMON_CONTRACT_ENDED_DESC:0 "Minor demon contract ended"
+
  PANTHEON_MAJOR_BLOOD:0 "§HDemocrus§!"
  PANTHEON_MAJOR_BLOOD_DESC:0 "$PANTHEON_MAJOR_BLOOD$\n§WIncarnation of War.\nHe loves infernal creatures known as "kittens". <3\n"
  PANTHEON_MINOR_BLOOD_1:0 "§HParry Lage§!"
@@ -16,3 +23,16 @@
  PANTHEON_MINOR_BLOOD_5_DESC:0 "$PANTHEON_MINOR_BLOOD_5$\n§WMaster of bugs.\n"
  PANTHEON_MINOR_BLOOD_6:0 "§HRegge a ton§!"
  PANTHEON_MINOR_BLOOD_6_DESC:0 "$PANTHEON_MINOR_BLOOD_6$\n§WHe will drive you crazy.\n"
+
+ minor_blood_demon_1_contract:0 "$PANTHEON_MINOR_BLOOD_1$ contract"
+ minor_blood_demon_1_contract_desc:0 "Do not let the enemy flee! Pursue them until no one is left standing."
+ minor_blood_demon_2_contract:0 "$PANTHEON_MINOR_BLOOD_2$ contract"
+ minor_blood_demon_2_contract_desc:0 "Do not stop shooting! Baptize the heathen with holy fire."
+ minor_blood_demon_3_contract:0 "$PANTHEON_MINOR_BLOOD_3$ contract"
+ minor_blood_demon_3_contract_desc:0 "Crush their ships! Our blessed fire will cleanse the impure."
+ minor_blood_demon_4_contract:0 "$PANTHEON_MINOR_BLOOD_4$ contract"
+ minor_blood_demon_4_contract_desc:0 "Skulls for the throne! We will keep fighting until no one is standing."
+ minor_blood_demon_5_contract:0 "$PANTHEON_MINOR_BLOOD_5$ contract"
+ minor_blood_demon_5_contract_desc:0 "Blood for $PANTHEON_MAJOR_BLOOD$! We will slaugher our enemy."
+ minor_blood_demon_6_contract:0 "$PANTHEON_MINOR_BLOOD_6$ contract"
+ minor_blood_demon_6_contract_desc:0 "Battle is our life! Our single purpose is to fight."

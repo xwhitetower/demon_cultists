@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_notification_minor_demon_contract_end"
+		textureFile = "gfx/interface/icons/message/contract_message.dds"
+		noOfFrames = 1
+	}
+}
