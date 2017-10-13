@@ -411,8 +411,40 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_plague_1_selected"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/plague/minor_plague_1.dds"
+			animationtexturefile = "gfx/interface/pantheon/plague/minor_plague_1.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+	spriteType = {
 		name = "GFX_pantheon_minor_plague_2"
 		texturefile = "gfx/interface/pantheon/plague/minor_plague_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_2_selected"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/plague/minor_plague_2.dds"
+			animationtexturefile = "gfx/interface/pantheon/plague/minor_plague_2.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
 	}
 
 	spriteType = {
@@ -421,8 +453,40 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_plague_3_selected"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/plague/minor_plague_3.dds"
+			animationtexturefile = "gfx/interface/pantheon/plague/minor_plague_3.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+	spriteType = {
 		name = "GFX_pantheon_minor_plague_4"
 		texturefile = "gfx/interface/pantheon/plague/minor_plague_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_4_selected"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/plague/minor_plague_4.dds"
+			animationtexturefile = "gfx/interface/pantheon/plague/minor_plague_4.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
 	}
 
 	spriteType = {
@@ -431,8 +495,40 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_plague_5_selected"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/plague/minor_plague_5.dds"
+			animationtexturefile = "gfx/interface/pantheon/plague/minor_plague_5.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+	spriteType = {
 		name = "GFX_pantheon_minor_plague_6"
 		texturefile = "gfx/interface/pantheon/plague/minor_plague_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_plague_6_selected"
+		texturefile = "gfx/interface/pantheon/plague/minor_plague_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/plague/minor_plague_6.dds"
+			animationtexturefile = "gfx/interface/pantheon/plague/minor_plague_6.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
 	}
 
 	#######################
