@@ -93,6 +93,30 @@ minor_plague_demon_6_contract = {
 }
 
 ##########################################################################
+# Minor Pleasure demon contracts
+##########################################################################
+
+
+minor_pleasure_demon_1_contract = {
+}
+
+minor_pleasure_demon_2_contract = {
+}
+
+minor_pleasure_demon_3_contract = {
+}
+
+minor_pleasure_demon_4_contract = {
+}
+
+minor_pleasure_demon_5_contract = {
+}
+
+minor_pleasure_demon_6_contract = {
+}
+
+
+##########################################################################
 # Plague demon Blessings
 ##########################################################################
 
