@@ -69,21 +69,27 @@ minor_blood_demon_6_contract = {
 
 
 minor_plague_demon_1_contract = {
+	ship_auto_repair_add = 0.05
 }
 
 minor_plague_demon_2_contract = {
+	ship_hitpoints_mult = 0.15
 }
 
 minor_plague_demon_3_contract = {
+	leader_age = 100
 }
 
 minor_plague_demon_4_contract = {
+	army_defense_morale_mult = 0.5
 }
 
 minor_plague_demon_5_contract = {
+	army_defense_damage_mult = 0.5
 }
 
 minor_plague_demon_6_contract = {
+	garrison_health = 0.5
 }
 
 ##########################################################################
