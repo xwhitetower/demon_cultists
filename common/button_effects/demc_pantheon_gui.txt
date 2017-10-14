@@ -218,10 +218,7 @@ button_pantheon_major_blood = {
 button_pantheon_minor_blood_1 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
-		OR = {
-			has_civic = civic_blood_demon_cult
-			is_generic_cultist = yes
-		}
+		has_civic = civic_blood_demon_cult
 		NOT = { has_modifier = minor_blood_demon_1_contract }
 	}
 
@@ -701,10 +698,7 @@ button_pantheon_minor_plague_1_selected = {
 button_pantheon_minor_plague_2 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
-		OR = {
-			has_civic = civic_plague_demon_cult
-			is_generic_cultist = yes
-		}
+		has_civic = civic_plague_demon_cult
 		NOT = { has_modifier = minor_plague_demon_2_contract }
 	}
 
@@ -742,10 +736,7 @@ button_pantheon_minor_plague_2 = {
 button_pantheon_minor_plague_2_selected = {
 	potential = {
 		has_country_flag = pantheon_screen_open
-		OR = {
-			has_civic = civic_plague_demon_cult
-			is_generic_cultist = yes
-		}
+		has_civic = civic_plague_demon_cult
 		has_modifier = minor_plague_demon_2_contract
 	}
 
@@ -1895,5 +1886,47 @@ button_pantheon_major_generic = {
 			country_event = { id = demc_generic_contact.1 }
 			remove_country_flag = pantheon_screen_open
 		}
+	}
+}
+
+button_pantheon_minor_generic_1 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_2 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_3 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_4 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_5 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
+	}
+}
+
+button_pantheon_minor_generic_6 = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		is_generic_cultist = yes
 	}
 }
