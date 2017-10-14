@@ -538,7 +538,7 @@ spriteTypes = {
 		name = "GFX_pantheon_major_pleasure"
 		texturefile = "gfx/interface/pantheon/pleasure/major_pleasure.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_pantheon_minor_pleasure_1"
 		texturefile = "gfx/interface/pantheon/pleasure/minor_pleasure_1.dds"
@@ -679,9 +679,43 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_1_selected"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/wisdom/minor_wisdom_1.dds"
+			animationtexturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_1.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+
+	spriteType = {
 		name = "GFX_pantheon_minor_wisdom_2"
 		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_2.dds"
 	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_2_selected"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_2.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/wisdom/minor_wisdom_2.dds"
+			animationtexturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_2.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
 
 	spriteType = {
 		name = "GFX_pantheon_minor_wisdom_3"
@@ -689,9 +723,43 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_3_selected"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_3.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/wisdom/minor_wisdom_3.dds"
+			animationtexturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_3.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+
+	spriteType = {
 		name = "GFX_pantheon_minor_wisdom_4"
 		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_4.dds"
 	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_4_selected"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/wisdom/minor_wisdom_4.dds"
+			animationtexturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_4.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
 
 	spriteType = {
 		name = "GFX_pantheon_minor_wisdom_5"
@@ -699,8 +767,41 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_5_selected"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_5.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/wisdom/minor_wisdom_5.dds"
+			animationtexturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_5.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
+	}
+
+
+	spriteType = {
 		name = "GFX_pantheon_minor_wisdom_6"
 		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pantheon_minor_wisdom_6_selected"
+		texturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_6.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/pantheon/wisdom/minor_wisdom_6.dds"
+			animationtexturefile = "gfx/interface/pantheon/wisdom/minor_wisdom_6.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 5.0
+			animationdelay = 0.0
+			animationblendmode = "add"	   #add, multiply, overlay
+			animationtype = "pulsing"	  #scrolling, rotating, pulsing
+		}
 	}
 
 	#######################

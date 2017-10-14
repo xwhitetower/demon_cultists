@@ -1467,44 +1467,402 @@ button_pantheon_minor_wisdom_1 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_wisdom_demon_cult
+		NOT = { has_modifier = minor_wisdom_demon_1_contract }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_1_DESC
+		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_wisdom_demon_2_contract
+				has_modifier = minor_wisdom_demon_3_contract
+				has_modifier = minor_wisdom_demon_4_contract
+				has_modifier = minor_wisdom_demon_5_contract
+				has_modifier = minor_wisdom_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_1_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_wisdom_demon_1_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
 	}
 }
+
+button_pantheon_minor_wisdom_1_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
+		has_modifier = minor_wisdom_demon_1_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_1_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_1_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_wisdom_demon_1_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_contract_canceled
+		}
+	}
+}
+
 
 button_pantheon_minor_wisdom_2 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_wisdom_demon_cult
+		NOT = { has_modifier = minor_wisdom_demon_2_contract }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_2_DESC
+		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_wisdom_demon_1_contract
+				has_modifier = minor_wisdom_demon_3_contract
+				has_modifier = minor_wisdom_demon_4_contract
+				has_modifier = minor_wisdom_demon_5_contract
+				has_modifier = minor_wisdom_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_2_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_wisdom_demon_2_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
 	}
 }
+
+button_pantheon_minor_wisdom_2_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
+		has_modifier = minor_wisdom_demon_2_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_2_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_2_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_wisdom_demon_2_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_contract_canceled
+		}
+	}
+}
+
 
 button_pantheon_minor_wisdom_3 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_wisdom_demon_cult
+		NOT = { has_modifier = minor_wisdom_demon_3_contract }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_3_DESC
+		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_wisdom_demon_1_contract
+				has_modifier = minor_wisdom_demon_2_contract
+				has_modifier = minor_wisdom_demon_4_contract
+				has_modifier = minor_wisdom_demon_5_contract
+				has_modifier = minor_wisdom_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_3_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_wisdom_demon_3_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
 	}
 }
+
+button_pantheon_minor_wisdom_3_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
+		has_modifier = minor_wisdom_demon_3_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_3_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_3_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_wisdom_demon_3_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_contract_canceled
+		}
+	}
+}
+
 
 button_pantheon_minor_wisdom_4 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_wisdom_demon_cult
+		NOT = { has_modifier = minor_wisdom_demon_4_contract }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_4_DESC
+		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_wisdom_demon_1_contract
+				has_modifier = minor_wisdom_demon_2_contract
+				has_modifier = minor_wisdom_demon_3_contract
+				has_modifier = minor_wisdom_demon_5_contract
+				has_modifier = minor_wisdom_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_4_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_wisdom_demon_4_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
 	}
 }
+
+button_pantheon_minor_wisdom_4_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
+		has_modifier = minor_wisdom_demon_4_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_4_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_4_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_wisdom_demon_4_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_contract_canceled
+		}
+	}
+}
+
 
 button_pantheon_minor_wisdom_5 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_wisdom_demon_cult
+		NOT = { has_modifier = minor_wisdom_demon_5_contract }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_5_DESC
+		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_wisdom_demon_1_contract
+				has_modifier = minor_wisdom_demon_2_contract
+				has_modifier = minor_wisdom_demon_3_contract
+				has_modifier = minor_wisdom_demon_4_contract
+				has_modifier = minor_wisdom_demon_6_contract
+			}
+		}
+		has_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_5_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_wisdom_demon_5_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
 	}
 }
+
+button_pantheon_minor_wisdom_5_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
+		has_modifier = minor_wisdom_demon_5_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_5_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_5_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_wisdom_demon_5_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_contract_canceled
+		}
+	}
+}
+
 
 button_pantheon_minor_wisdom_6 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
 		has_civic = civic_wisdom_demon_cult
+		NOT = { has_modifier = minor_wisdom_demon_6_contract }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_6_DESC
+		}
+		custom_tooltip = {
+			fail_text = PANTHEON_MINOR_CONTRACTED
+			NOR = {
+				has_modifier = minor_wisdom_demon_1_contract
+				has_modifier = minor_wisdom_demon_2_contract
+				has_modifier = minor_wisdom_demon_3_contract
+				has_modifier = minor_wisdom_demon_4_contract
+				has_modifier = minor_wisdom_demon_5_contract
+			}
+		}
+		has_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_6_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -1
+		}
+		add_modifier = { modifier = minor_wisdom_demon_6_contract days = @contractTime }
+		hidden_effect = {
+			remove_country_flag = pantheon_minor_contract_canceled
+			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
+		}
 	}
 }
 
+button_pantheon_minor_wisdom_6_selected = {
+	potential = {
+		has_country_flag = pantheon_screen_open
+		has_civic = civic_wisdom_demon_cult
+		has_modifier = minor_wisdom_demon_6_contract
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = PANTHEON_MINOR_WISDOM_6_DESC
+		}
+		has_5_sacrificial_energy = yes
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_6_DESC
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		remove_modifier = minor_wisdom_demon_6_contract
+		add_modifier = { modifier = minor_demon_contract_canceled days = @contractCanceledUnhappinessTime }
+		hidden_effect = {
+			set_country_flag = pantheon_minor_contract_canceled
+		}
+	}
+}
 
 #######################
 ### GENERIC         ###
