@@ -553,7 +553,6 @@ button_pantheon_minor_blood_6 = {
 	}
 
 	allow = {
-		always = yes
 		custom_tooltip = {
 			text = PANTHEON_MINOR_BLOOD_6_DESC
 		}
