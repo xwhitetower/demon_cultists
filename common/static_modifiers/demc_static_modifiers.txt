@@ -120,6 +120,33 @@ minor_pleasure_demon_6_contract = {
 	pop_growth_speed = 0.1
 }
 
+##########################################################################
+# Minor Wisdom demon contracts
+##########################################################################
+
+minor_wisdom_demon_1_contract = {
+	tile_resource_engineering_research_mult = 0.05
+}
+
+minor_wisdom_demon_2_contract = {
+	tile_resource_physics_research_mult = 0.05
+}
+
+minor_wisdom_demon_3_contract = {
+	tile_resource_society_research_mult = 0.05
+}
+
+minor_wisdom_demon_4_contract = {
+	tile_resource_energy_mult = 0.05
+}
+
+minor_wisdom_demon_5_contract = {
+	species_leader_exp_gain = 0.25
+}
+
+minor_wisdom_demon_6_contract = {
+	ship_upkeep_mult = -0.15
+}
 
 ##########################################################################
 # Plague demon Blessings
