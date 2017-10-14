@@ -96,23 +96,28 @@ minor_plague_demon_6_contract = {
 # Minor Pleasure demon contracts
 ##########################################################################
 
-
 minor_pleasure_demon_1_contract = {
+	pop_happiness = 0.1
 }
 
 minor_pleasure_demon_2_contract = {
+	tile_resource_food_mult = 0.15
 }
 
 minor_pleasure_demon_3_contract = {
+	planet_unrest_mult = -0.15
 }
 
 minor_pleasure_demon_4_contract = {
+	edict_influence_cost = -0.2
 }
 
 minor_pleasure_demon_5_contract = {
+	country_resource_influence_add = 0.1
 }
 
 minor_pleasure_demon_6_contract = {
+	pop_growth_speed = 0.1
 }
 
 
