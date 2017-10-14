@@ -814,32 +814,32 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_pantheon_minor_generic_1"
-		texturefile = "gfx/interface/pantheon/generic/minor_generic_1.dds"
+		texturefile = "gfx/interface/pantheon/generic/minor_plague_1.dds"
 	}
 
 	spriteType = {
 		name = "GFX_pantheon_minor_generic_2"
-		texturefile = "gfx/interface/pantheon/generic/minor_generic_2.dds"
+		texturefile = "gfx/interface/pantheon/generic/minor_wisdom_2.dds"
 	}
 
 	spriteType = {
 		name = "GFX_pantheon_minor_generic_3"
-		texturefile = "gfx/interface/pantheon/generic/minor_generic_3.dds"
+		texturefile = "gfx/interface/pantheon/generic/minor_pleasure_3.dds"
 	}
 
 	spriteType = {
 		name = "GFX_pantheon_minor_generic_4"
-		texturefile = "gfx/interface/pantheon/generic/minor_generic_4.dds"
+		texturefile = "gfx/interface/pantheon/generic/minor_blood_4.dds"
 	}
 
 	spriteType = {
 		name = "GFX_pantheon_minor_generic_5"
-		texturefile = "gfx/interface/pantheon/generic/minor_generic_5.dds"
+		texturefile = "gfx/interface/pantheon/generic/minor_pleasure_5.dds"
 	}
 
 	spriteType = {
 		name = "GFX_pantheon_minor_generic_6"
-		texturefile = "gfx/interface/pantheon/generic/minor_generic_6.dds"
+		texturefile = "gfx/interface/pantheon/generic/minor_wisdom_6.dds"
 	}
 
 }
