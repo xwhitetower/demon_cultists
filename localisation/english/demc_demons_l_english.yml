@@ -76,7 +76,7 @@
  PANTHEON_MINOR_WISDOM_6:0 "§HXyn'Goran§!"
  PANTHEON_MINOR_WISDOM_6_DESC:0 "$PANTHEON_MINOR_WISDOM_6$\n$PANTHEON_ALLEGIANCE_WISDOM$§EServant of Abaddon the Despoiler.§!\n"$
 
- PANTHEON_MAJOR_GENERIC:0 "§HThe Chaos Undivided§!"
+ PANTHEON_MAJOR_GENERIC:0 "§HChaos Undivided§!"
  PANTHEON_MAJOR_GENERIC_DESC:0 "$PANTHEON_MAJOR_GENERIC$\n§EThe Only Truth is Chaos.§!\n"$
 
  minor_blood_demon_1_contract:0 "$PANTHEON_MINOR_BLOOD_1$ contract"
