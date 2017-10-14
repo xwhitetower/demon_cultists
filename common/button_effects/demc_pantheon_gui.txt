@@ -218,7 +218,10 @@ button_pantheon_major_blood = {
 button_pantheon_minor_blood_1 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
-		has_civic = civic_blood_demon_cult
+		OR = {
+			has_civic = civic_blood_demon_cult
+			is_generic_cultist = yes
+		}
 		NOT = { has_modifier = minor_blood_demon_1_contract }
 	}
 
@@ -698,7 +701,10 @@ button_pantheon_minor_plague_1_selected = {
 button_pantheon_minor_plague_2 = {
 	potential = {
 		has_country_flag = pantheon_screen_open
-		has_civic = civic_plague_demon_cult
+		OR = {
+			has_civic = civic_plague_demon_cult
+			is_generic_cultist = yes
+		}
 		NOT = { has_modifier = minor_plague_demon_2_contract }
 	}
 
@@ -736,7 +742,10 @@ button_pantheon_minor_plague_2 = {
 button_pantheon_minor_plague_2_selected = {
 	potential = {
 		has_country_flag = pantheon_screen_open
-		has_civic = civic_plague_demon_cult
+		OR = {
+			has_civic = civic_plague_demon_cult
+			is_generic_cultist = yes
+		}
 		has_modifier = minor_plague_demon_2_contract
 	}
 
@@ -1035,7 +1044,7 @@ button_pantheon_major_pleasure = {
 	}
 
 	effect = {
-#		custom_tooltip = PANTHEON_MAJOR_PLEASURE_DESC
+		custom_tooltip = PANTHEON_MAJOR_PLEASURE_DESC
 		hidden_effect = {
 			country_event = { id = demc_pleasure_contact.1 }
 			remove_country_flag = pantheon_screen_open
@@ -1078,6 +1087,10 @@ button_pantheon_minor_pleasure_1 = {
 			remove_country_flag = pantheon_minor_contract_canceled
 			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
 		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_PLEASURE_1_DESC
 	}
 }
 
@@ -1279,6 +1292,10 @@ button_pantheon_minor_pleasure_4 = {
 			remove_country_flag = pantheon_minor_contract_canceled
 			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
 		}
+	}
+
+	effect = {
+		custom_tooltip = PANTHEON_MINOR_WISDOM_1_DESC
 	}
 }
 
@@ -1873,52 +1890,10 @@ button_pantheon_major_generic = {
 	}
 
 	effect = {
-#		custom_tooltip = PANTHEON_MAJOR_GENERIC_DESC
+		custom_tooltip = PANTHEON_MAJOR_GENERIC_DESC
 		hidden_effect = {
 			country_event = { id = demc_generic_contact.1 }
 			remove_country_flag = pantheon_screen_open
 		}
-	}
-}
-
-button_pantheon_minor_generic_1 = {
-	potential = {
-		has_country_flag = pantheon_screen_open
-		is_generic_cultist = yes
-	}
-}
-
-button_pantheon_minor_generic_2 = {
-	potential = {
-		has_country_flag = pantheon_screen_open
-		is_generic_cultist = yes
-	}
-}
-
-button_pantheon_minor_generic_3 = {
-	potential = {
-		has_country_flag = pantheon_screen_open
-		is_generic_cultist = yes
-	}
-}
-
-button_pantheon_minor_generic_4 = {
-	potential = {
-		has_country_flag = pantheon_screen_open
-		is_generic_cultist = yes
-	}
-}
-
-button_pantheon_minor_generic_5 = {
-	potential = {
-		has_country_flag = pantheon_screen_open
-		is_generic_cultist = yes
-	}
-}
-
-button_pantheon_minor_generic_6 = {
-	potential = {
-		has_country_flag = pantheon_screen_open
-		is_generic_cultist = yes
 	}
 }
