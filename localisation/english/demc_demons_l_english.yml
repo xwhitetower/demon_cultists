@@ -77,7 +77,7 @@
  PANTHEON_MINOR_WISDOM_6_DESC:0 "$PANTHEON_MINOR_WISDOM_6$\n$PANTHEON_ALLEGIANCE_WISDOM$§WServant of Abaddon the Despoiler.\n"
 
  PANTHEON_MAJOR_GENERIC:0 "§HThe Chaos Undivided§!"
- PANTHEON_MAJOR_GENERIC_DESC:0 "$PANTHEON_MAJOR_WISDOM$\n§WThe Only Truth is Chaos.\n"
+ PANTHEON_MAJOR_GENERIC_DESC:0 "$PANTHEON_MAJOR_GENERIC$\n§WThe Only Truth is Chaos.\n"
 
  minor_blood_demon_1_contract:0 "$PANTHEON_MINOR_BLOOD_1$ contract"
  minor_blood_demon_1_contract_desc:0 "Do not let the enemy flee! Pursue them until no one is left standing."
