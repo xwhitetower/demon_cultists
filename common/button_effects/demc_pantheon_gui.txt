@@ -1516,7 +1516,7 @@ button_pantheon_major_wisdom = {
 	}
 
 	effect = {
-#		custom_tooltip = PANTHEON_MAJOR_WISDOM_DESC
+		custom_tooltip = PANTHEON_MAJOR_WISDOM_DESC
 		hidden_effect = {
 			country_event = { id = demc_wisdom_contact.1 }
 			remove_country_flag = pantheon_screen_open
