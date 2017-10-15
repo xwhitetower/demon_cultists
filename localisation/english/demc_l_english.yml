@@ -61,6 +61,7 @@
 
  sacrifical_energy_count:0 "Sacrifical Energy"
  sacrifical_energy_count_desc:0 "Souls of the living ready to feed our Masters"
+ NO_SACRIFICAL_ENERGY:0 "£trigger_no  Needs at least one point of Sacrificial Energy"
 
  building_sacrificial_altar:0 "Sacrificial Altar"
  building_sacrificial_altar_desc:0 "A desecrated temple to worship Demons.\nKilling a £pop  §Epop§! while being in the temple will grant you a §ESoul§!.\n§ESouls §!can be exchanged in the §EPhanteon§!"
