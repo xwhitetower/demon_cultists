@@ -11,10 +11,10 @@
 
  SOURCES_OF_THE_NAMES:0 "http://wh40k.lexicanum.com/wiki/List_of_Daemon_Princes#Chaos_Undivided"
  
- PANTHEON_ALLEGIANCE_BLOOD:0 "Allegiance: §RKhorne§!\n"
- PANTHEON_ALLEGIANCE_PLAGUE:0 "Allegiance: §GNurgle§!\n"
- PANTHEON_ALLEGIANCE_PLEASURE:0 "Allegiance: §MSlaanesh§!\n"
- PANTHEON_ALLEGIANCE_WISDOM:0 "Allegiance: §BTzeentch§!\n"
+ PANTHEON_ALLEGIANCE_BLOOD:0 "Allegiance: §RKhorne§!\n--------------\n"
+ PANTHEON_ALLEGIANCE_PLAGUE:0 "Allegiance: §GNurgle§!\n--------------\n"
+ PANTHEON_ALLEGIANCE_PLEASURE:0 "Allegiance: §MSlaanesh§!\n--------------\n"
+ PANTHEON_ALLEGIANCE_WISDOM:0 "Allegiance: §BTzeentch§!\n--------------\n"
 
  PANTHEON_MAJOR_BLOOD:0 "§HKhorne§!"
  PANTHEON_MAJOR_BLOOD_DESC:0 "$PANTHEON_MAJOR_BLOOD$\n§ELord of Skulls.§!\n\n"$
