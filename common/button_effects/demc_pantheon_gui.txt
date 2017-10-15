@@ -1974,7 +1974,10 @@ button_pantheon_minor_generic_1 = {
 				has_modifier = minor_wisdom_demon_2_contract
 			}
 		}
-		has_sacrificial_energy = yes
+		custom_tooltip = {
+			fail_text = NO_SACRIFICAL_ENERGY
+			has_sacrificial_energy = yes
+		}
 	}
 
 	effect = {
@@ -2040,7 +2043,10 @@ button_pantheon_minor_generic_2 = {
 				has_modifier = minor_wisdom_demon_2_contract
 			}
 		}
-		has_sacrificial_energy = yes
+		custom_tooltip = {
+			fail_text = NO_SACRIFICAL_ENERGY
+			has_sacrificial_energy = yes
+		}
 	}
 
 	effect = {
@@ -2106,7 +2112,10 @@ button_pantheon_minor_generic_3 = {
 				has_modifier = minor_wisdom_demon_2_contract
 			}
 		}
-		has_sacrificial_energy = yes
+		custom_tooltip = {
+			fail_text = NO_SACRIFICAL_ENERGY
+			has_sacrificial_energy = yes
+		}
 	}
 
 	effect = {
@@ -2172,7 +2181,10 @@ button_pantheon_minor_generic_4 = {
 				has_modifier = minor_wisdom_demon_2_contract
 			}
 		}
-		has_sacrificial_energy = yes
+		custom_tooltip = {
+			fail_text = NO_SACRIFICAL_ENERGY
+			has_sacrificial_energy = yes
+		}
 	}
 
 	effect = {
@@ -2239,7 +2251,10 @@ button_pantheon_minor_generic_5 = {
 				has_modifier = minor_pleasure_demon_5_contract
 			}
 		}
-		has_sacrificial_energy = yes
+		custom_tooltip = {
+			fail_text = NO_SACRIFICAL_ENERGY
+			has_sacrificial_energy = yes
+		}
 	}
 
 	effect = {
@@ -2305,7 +2320,10 @@ button_pantheon_minor_generic_6 = {
 				has_modifier = minor_wisdom_demon_2_contract
 			}
 		}
-		has_sacrificial_energy = yes
+		custom_tooltip = {
+			fail_text = NO_SACRIFICAL_ENERGY
+			has_sacrificial_energy = yes
+		}
 	}
 
 	effect = {
