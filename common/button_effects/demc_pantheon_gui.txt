@@ -1118,10 +1118,6 @@ button_pantheon_minor_pleasure_1 = {
 			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
 		}
 	}
-
-	effect = {
-		custom_tooltip = PANTHEON_MINOR_PLEASURE_1_DESC
-	}
 }
 
 button_pantheon_minor_pleasure_1_selected = {
@@ -1331,10 +1327,6 @@ button_pantheon_minor_pleasure_4 = {
 			remove_country_flag = pantheon_minor_contract_canceled
 			country_event = { id = demc_minor_demon.1 days = @contractNotificationTime }
 		}
-	}
-
-	effect = {
-		custom_tooltip = PANTHEON_MINOR_WISDOM_1_DESC
 	}
 }
 
