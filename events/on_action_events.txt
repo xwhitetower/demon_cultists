@@ -4376,7 +4376,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	after = {
 		if = {
 			limit = {
@@ -5195,6 +5195,7 @@ country_event = {
 
 		FROMFROM = {
 			set_owner = ROOT
+			add_organic_sanctuaries = yes
 		}
 
 		every_country = {
@@ -5215,6 +5216,11 @@ country_event = {
 			fromfrom = {
 				save_event_target_as = conquered_primitive_country
 			}
+			from = {
+				owner_species = {
+					save_event_target_as = conquered_primitive_species
+				}
+			}
 			country_event = { id = action.140 }
 		}
 
@@ -5226,13 +5232,96 @@ country_event = {
 country_event = {
 	id = action.140
 	title = action.14.name
-	desc = action.14.desc
+	desc = { #Non-Purge Policy Regular Empires
+		text = action.14.desc
+		trigger = {
+			NOR = {
+				has_ethic = ethic_gestalt_consciousness
+				event_target:conquered_primitive_species = {
+					has_citizenship_type = { country = root type = citizenship_purge }
+				}
+			}
+		}
+	}
+	desc = { #Purge Policy Regular Empires
+		text = action.14.desc.purge
+		trigger = {
+			NOT = { has_ethic = ethic_gestalt_consciousness }
+			event_target:conquered_primitive_species = {
+				has_citizenship_type = { country = root type = citizenship_purge }
+			}
+		}
+	}
+	desc = { #Servitors
+		text = action.14.desc.serv
+		trigger = {
+			has_civic = civic_machine_servitor
+		}
+	}
+	desc = { #Assimilators
+		text = action.14.desc.assim
+		trigger = {
+			has_civic = civic_machine_assimilator
+		}
+	}
+	desc = { #Exterminators
+		text = action.14.desc.term
+		trigger = {
+			has_civic = civic_machine_terminator
+		}
+	}
+	desc = { #Purge Policy MIs
+		text = action.14.desc.mach.purge
+		trigger = {
+			has_authority = auth_machine_intelligence
+			event_target:conquered_primitive_species = {
+				has_citizenship_type = { country = root type = citizenship_purge }
+			}
+			NOR = {
+				has_civic = civic_machine_servitor
+				has_civic = civic_machine_assimilator
+				has_civic = civic_machine_terminator
+			}
+		}
+	}
+	desc = { #Enslave Policy MIs
+		text = action.14.desc.mach.slave
+		trigger = {
+			has_authority = auth_machine_intelligence
+			event_target:conquered_primitive_species = {
+				has_citizenship_type = { country = root type = citizenship_slavery }
+			}
+			NOR = {
+				has_civic = civic_machine_servitor
+				has_civic = civic_machine_assimilator
+				has_civic = civic_machine_terminator
+			}
+		}
+	}
+	desc = { #Purge Policy Hiveminds
+		text = action.14.desc.hive.purge
+		trigger = {
+			has_authority = auth_hive_mind
+			event_target:conquered_primitive_species = {
+				has_citizenship_type = { country = root type = citizenship_purge }
+			}
+		}
+	}
+	desc = { #Enslave Policy Hiveminds
+		text = action.14.desc.hive.slave
+		trigger = {
+			has_authority = auth_hive_mind
+			event_target:conquered_primitive_species = {
+				has_citizenship_type = { country = root type = citizenship_slavery }
+			}
+		}
+	}
+
 	picture = GFX_evt_ground_combat
 	show_sound = event_alien_signal
 	location = event_target:conquered_primitive_country
 
 	is_triggered_only = yes
-
 
 	option = {
 		name = action.14.a.phobe
@@ -5303,6 +5392,40 @@ country_event = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_materialist
+				has_authority = auth_machine_intelligence
+			}
+		}
+	}
+	option = {
+		name = action.14.a.serv
+		custom_tooltip = action.14.a.tooltip
+		trigger = {
+			has_civic = civic_machine_servitor
+		}
+	}
+	option = {
+		name = action.14.a.assim
+		custom_tooltip = action.14.a.tooltip
+		trigger = {
+			has_civic = civic_machine_assimilator
+		}
+	}
+	option = {
+		name = action.14.a.term
+		custom_tooltip = action.14.a.tooltip
+		trigger = {
+			has_civic = civic_machine_terminator
+		}
+	}
+	option = {
+		name = action.14.a.mach
+		custom_tooltip = action.14.a.tooltip
+		trigger = {
+			has_authority = auth_machine_intelligence
+			NOR = {
+				has_civic = civic_machine_servitor
+				has_civic = civic_machine_assimilator
+				has_civic = civic_machine_terminator
 			}
 		}
 	}
@@ -5907,14 +6030,14 @@ country_event = {
 						}
 						30 = { # only non-fanatic
 							random_list = {
-								1 = { country_add_ethic = ethic_fanatic_materialist }
-								1 = { country_add_ethic = ethic_fanatic_spiritualist }
-								1 = { country_add_ethic = ethic_fanatic_militarist }
-								1 = { country_add_ethic = ethic_fanatic_pacifist }
-								1 = { country_add_ethic = ethic_fanatic_xenophile }
-								1 = { country_add_ethic = ethic_fanatic_xenophobe }
-								1 = { country_add_ethic = ethic_fanatic_egalitarian }
-								1 = { country_add_ethic = ethic_fanatic_authoritarian }
+								1 = { country_add_ethic = ethic_materialist }
+								1 = { country_add_ethic = ethic_spiritualist }
+								1 = { country_add_ethic = ethic_militarist }
+								1 = { country_add_ethic = ethic_pacifist }
+								1 = { country_add_ethic = ethic_xenophile }
+								1 = { country_add_ethic = ethic_xenophobe }
+								1 = { country_add_ethic = ethic_egalitarian }
+								1 = { country_add_ethic = ethic_authoritarian }
 							}
 							random_list = {
 								1 = { country_add_ethic = ethic_materialist 	modifier = { factor = 0 OR = { has_ethic = ethic_materialist   has_ethic = ethic_spiritualist } } }
@@ -6432,6 +6555,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6451,6 +6575,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6481,6 +6606,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6500,6 +6626,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6530,6 +6657,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6549,6 +6677,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6579,6 +6708,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6598,6 +6728,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6628,6 +6759,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -6647,6 +6779,7 @@ planet_event = {
 						}
 						is_sapient = yes
 						has_citizenship_rights = no
+						NOT = { has_citizenship_type = { type = citizenship_assimilation } }
 						root = {
 							count_pops = {
 								limit = { is_same_species = prev }
@@ -7196,6 +7329,7 @@ pop_event = {
 				add_modifier = { modifier = recently_migrated days = 3600 }
 			}
 		}
+		planet = { add_organic_sanctuaries = yes }
 	}
 }
 
@@ -7269,13 +7403,15 @@ event = {
 
 	immediate = {
 		every_playable_country = {
-			country_event = { id = action.65 }
+			every_owned_planet = {
+				planet_event = { id = action.65 }
+			}
 		}
 	}
 }
 
 # Assimilate Pops
-country_event = {
+planet_event = {
 	id = action.65
 	hide_window = yes
 	is_triggered_only = yes
@@ -7284,25 +7420,25 @@ country_event = {
 		any_owned_pop = {
 			has_citizenship_type = {
 				type = citizenship_assimilation
-				country = root
+				country = root.owner
 			}
 		}
 	}
 
 	immediate = {
 		random_list = {
-			50 = { # 1 pop
+			1 = { # 1 pop
 				random_owned_pop = {
 					limit = {
 						has_citizenship_type = {
 							type = citizenship_assimilation
-							country = root
+							country = root.owner
 						}
 					}
 
 					if = { # assimilator empire
 						limit = {
-							root = {
+							root.owner = {
 								has_authority = auth_machine_intelligence
 								has_civic = civic_machine_assimilator
 							}
@@ -7318,11 +7454,12 @@ country_event = {
 							remove_culture_shock = yes
 							remove_hive_minded = yes # scripted effect
 							remove_self_modified = yes # scripted effect
+							root.owner = { generate_cyborg_treats = yes } # scripted effect
 						}
 						else = {
 							if = { # hive mind
 								limit = {
-									root = {
+									root.owner = {
 										has_authority = auth_hive_mind
 										NOT = { has_civic = civic_hive_devouring_swarm }
 									}
@@ -7338,21 +7475,21 @@ country_event = {
 								else = {
 									if = { # ascended synths
 										limit = {
-											root = {
+											root.owner = {
 												has_country_flag = synthetic_empire
 											}
 										}
 										tile = {
-											prev = { kill_pop = yes }
+											kill_pop = yes
 											create_pop = {
-												species = root
-												ethos = root
+												species = root.owner
+												ethos = root.owner
 											}
 										}
 										else = {
 											if = { # cyborg empire
 												limit = {
-													root = {
+													root.owner = {
 														has_country_flag = flesh_weakened
 													}
 												}
@@ -7368,7 +7505,7 @@ country_event = {
 												else = {
 													if = {
 														limit = {
-															root = {
+															root.owner = {
 																NOR = {
 																	has_ethic = ethic_gestalt_consciousness
 																	has_country_flag = synthetic_empire
@@ -7394,37 +7531,37 @@ country_event = {
 					}
 
 					if = { # set citizenship
-						limit = { root = { has_authority = auth_machine_intelligence } }
+						limit = { root.owner = { has_authority = auth_machine_intelligence } }
 						set_citizenship_type = {
 							type = citizenship_full_machine
-							country = root
+							country = root.owner
 						}
 						else = {
 							set_citizenship_type = {
 								type = citizenship_full
-								country = root
+								country = root.owner
 							}
 						}
 					}
 
 					if = { # set citizenship
-						limit = { root = { has_ethic = ethic_gestalt_consciousness } }
+						limit = { root.owner = { has_ethic = ethic_gestalt_consciousness } }
 						set_living_standard = {
 							type = living_standard_hive_mind
-							country = root
+							country = root.owner
 						}
 					}
 				}
 			}
 
-			30 = { # 2 pops
+			1 = { # 2 pops
 				while = {
 					count = 2
 					limit = {
 						any_owned_pop = {
 							has_citizenship_type = {
 								type = citizenship_assimilation
-								country = root
+								country = root.owner
 							}
 						}
 					}
@@ -7432,13 +7569,13 @@ country_event = {
 						limit = {
 							has_citizenship_type = {
 								type = citizenship_assimilation
-								country = root
+								country = root.owner
 							}
 						}
 
 						if = { # assimilator empire
 							limit = {
-								root = {
+								root.owner = {
 									has_authority = auth_machine_intelligence
 									has_civic = civic_machine_assimilator
 								}
@@ -7454,11 +7591,12 @@ country_event = {
 								remove_hive_minded = yes # scripted effect
 								remove_culture_shock = yes
 								remove_self_modified = yes # scripted effect
+								root.owner = { generate_cyborg_treats = yes } # scripted effect
 							}
 							else = {
 								if = { # hive mind
 									limit = {
-										root = {
+										root.owner = {
 											has_authority = auth_hive_mind
 											NOT = { has_civic = civic_hive_devouring_swarm }
 										}
@@ -7474,21 +7612,21 @@ country_event = {
 									else = {
 										if = { # ascended synths
 											limit = {
-												root = {
+												root.owner = {
 													has_country_flag = synthetic_empire
 												}
 											}
 											tile = {
-												prev = { kill_pop = yes }
+												kill_pop = yes
 												create_pop = {
-													species = root
-													ethos = root
+													species = root.owner
+													ethos = root.owner
 												}
 											}
 											else = {
 												if = { # cyborg empire
 													limit = {
-														root = {
+														root.owner = {
 															has_country_flag = flesh_weakened
 														}
 													}
@@ -7504,7 +7642,7 @@ country_event = {
 													else = {
 														if = {
 															limit = {
-																root = {
+																root.owner = {
 																	NOR = {
 																		has_ethic = ethic_gestalt_consciousness
 																		has_country_flag = synthetic_empire
@@ -7530,38 +7668,38 @@ country_event = {
 						}
 
 						if = { # set citizenship
-							limit = { root = { has_authority = auth_machine_intelligence } }
+							limit = { root.owner = { has_authority = auth_machine_intelligence } }
 							set_citizenship_type = {
 								type = citizenship_full_machine
-								country = root
+								country = root.owner
 							}
 							else = {
 								set_citizenship_type = {
 									type = citizenship_full
-									country = root
+									country = root.owner
 								}
 							}
 						}
 
 						if = { # set citizenship
-							limit = { root = { has_ethic = ethic_gestalt_consciousness } }
+							limit = { root.owner = { has_ethic = ethic_gestalt_consciousness } }
 							set_living_standard = {
 								type = living_standard_hive_mind
-								country = root
+								country = root.owner
 							}
 						}
 					}
 				}
 			}
 
-			20 = { # 4 pops
+			1 = { # 4 pops
 				while = {
 					count = 4
 					limit = {
 						any_owned_pop = {
 							has_citizenship_type = {
 								type = citizenship_assimilation
-								country = root
+								country = root.owner
 							}
 						}
 					}
@@ -7569,13 +7707,13 @@ country_event = {
 						limit = {
 							has_citizenship_type = {
 								type = citizenship_assimilation
-								country = root
+								country = root.owner
 							}
 						}
 
 						if = { # assimilator empire
 							limit = {
-								root = {
+								root.owner = {
 									has_authority = auth_machine_intelligence
 									has_civic = civic_machine_assimilator
 								}
@@ -7591,11 +7729,12 @@ country_event = {
 								remove_hive_minded = yes # scripted effect
 								remove_culture_shock = yes
 								remove_self_modified = yes # scripted effect
+								root.owner = { generate_cyborg_treats = yes } # scripted effect
 							}
 							else = {
 								if = { # hive mind
 									limit = {
-										root = {
+										root.owner = {
 											has_authority = auth_hive_mind
 											NOT = { has_civic = civic_hive_devouring_swarm }
 										}
@@ -7611,21 +7750,21 @@ country_event = {
 									else = {
 										if = { # ascended synths
 											limit = {
-												root = {
+												root.owner = {
 													has_country_flag = synthetic_empire
 												}
 											}
 											tile = {
-												prev = { kill_pop = yes }
+												kill_pop = yes
 												create_pop = {
-													species = root
-													ethos = root
+													species = root.owner
+													ethos = root.owner
 												}
 											}
 											else = {
 												if = { # cyborg empire
 													limit = {
-														root = {
+														root.owner = {
 															has_country_flag = flesh_weakened
 														}
 													}
@@ -7641,7 +7780,7 @@ country_event = {
 													else = {
 														if = {
 															limit = {
-																root = {
+																root.owner = {
 																	NOR = {
 																		has_ethic = ethic_gestalt_consciousness
 																		has_country_flag = synthetic_empire
@@ -7667,24 +7806,24 @@ country_event = {
 						}
 
 						if = { # set citizenship
-							limit = { root = { has_authority = auth_machine_intelligence } }
+							limit = { root.owner = { has_authority = auth_machine_intelligence } }
 							set_citizenship_type = {
 								type = citizenship_full_machine
-								country = root
+								country = root.owner
 							}
 							else = {
 								set_citizenship_type = {
 									type = citizenship_full
-									country = root
+									country = root.owner
 								}
 							}
 						}
 
 						if = { # set citizenship
-							limit = { root = { has_ethic = ethic_gestalt_consciousness } }
+							limit = { root.owner = { has_ethic = ethic_gestalt_consciousness } }
 							set_living_standard = {
 								type = living_standard_hive_mind
-								country = root
+								country = root.owner
 							}
 						}
 					}
