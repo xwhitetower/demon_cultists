@@ -144,7 +144,7 @@ civic_charimatic_leader_demon_cult = {
 	}
 }
 
-civic_new_unholy_pact_demon_cult = {
+civic_unholy_pact_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
@@ -153,7 +153,7 @@ civic_new_unholy_pact_demon_cult = {
 	}
 }
 
-civic_new_offerings_demon_cult = {
+civic_offerings_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
@@ -161,7 +161,7 @@ civic_new_offerings_demon_cult = {
 	}
 }
 
-civic_new_demonic_knowledge_demon_cult = {
+civic_demonic_knowledge_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
@@ -169,7 +169,7 @@ civic_new_demonic_knowledge_demon_cult = {
 	}
 }
 
-civic_new_pitiful_imps_demon_cult = {
+civic_pitiful_imps_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
@@ -178,7 +178,7 @@ civic_new_pitiful_imps_demon_cult = {
 	}
 }
 
-civic_new_zealots_demon_cult = {
+civic_zealots_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
@@ -188,7 +188,7 @@ civic_new_zealots_demon_cult = {
 	}
 }
 
-civic_new_grow_like_rats_demon_cult = {
+civic_grow_like_rats_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
@@ -196,7 +196,7 @@ civic_new_grow_like_rats_demon_cult = {
 	}
 }
 
-civic_new_chaos_beacon_demon_cult = {
+civic_chaos_beacon_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
