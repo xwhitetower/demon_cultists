@@ -12,6 +12,10 @@
 #	can_build_ruler_ship = yes / no				# default: no
 #}
 
+#######################
+### MAJOR CIVICS 	###
+#######################
+
 civic_blood_demon_cult = {
 	modification = no
 	potential = { ethics = { value = ethic_demon_cultists } }
@@ -92,6 +96,10 @@ civic_wisdom_demon_cult = {
 		ship_anomaly_research_speed_mult = 0.05
 	}
 }
+
+#######################
+### MINOR CIVICS 	###
+#######################
 
 civic_preachers_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
