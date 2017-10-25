@@ -188,7 +188,7 @@ civic_zealots_demon_cult = {
 	}
 }
 
-civic_grow_like_rats_demon_cult = {
+civic_hatching_nests_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
 	modifier = {
