@@ -1061,7 +1061,7 @@ civic_machine_terminator = {
 	description = civic_tooltip_machine_terminator_effects
 	modifier = {
 		ship_weapon_damage = 0.25
-		spaceport_ship_build_cost_mult = -0.25
+		spaceport_ship_build_cost_mult = -0.15
 		navy_size_mult = 0.33
 	}
 }
