@@ -196,12 +196,4 @@ civic_hatching_nests_demon_cult = {
 	}
 }
 
-civic_chaos_beacon_demon_cult = {
-	potential = { ethics = { value = ethic_demon_cultists } }
-	random_weight = { base = 1 }
-	modifier = {
-		planet_border_mult = 0.15
-	}
-}
-
 
