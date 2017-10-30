@@ -13,7 +13,7 @@
 #}
 
 #######################
-### MAJOR CIVICS 	###
+### CULT CIVICS 	###
 #######################
 
 civic_blood_demon_cult = {
@@ -98,7 +98,7 @@ civic_wisdom_demon_cult = {
 }
 
 #######################
-### MINOR CIVICS 	###
+### REGULAR CIVICS 	###
 #######################
 
 civic_preachers_demon_cult = {
