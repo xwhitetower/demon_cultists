@@ -12,6 +12,10 @@
 #	can_build_ruler_ship = yes / no				# default: no
 #}
 
+#######################
+### CULT CIVICS 	###
+#######################
+
 civic_blood_demon_cult = {
 	modification = no
 	potential = { ethics = { value = ethic_demon_cultists } }
@@ -93,6 +97,10 @@ civic_wisdom_demon_cult = {
 	}
 }
 
+#######################
+### REGULAR CIVICS 	###
+#######################
+
 civic_preachers_demon_cult = {
 	potential = { ethics = { value = ethic_demon_cultists } }
 	random_weight = { base = 1 }
@@ -135,3 +143,57 @@ civic_charimatic_leader_demon_cult = {
 		country_core_sector_system_cap = 2
 	}
 }
+
+civic_unholy_pact_demon_cult = {
+	potential = { ethics = { value = ethic_demon_cultists } }
+	random_weight = { base = 1 }
+	modifier = {
+		leader_age = 10
+		leader_influence_cost = -0.05
+	}
+}
+
+civic_offerings_demon_cult = {
+	potential = { ethics = { value = ethic_demon_cultists } }
+	random_weight = { base = 1 }
+	modifier = {
+		pop_consumer_goods_mult = -0.20
+	}
+}
+
+civic_demonic_knowledge_demon_cult = {
+	potential = { ethics = { value = ethic_demon_cultists } }
+	random_weight = { base = 1 }
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+}
+
+civic_pitiful_imps_demon_cult = {
+	potential = { ethics = { value = ethic_demon_cultists } }
+	random_weight = { base = 1 }
+	modifier = {
+		slave_mineral_output = 0.15
+		country_vassal_naval_capacity_contribution_mult = 0.10
+	}
+}
+
+civic_zealots_demon_cult = {
+	potential = { ethics = { value = ethic_demon_cultists } }
+	random_weight = { base = 1 }
+	modifier = {
+		army_health = 0.10
+		army_damage_mult = 0.10
+		army_upkeep_mult = -0.20
+	}
+}
+
+civic_hatching_nests_demon_cult = {
+	potential = { ethics = { value = ethic_demon_cultists } }
+	random_weight = { base = 1 }
+	modifier = {
+		pop_growth_speed = 0.15
+	}
+}
+
+
