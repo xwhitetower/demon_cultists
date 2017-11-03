@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_demc_ap_shroud_communion"
+		texturefile = "gfx/interface/icons/ascension_perks/demc_ap_shroud_communion.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_demc_ap_shroud_champion"
+		texturefile = "gfx/interface/icons/ascension_perks/demc_ap_shroud_champion.dds"
+		alwaystransparent = yes
+	}
+}

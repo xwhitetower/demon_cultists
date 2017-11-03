@@ -1,0 +1,26 @@
+
+demc_ap_shroud_communion = {
+	on_enabled = {
+		custom_tooltip = allow_minor_demons
+		custom_tooltip = upgrades_pantheon_temple
+		custom_tooltip = materium_becomes_unstable
+	}
+
+	potential = {
+		has_ethic = ethic_demon_cultists
+		NOT = {
+			has_ascension_perk = demc_ap_shroud_communion
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
