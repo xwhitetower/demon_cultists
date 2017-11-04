@@ -179,8 +179,14 @@
  opinion_demon_cultist_ethos_on_normals:0 "Heathen"
  opinion_demon_cultist_ethos_on_demon_cultist_ethos:0 "Fellow cultists"
 
+
  demc_ap_shroud_communion:0 "Shroud Communion"
  demc_ap_shroud_communion_desc:0 "With our sacrifices the layer between reality and the immaterium becomes thinner allowing the creatures of the Shroud to play a more active role in our reality."
  allow_minor_demons:0 "Allows communication with minor shroud entities"
  upgrades_pantheon_temple:0 "Upgrades the dark pantheon temple"
  materium_becomes_unstable:0 "Systems might be engulfed in the Shroud isolating them from reality for decades"
+
+ demc_ap_shroud_champion:0 "Shroud Champion"
+ demc_ap_shroud_champion_desc:0 "We have been branded as worthy to be the gods supreme voice on this reality. It is our destiny to chain the galaxy under our rule and sacrifice the unworthy to our masters."
+ allow_everchosen_quest:0 "Allows to challenge the everchosen trials"
+ requires_ascension_perks_5:0 "$TRIGGER_FAIL$Requires 5 Ascension Perk to be selected first."
