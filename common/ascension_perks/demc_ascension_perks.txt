@@ -39,8 +39,8 @@ demc_ap_shroud_champion = {
 
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ascension_perks_5"
-			num_ascension_perks > 4
+			fail_text = "requires_ascension_perks_4"
+			num_ascension_perks > 3
 		}
 		has_ascension_perk = demc_ap_shroud_communion
 	}

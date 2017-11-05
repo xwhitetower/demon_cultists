@@ -187,6 +187,6 @@
  materium_becomes_unstable:0 "Systems might be engulfed in the Shroud isolating them from reality for decades"
 
  demc_ap_shroud_champion:0 "Shroud Champion"
- demc_ap_shroud_champion_desc:0 "We have been branded as worthy to be the gods supreme voice on this reality. It is our destiny to chain the galaxy under our rule and sacrifice the unworthy to our masters."
+ demc_ap_shroud_champion_desc:0 "We have been branded as worthy to be the Gods supreme voice on this reality. It is our destiny to chain the galaxy under our rule and sacrifice the unworthy to our masters."
  allow_everchosen_quest:0 "Allows to challenge the everchosen trials"
- requires_ascension_perks_5:0 "$TRIGGER_FAIL$Requires 5 Ascension Perk to be selected first."
+ requires_ascension_perks_4:0 "$TRIGGER_FAIL$Requires 4 Ascension Perk to be selected first."
