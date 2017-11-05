@@ -24,3 +24,28 @@ demc_ap_shroud_communion = {
 		factor = 10
 	}
 }
+
+demc_ap_shroud_champion = {
+	on_enabled = {
+		custom_tooltip = allow_everchosen_quest
+	}
+
+	potential = {
+		has_ethic = ethic_demon_cultists
+		NOT = {
+			has_ascension_perk = demc_ap_shroud_champion
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_4"
+			num_ascension_perks > 3
+		}
+		has_ascension_perk = demc_ap_shroud_communion
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
