@@ -1,0 +1,15 @@
+# Unlocks demon gates. Demon army building.
+demc_tech_demon_gate = {
+	cost = 7000
+	area = society
+	tier = 3
+	category = { military_theory }
+	ai_update_type = all
+	weight = 0
+	is_rare = yes
+	is_reverse_engineerable = no
+
+	weight_modifier = {
+		factor = 0
+	}
+}
