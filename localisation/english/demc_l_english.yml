@@ -195,3 +195,5 @@
  demc_demon_army_desc:0 "Summoned demons from the Shroud. Naturally vicious, if they hunger for souls is not met they might start rampaging."
  building_demc_demon_gate:0 "Demon Summoning Gate"
  building_demc_demon_gate_desc:0 "A stable gate to the Shroud. It allows to minor Shroud entities to materialize in this reality."
+ demc_tech_demon_gate:0 "Demon Summoning Rituals"
+ demc_tech_demon_gate_desc:0 "Secret knowledge on how to perform rituals to summon Shroud entities."
