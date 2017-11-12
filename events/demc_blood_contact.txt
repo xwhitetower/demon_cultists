@@ -89,6 +89,7 @@ country_event = {
 	option = {
 		name = demc_demon.blood.temple.mainwindow.opt.gatetech
 		trigger = {
+			in_dark_gods_good_grace = yes
 			OR = {
 				has_ascension_perk = demc_ap_shroud_communion
 				has_ascension_perk = demc_ap_shroud_champion

@@ -32,6 +32,7 @@
  demc_demon.plague.temple.mainwindow.opt.blessings:0 "I want to receive blessings."
  demc_demon.plague.temple.mainwindow.opt.upset:0 "A sacrifice will please him."
  demc_demon.plague.temple.mainwindow.opt.sinner:0 "I will atone my sins!"
+ demc_demon.plague.temple.mainwindow.opt.gatetech:0 "I want to summon your armies!"
  demc_demon.plague.temple.mainwindow.opt.bye:0 "I don't need anything."
 
 
@@ -57,6 +58,7 @@
  demc_demon.pleasure.temple.mainwindow.opt.blessings:0 "I want to receive blessings."
  demc_demon.pleasure.temple.mainwindow.opt.upset:0 "Organise a festival ASAP!"
  demc_demon.pleasure.temple.mainwindow.opt.sinner:0 "I am so disgusting!"
+ demc_demon.pleasure.temple.mainwindow.opt.gatetech:0 "I want to summon your armies!"
  demc_demon.pleasure.temple.mainwindow.opt.bye:0 "I don't need anything."
 
 
@@ -81,6 +83,7 @@
  demc_demon.wisdom.temple.mainwindow.opt.blessings:0 "I want to receive blessings."
  demc_demon.wisdom.temple.mainwindow.opt.upset:0 "A sacrifice will please him."
  demc_demon.wisdom.temple.mainwindow.opt.sinner:0 "I will atone my sins!"
+ demc_demon.wisdom.temple.mainwindow.opt.gatetech:0 "I want to summon your armies!"
  demc_demon.wisdom.temple.mainwindow.opt.bye:0 "I don't need anything."
 
 
@@ -104,6 +107,7 @@
  demc_demon.generic.temple.mainwindow.opt.blessings:0 "I want to receive blessings."
  demc_demon.generic.temple.mainwindow.opt.upset:0 "A sacrifice will please him."
  demc_demon.generic.temple.mainwindow.opt.sinner:0 "I will atone my sins!"
+ demc_demon.generic.temple.mainwindow.opt.gatetech:0 "I want to summon your armies!"
  demc_demon.generic.temple.mainwindow.opt.bye:0 "I don't need anything."
 
 

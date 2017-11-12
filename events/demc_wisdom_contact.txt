@@ -87,6 +87,25 @@ country_event = {
 		}
 	}
 	option = {
+		name = demc_demon.wisdom.temple.mainwindow.opt.gatetech
+		trigger = {
+			in_dark_gods_good_grace = yes
+			OR = {
+				has_ascension_perk = demc_ap_shroud_communion
+				has_ascension_perk = demc_ap_shroud_champion
+			}
+			NOT = { has_technology = demc_tech_demon_gate }
+		}
+		allow = {
+			has_5_sacrificial_energy = yes
+		}
+		change_variable = {
+			which = sacrifical_energy_count
+			value = -5
+		}
+		give_technology = { message = no tech = demc_tech_demon_gate }
+	}
+	option = {
 		default_hide_option = yes
 		name = demc_demon.wisdom.temple.mainwindow.opt.bye
 	}
