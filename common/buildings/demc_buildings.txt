@@ -39,3 +39,91 @@ building_sacrificial_altar = {
 	upgrades = {
 	}
 }
+
+
+# Demon gate to summon demon armies
+building_demc_demon_gate = {
+	base_buildtime = 360
+	planet_unique = yes
+
+	cost = {
+		minerals = 250
+	}
+
+	produced_resources = {
+	}
+
+	required_resources = {
+		energy = 2
+	}
+
+	prerequisites = {
+		demc_tech_demon_gate
+	}
+
+	potential = {
+		owner = { has_ethic = ethic_demon_cultists }
+		planet = {
+			NOT = { is_planet_class = pc_habitat }
+		}
+	}
+
+	destroy_if = {
+		exists = owner
+		owner = { NOT = { has_ethic = ethic_demon_cultists } }
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+
+	ai_allow = {
+		NOR = {
+			has_resource = {
+				type = sr_betharian
+				amount > 0
+			}
+			has_resource = {
+				type = sr_alien_pets
+				amount > 0
+			}
+		}
+
+		NOT = {
+			planet = {
+				owner = {
+					any_owned_planet = {
+						NOT = { is_same_value = from }
+						has_building = building_demc_demon_gate
+					}
+				}
+			}
+		}
+		# If planet only has slaves/robots, keep it to mining and farming...
+		is_slave_tile_or_planet = no
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			weight = 0
+			from = {
+				owner = {
+					NOT = {
+						has_technology = demc_tech_demon_gate
+						has_ethic = ethic_demon_cultists
+					}
+				}
+				NOT = { has_building = building_demc_demon_gate }
+			}
+		}
+	}
+}

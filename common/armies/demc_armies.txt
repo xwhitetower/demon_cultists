@@ -1,0 +1,26 @@
+demc_demon_army = {
+	damage = 2.75
+	morale_damage = 1.3
+	health = 2.25
+	morale = 4.5
+	time = 360
+	maintenance = 1.1
+	icon_frame = 8
+	has_species = no
+
+	cost = {
+		minerals = 50
+		energy = 150
+	}
+
+	potential = {
+		owner = {
+			has_ethic = ethic_demon_cultists
+		}
+	}
+	allow = {
+		has_building = building_demc_demon_gate
+	}
+
+	prerequisites = { demc_tech_demon_gate }
+}
